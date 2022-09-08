@@ -14,8 +14,10 @@ module.exports = {
       'sub-heading': '#263238',
       'regular': '#40457E',
       'mini-regular': '#E9EBFC',
-      'orange' : '#FF7A00',
-      'border-1' : '#CCD1FF'
+      'primary' : '#FF7A00',
+      'border-1' : '#CCD1FF',
+      'footer-bg' : '#2B2E4A',
+      'copyright': '#858DCE'
     },
     fontFamily: {
       'body': ['"Open Sans"'],

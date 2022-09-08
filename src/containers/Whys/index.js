@@ -14,7 +14,7 @@ const guidance = [{
 
 export default function Whys() {
     return (
-        <div className="bg-home-bg">
+        <div className="bg-home-bg pb-20">
             <div className="ml-20 pt-20">
                 <p className="text-mini-heading text-mini-heading-sz leading-tight">
                     <span className="text-heading-title">Why</span> Passion Ai ?

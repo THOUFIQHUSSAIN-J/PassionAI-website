@@ -15,7 +15,7 @@ export default function Home() {
 
                 <div className="ml-20 border-slate-50">
                     <p className="text-regular-sz text-regular">Your perfect  career companion</p>
-                    <button class="mt-10 mb-10  bg-orange hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded "> Explore more</button>
+                    <button class="mt-10 mb-10  bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded "> Explore more</button>
                 </div>
             </div>
            

@@ -1,6 +1,7 @@
-import Header from "./components/Header"
-import Home from "./containers/Home"
-import Whys from "./containers/Whys"
+import Header from "components/Header"
+import Home from "containers/Home"
+import Whys from "containers/Whys"
+import Footer from "components/Footer"
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
      <Header />
      <Home />
      <Whys />
+     <Footer />
     </div>
   );
 }
