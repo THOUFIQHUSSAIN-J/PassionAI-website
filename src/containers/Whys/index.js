@@ -1,7 +1,7 @@
 import GuidanceCard from "components/GuidanceCard/index.js";
-import suitcase from "images/briefcase.png";
-import mentorship from "images/mentorship.png";
-import careerpath from "images/careerpath.png";
+import mentorship from "images/mentorship.svg";
+import suitcase from "images/briefcase.svg";
+import careerpath from "images/careerpath.svg";
 
 const guidance = [
   {
