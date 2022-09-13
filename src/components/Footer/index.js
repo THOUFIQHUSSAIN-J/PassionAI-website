@@ -1,5 +1,7 @@
 import passionai from "images/passionai.png";
 import passionaiLogo from "images/passionai-logo.png";
+import footerImage from "images/footer-image.png";
+
 const company = [
   {
     name: "Home",
@@ -22,7 +24,7 @@ const company = [
 export default function Footer() {
   return (
     <footer class="p-4 bg-footer-bg sm:p-6 dark:bg-gray-900">
-      <div class="md:flex md:justify-between">
+      <div class="md:flex md:justify-between relative">
         <div class="mb-6 md:mb-0 mt-4 md:pl-20">
           <div className="flex justify-center">
             <img src={passionaiLogo} class="mr-3 h-8" alt="FlowBite Logo" />
@@ -88,6 +90,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
+        <div className="absolute right-0 -bottom-20  z-50">
+            <img src={footerImage} width="200" height="200"></img>
+            </div>
       </div>
 
       <div className="flex justify-center mt-10">
@@ -95,6 +100,9 @@ export default function Footer() {
           Copyright 2021 PassionAi Inc. All rights Reserved
         </span>
       </div>
+      
+     
+
     </footer>
   );
 }

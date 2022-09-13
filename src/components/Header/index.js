@@ -11,10 +11,6 @@ const Headings = [
     link: "",
   },
   {
-    name: "Blogs",
-    link: "",
-  },
-  {
     name: "Contact us",
     link: "",
   },

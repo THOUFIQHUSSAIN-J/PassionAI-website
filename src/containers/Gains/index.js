@@ -44,7 +44,7 @@ export default function Gains() {
       {/***
        * STUDENT GAINS
        */}
-      <div className="flex flex-row mt-10 mb-10">
+      <div className="flex flex-row pt-20 pb-20">
         <div className="students-gain ">
           <p className="text-regular text-heading-title-sz ml-20">
             What do <span className="text-primary">Students</span> gain from
@@ -69,7 +69,7 @@ export default function Gains() {
       {/***
        * EXPERT GAINS
        */}
-      <div className="flex flex-row  mt-10 mb-10">
+      <div className="flex flex-row  pt-20 pb-20">
         <div className="expert-gain">
           <div className="flex justify-end">
             <p className="text-regular text-heading-title-sz mr-20">
@@ -96,7 +96,7 @@ export default function Gains() {
       {/***
        * INSITITUTE GAINS
        */}
-      <div className="flex flex-row mt-10 mb-10">
+      <div className="flex flex-row pt-20 pb-20">
         <div className="institute-gain">
           <p className="text-regular text-heading-title-sz ml-20">
             What do <span className="text-primary">Institutes</span> gain from
