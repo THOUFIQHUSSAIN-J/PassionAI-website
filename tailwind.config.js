@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "home-background": "url('/src/images/home-background.svg')",
+      },
+    },
     colors: {
       "header-bg": "#24273F",
       white: "#ffffff",

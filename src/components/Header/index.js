@@ -1,5 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from "react";
+import HomeImage from "../../images/home.svg";
+import HomeLogo from "../../images/home-logo.png";
 
 const Headings = [
   {
@@ -21,14 +23,14 @@ export default function Header() {
     <Fragment>
       <div className="bg-header-bg text-white">
         <div className="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
-          <div className="flex justify-start lg:w-0 lg:flex-1">
+          <div className="flex justify-start lg:w-0 lg:flex-1 pl-10">
             <a href="#">
-              <span className="sr-only">Your Company</span>
-              <img
-                className="ml-10 h-8 w-auto sm:h-10"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
+              <span className="sr-only">PassionAi</span>
+
+              <img src={HomeLogo} alt="image not found"
+                   width={185.27} height={51.34} left={33} top={16}
               />
+
             </a>
           </div>
 

@@ -1,14 +1,16 @@
 import GuidanceCard from "components/GuidanceCard/index.js";
 import suitcase from "images/briefcase.png";
+import mentorship from "images/mentorship.png";
+import careerpath from "images/careerpath.png";
 
 const guidance = [
   {
     text: "Choose your  career path",
-    image: suitcase,
+    image: careerpath,
   },
   {
     text: "1-on-1 membership",
-    image: suitcase,
+    image: mentorship,
   },
   {
     text: "Get industry ready",
