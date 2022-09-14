@@ -37,7 +37,7 @@ export default function Header() {
           {Headings.map((item) => (
             <a
               href="#"
-              className="text-base font-medium text-gray-500 hover:text-gray-900"
+              className="text-base ml-10 font-medium text-gray-500 hover:text-gray-900"
             >
               {item.name}
             </a>
