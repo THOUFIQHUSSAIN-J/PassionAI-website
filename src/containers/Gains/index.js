@@ -45,12 +45,12 @@ export default function Gains() {
        * STUDENT GAINS
        */}
       <div className="flex flex-row pt-20 pb-20">
-        <div className="students-gain ">
-          <p className="text-regular text-heading-title-sz ml-20">
+        <div className="students-gain">
+          <p className="text-regular text-heading-title-sz md:ml-20">
             What do <span className="text-primary">Students</span> gain from
             PassionAi ?{" "}
           </p>
-          <div className="flex flex-row justify-between">
+          <div className="flex flex-col  md:flex-row justify-between">
             <div className="pl-20 pt-10">
               <img src={studentgainsimage} width="600" height="400" />
             </div>
@@ -78,7 +78,7 @@ export default function Gains() {
             </p>
           </div>
 
-          <div className="flex flex-row justify-between">
+          <div className="flex flex-col  md:flex-row justify-between">
             <div className="pt-10 pl-20">
               <GainList
                 heading={experts.heading}
@@ -102,7 +102,7 @@ export default function Gains() {
             What do <span className="text-primary">Institutes</span> gain from
             PassionAi ?{" "}
           </p>
-          <div className="flex flex-row justify-between">
+          <div className="flex flex-col  md:flex-row justify-between">
             <div className="pl-20 pt-10">
               <img src={institutegainsimage} width="600" height="400" />
             </div>

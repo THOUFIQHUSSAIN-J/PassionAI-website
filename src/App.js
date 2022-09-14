@@ -4,17 +4,18 @@ import Whys from "containers/Whys";
 import Footer from "components/Footer";
 import Gains from "containers/Gains";
 import ContactUs from "containers/Contactus";
+import { Fragment } from "react";
 
 function App() {
   return (
-    <div className="flex flex-col h-screen justify-between">
+    <Fragment>
       <Header />
       <Home />
       <Whys />
       <Gains />
-      <ContactUs />
+      {/* <ContactUs /> */}
       <Footer />
-    </div>
+    </Fragment>
   );
 }
 

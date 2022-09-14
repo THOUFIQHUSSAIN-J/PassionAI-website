@@ -35,6 +35,7 @@ module.exports = {
       "sub-heading-sz": "35px",
       "regular-sz": "30px",
       "mini-regular-sz": "17px",
+      "xs": "12px"
     },
   },
   plugins: [],
