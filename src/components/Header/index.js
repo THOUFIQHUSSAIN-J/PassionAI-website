@@ -33,7 +33,7 @@ export default function Header() {
 
             </a>
           </div>
-
+          <div  className="hidden md:block">
           {Headings.map((item) => (
             <a
               href="#"
@@ -42,8 +42,10 @@ export default function Header() {
               {item.name}
             </a>
           ))}
+          </div>
+         
 
-          <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0  pr-10">
+          <div className="hidden md:block items-center justify-end md:flex md:flex-1 lg:w-0  pr-10">
             <a
               href="#"
               className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"

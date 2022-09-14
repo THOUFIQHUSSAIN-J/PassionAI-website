@@ -3,7 +3,7 @@ import tickImage from "images/tick.png";
 export default function GainList({ heading, subheading, list }) {
   return (
     <div className="flex flex-col">
-      <div className="text-primary text-mobile-heading md:text-regular-sz">
+      <div className="text-primary text-mobile-heading-sz md:text-regular-sz">
         {heading}
       </div>
       <div className="text-regular mt-10 md:mt-0 text-mini-regular-sz md:text-sub-heading-sz">
