@@ -3,6 +3,7 @@ import mentorship from "images/mentorship.svg";
 import suitcase from "images/briefcase.svg";
 import careerpath from "images/careerpath.svg";
 import BriefcaseGirl from "images/briefcase-girl.svg";
+import VideoPointer from "images/video-pointer.svg";
 import IntroVideo from "images/introVideo.mp4";
 import helloGIF from "../../images/hello.gif";
 
@@ -48,6 +49,10 @@ export default function Whys() {
             <span>“</span>Get to know it <br /> from <span className="text-heading-title">Ram</span>, our <br /> Passion
             guru <span>"</span>
           </p>
+          {/*to be changed*/}
+          <div className="md:absolute md:right-0 md:top-15 md:-z-50">
+            <img src={VideoPointer} width="437" height="466"></img>
+          </div>
         </div>
       </div>
 
