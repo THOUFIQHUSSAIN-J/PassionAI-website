@@ -46,16 +46,16 @@ export default function Gains() {
        */}
       <div className="flex flex-row pt-20 pb-20">
         <div className="students-gain">
-          <p className="text-regular text-heading-title-sz md:ml-20">
+        <p className="text-regular ml-10 mr-10 text-regular-sz md:text-heading-title-sz md:ml-20">
             What do <span className="text-primary">Students</span> gain from
             PassionAi ?{" "}
           </p>
           <div className="flex flex-col  md:flex-row justify-between">
-            <div className="pl-20 pt-10">
+          <div className="p-10 md:pl-20 md:pt-10">
               <img src={studentgainsimage} width="600" height="400" />
             </div>
 
-            <div className="pt-10 pl-20">
+            <div className="p-10 md:pt-10 md:pl-20">
               <GainList
                 heading={student.heading}
                 subheading={student.subheading}
@@ -69,17 +69,17 @@ export default function Gains() {
       {/***
        * EXPERT GAINS
        */}
-      <div className="flex flex-row  pt-20 pb-20">
+      <div className="flex flex-row  md:pt-20 md:pb-20">
         <div className="expert-gain">
           <div className="flex justify-end">
-            <p className="text-regular text-heading-title-sz mr-20">
+          <p className="text-regular ml-10 mr-10 text-regular-sz md:text-heading-title-sz md:ml-20">
               What do <span className="text-primary">Experts</span> gain from
               PassionAi ?{" "}
             </p>
           </div>
 
           <div className="flex flex-col  md:flex-row justify-between">
-            <div className="pt-10 pl-20">
+          <div className="p-10 md:pt-10 md:pl-20">
               <GainList
                 heading={experts.heading}
                 subheading={experts.subheading}
@@ -87,7 +87,7 @@ export default function Gains() {
               />
             </div>
 
-            <div className="pr-20 pt-10">
+            <div className="p-10 md:pl-20 md:pt-10">
               <img src={expertgainsimage} width="600" height="400" />
             </div>
           </div>
@@ -98,16 +98,16 @@ export default function Gains() {
        */}
       <div className="flex flex-row pt-20 pb-20">
         <div className="institute-gain">
-          <p className="text-regular text-heading-title-sz ml-20">
+          <p className="text-regular ml-10 mr-10 text-regular-sz md:text-heading-title-sz md:ml-20">
             What do <span className="text-primary">Institutes</span> gain from
             PassionAi ?{" "}
           </p>
           <div className="flex flex-col  md:flex-row justify-between">
-            <div className="pl-20 pt-10">
+            <div className="p-10 md:pl-20 md:pt-10">
               <img src={institutegainsimage} width="600" height="400" />
             </div>
 
-            <div className="pt-10 pl-20">
+            <div className="p-10 md:pt-10 md:pl-20">
               <GainList
                 heading={institutes.heading}
                 subheading={institutes.subheading}

@@ -81,9 +81,6 @@ export default function Footer() {
           All rights Reserved
         </p>
       </div>
-      
-     
-
     </footer>
   );
 }
