@@ -2,6 +2,9 @@ import GuidanceCard from "components/GuidanceCard/index.js";
 import mentorship from "images/mentorship.svg";
 import suitcase from "images/briefcase.svg";
 import careerpath from "images/careerpath.svg";
+import BriefcaseGirl from "images/briefcase-girl.svg";
+import IntroVideo from "images/introVideo.mp4";
+import helloGIF from "../../images/hello.gif";
 
 const guidance = [
   {
@@ -23,21 +26,26 @@ export default function Whys() {
     <div className="pb-20">
       <div className="flex justify-center md:block pt-10 md:p-0 md:ml-20 md:pt-20">
         <p className="text-mini-heading text-mobile-heading-sz md:text-mini-heading-sz leading-tight">
-          <span className="text-heading-title">Why</span> Passion Ai ?
+          <span className="text-heading-title">Why</span> PassionAi ?
         </p>
       </div>
 
       <div className="flex lg:justify-between">
         <div className="p-10 md:p-0 md:mt-20 md:ml-20">
-          <video width="768" height="500" className="" controls>
-            <source src="movie.mp4" type="video/mp4" />
+          <video width="768" height="500" className="" controls autoplay>
+            <source src={IntroVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
 
+        {/*to be changed*/}
+        <div className="md:absolute md:right-0 md:top-18 md:-z-50">
+          <img src={helloGIF} width="300" height="300"></img>
+        </div>
+
         <div className="mt-40 mr-60 hidden md:block">
-          <p className="text-sub-heading-2 text-sub-heading-sz">
-            <span>"</span>Get to know it <br /> from Ram, our <br /> Passion
+          <p className="text-why-passion-heading text-why-passion-heading-sz">
+            <span>“</span>Get to know it <br /> from <span className="text-heading-title">Ram</span>, our <br /> Passion
             guru <span>"</span>
           </p>
         </div>
@@ -50,9 +58,13 @@ export default function Whys() {
               Let’s choose wisely this time...
             </p>{" "}
           </div>
+          {/*to be changed*/}
+          <div className="md:absolute md:right-0 md:top-15 md:-z-50">
+            <img src={BriefcaseGirl} width="437" height="466"></img>
+          </div>
           <div className="flex justify-center mt-4">
-            <p className="text-regular text-mini-regular-sz md:text-regular-sz">
-              Get career guidance and kick start your career
+            <p className="text-regular text-mini-regular-sz md:text-regular-sz w-627">
+              Get career guidance and kick start your career In Marketing & Sales
             </p>
           </div>
         </div>
@@ -63,6 +75,7 @@ export default function Whys() {
           ))}
         </div>
       </div>
+
     </div>
   );
 }

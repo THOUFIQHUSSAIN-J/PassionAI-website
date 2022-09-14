@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "home-background": "url('/src/images/home-background.svg')",
+        "roadmap-background": "url('/src/images/roadmap.svg')",
       },
     },
     colors: {
@@ -14,6 +15,7 @@ module.exports = {
       "heading-title": "#FF7A00",
       "mini-heading": "#39407F",
       "sub-heading": "#263238",
+      "why-passion-heading": "#263238",
       regular: "#40457E",
       "mini-regular": "#E9EBFC",
       primary: "#FF7A00",
@@ -38,6 +40,7 @@ module.exports = {
     fontSize: {
       "heading-title-sz": "52px",
       "mini-heading-sz": "52px",
+      "why-passion-heading-sz": "52px",
       "sub-heading-sz": "35px",
       "regular-sz": "30px",
       "mini-regular-sz": "17px",

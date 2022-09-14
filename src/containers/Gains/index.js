@@ -1,7 +1,9 @@
 import GainList from "components/GainList";
-import studentgainsimage from "images/student-gains.png";
-import expertgainsimage from "images/expert-gains.png";
-import institutegainsimage from "images/institute-gains.jpg";
+import studentgainsimage from "images/student-gains.svg";
+import RoadMap from "images/roadmap.svg";
+import WorldMap from "images/worldmap.svg";
+import expertgainsimage from "images/expert-gains.svg";
+import institutegainsimage from "images/institute-gains.svg";
 import { Fragment } from "react";
 
 const student = {
@@ -65,18 +67,25 @@ export default function Gains() {
           </div>
         </div>
       </div>
+      {/***
+       * Road Map Image
+       */}
+        {/*to be changed*/}
+      <div className="flex flex-row pt-20 pb-20">
+        <div className="students-gain">
+            <img src={RoadMap} />
+        </div>
+      </div>
 
       {/***
        * EXPERT GAINS
        */}
       <div className="flex flex-row  md:pt-20 md:pb-20">
         <div className="expert-gain">
-          <div className="flex justify-end">
           <p className="text-regular ml-10 mr-10 text-regular-sz md:text-heading-title-sz md:ml-20">
               What do <span className="text-primary">Experts</span> gain from
               PassionAi ?{" "}
             </p>
-          </div>
 
           <div className="flex flex-col  md:flex-row justify-between">
           <div className="p-10 md:pt-10 md:pl-20">
@@ -87,12 +96,25 @@ export default function Gains() {
               />
             </div>
 
+              {/*to be changed*/}
             <div className="p-10 md:pl-20 md:pt-10">
-              <img src={expertgainsimage} width="600" height="400" />
+              <img src={expertgainsimage} width="600" height="460" />
             </div>
           </div>
         </div>
       </div>
+
+
+      {/***
+       * World Map Image
+       */}
+        {/*to be changed*/}
+      <div className="flex flex-row pt-20 pb-20">
+        <div className="students-gain pl-25">
+          <img src={WorldMap} />
+        </div>
+      </div>
+
       {/***
        * INSITITUTE GAINS
        */}
@@ -104,6 +126,7 @@ export default function Gains() {
           </p>
           <div className="flex flex-col  md:flex-row justify-between">
             <div className="p-10 md:pl-20 md:pt-10">
+                {/*to be changed*/}
               <img src={institutegainsimage} width="600" height="400" />
             </div>
 

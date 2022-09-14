@@ -9,7 +9,7 @@ const Headings = [
     link: "",
   },
   {
-    name: "Why Passion ai?",
+    name: "Why PassionAi?",
     link: "",
   },
   {

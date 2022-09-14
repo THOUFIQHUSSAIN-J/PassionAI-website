@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import ModalImage from "images/modal-image.png";
+import ModalImage from "images/modal-image.svg";
 
 export default function ContactModal({ showModal, setShowModal }) {
   return (
