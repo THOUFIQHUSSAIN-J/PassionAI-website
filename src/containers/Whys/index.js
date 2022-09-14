@@ -20,7 +20,7 @@ const guidance = [
 
 export default function Whys() {
   return (
-    <div className="bg-home-bg pb-20">
+    <div className="pb-20">
       <div className="flex justify-center md:block pt-10 md:p-0 md:ml-20 md:pt-20">
         <p className="text-mini-heading text-mobile-heading-sz md:text-mini-heading-sz leading-tight">
           <span className="text-heading-title">Why</span> Passion Ai ?
