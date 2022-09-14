@@ -15,7 +15,7 @@ export default function ContactUs() {
              * Form
              */
             }
-          <div class="flex flex-col p-6 bg-formBackground w-96 ml-20 rounded items-center">
+          <div class="flex flex-col p-6 bg-formBackground w-96 m-10 md:ml-20 rounded items-center">
             <div class="form-group mb-6">
               <input
                 type="text"
@@ -55,7 +55,7 @@ export default function ContactUs() {
              */
           }
 
-          <div className="gif-container ">
+          <div className="gif-container hidden md:block">
             <div className="flex flex-col">
              <div className="inline-flex ml-10"> 
                     <p className="mt-6 text-primary text-regular-sz">Drop us a line</p>
@@ -69,8 +69,8 @@ export default function ContactUs() {
            
            
            
-            <div className="absolute right-0 top-18 -z-50">
-            <img src={teamGIF} width="500" height="200"></img>
+            <div className="md:absolute md:right-0 md:top-18 md:-z-50">
+                <img src={teamGIF} width="500" height="200"></img>
             </div>
            
           </div>

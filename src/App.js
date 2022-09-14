@@ -13,7 +13,7 @@ function App() {
       <Home />
       <Whys />
       <Gains />
-      {/* <ContactUs /> */}
+      <ContactUs />
       <Footer />
     </Fragment>
   );

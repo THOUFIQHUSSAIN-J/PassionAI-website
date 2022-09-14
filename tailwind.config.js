@@ -24,7 +24,11 @@ module.exports = {
       formGradient0: "#FF7A00",
       formGradient100: "#FF9D44",
       formBackground: "#F7F7FE",
-      formBorder: "#ACAFC9"
+      formBorder: "#ACAFC9",
+      buttonGradient0: "#B49EF9",
+      buttonGradient100: "#FF9D44",
+      hoverColor:"#EBEDFF",
+      hoverBorderColor:"#6973CD"
     },
     fontFamily: {
       body: ['"Open Sans"'],
