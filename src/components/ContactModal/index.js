@@ -1,22 +1,95 @@
-import { Fragment } from "react"
+import { Fragment } from "react";
+import ModalImage from "images/modal-image.png";
 
-export default function ContactModal() {
-    return (
-        <Fragment>
-<div id="authentication-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center">
-    <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+export default function ContactModal({ showModal, setShowModal }) {
+  return (
+    <Fragment>
+      <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+        <div className="relative w-auto my-6 mx-auto max-w-3xl">
+          {/*content*/}
+          <div className="flex flex-row rounded-lg shadow-lg relative w-full bg-white ">
+            {/*body*/}
 
-        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-            <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-toggle="authentication-modal">
-                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                <span class="sr-only">Close modal</span>
-            </button>
-            <div class="py-6 px-6 lg:px-8">
-                <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">Sign in to our platform</h3>
+            <div className="imageContainer p-20  bg-gradient-to-r from-modalGradient to-modalGradient">
+              <img
+                className="absolute -bottom-6 -left-14"
+                src={ModalImage}
+                width={272}
+                height={473}
+              />
             </div>
+
+            <div class="flex flex-col p-6 w-96  rounded items-center">
+              <div className="flex flex-row  w-full justify-between">
+                <p>Hi There</p>
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.2 10.8L10.8 19.2M10.8 10.8L19.2 19.2M29 15C29 22.732 22.732 29 15 29C7.26801 29 1 22.732 1 15C1 7.26801 7.26801 1 15 1C22.732 1 29 7.26801 29 15Z"
+                    stroke="#263238"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div className="flex justify-start w-full mt-5">
+                <p className="text-modalText text-xs">
+                  Please fill out the details to level-up our interaction...
+                  <br />
+                  We’ll catch-up soon!!!
+                </p>
+              </div>
+              <div class="form-group mb-6 mt-10">
+                <input
+                  type="text"
+                  class="form-control block w-80 h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="form-group mb-6">
+                <input
+                  type="email"
+                  className="form-control block w-80 h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
+                  id="exampleInputPassword1"
+                  placeholder="email"
+                />
+              </div>
+
+              <div className="form-group mb-6">
+                <input
+                  type="text"
+                  className="form-control block w-80  h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
+                  id="exampleInputPassword1"
+                  placeholder="Phone Number"
+                />
+              </div>
+              <div className="form-group mb-6">
+                <textarea
+                  id="message"
+                  rows="6"
+                  className="form-control block p-2.5 w-80 h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
+                  placeholder="Comments"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                className="px-6 py-2.5  w-80 rounded-md bg-gradient-to-r from-formGradient0 to-formGradient100"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
-</Fragment>
-    )
+      </div>
+      <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+    </Fragment>
+  );
 }

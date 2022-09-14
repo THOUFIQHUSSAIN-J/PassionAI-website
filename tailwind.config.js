@@ -28,7 +28,9 @@ module.exports = {
       buttonGradient0: "#B49EF9",
       buttonGradient100: "#FF9D44",
       hoverColor:"#EBEDFF",
-      hoverBorderColor:"#6973CD"
+      hoverBorderColor:"#6973CD",
+      modalGradient: "#B49EF9",
+      modalText:"#979797"
     },
     fontFamily: {
       body: ['"Open Sans"'],
