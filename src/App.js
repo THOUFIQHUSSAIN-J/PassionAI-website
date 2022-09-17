@@ -5,6 +5,7 @@ import Footer from "components/Footer";
 import Gains from "containers/Gains";
 import ContactUs from "containers/Contactus";
 import { Fragment } from "react";
+import Testimonial from "containers/Testimonial";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Home />
       <Whys />
       <Gains />
+      <Testimonial />
       <ContactUs />
       <Footer />
     </Fragment>

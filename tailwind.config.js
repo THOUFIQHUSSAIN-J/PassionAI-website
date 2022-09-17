@@ -11,6 +11,7 @@ module.exports = {
     colors: {
       "header-bg": "#24273F",
       white: "#ffffff",
+      black:"#000000",
       "home-bg": "#E1E1E1",
       "heading-title": "#FF7A00",
       "mini-heading": "#39407F",
@@ -32,7 +33,9 @@ module.exports = {
       hoverColor:"#EBEDFF",
       hoverBorderColor:"#6973CD",
       modalGradient: "#B49EF9",
-      modalText:"#979797"
+      modalText:"#979797",
+      testimonialBg:"#E9EBFC",
+      violet: "#40457E"
     },
     fontFamily: {
       body: ['"Open Sans"'],
