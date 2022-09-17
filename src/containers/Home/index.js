@@ -2,8 +2,8 @@ import HomeImage from "images/home.svg";
 
 export default function Home() {
   return (
-    <div className="flex flex-row bg-home-background">
-      <div className="flex flex-col">
+    <div className="flex flex-row bg-home-background -mt-0 pb-18">
+      <div className="flex flex-col borde">
         <div className="m-10 md:m-20 w-616">
           <p className="text-mini-heading text-mobile-heading-sz font-bold md:text-mini-heading-sz leading-tight">
             Want to Kickstart your career in <span className="text-primary">Marketing</span> and <span className="text-primary">Sales</span>, We’ll help you choose the best career path in it.
@@ -21,7 +21,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full hidden md:block flex flex-row justify-around pt-40">
+      <div className="w-full hidden md:block flex flex-row justify-around pt-20">
         <img src={HomeImage} alt="image not found"  
         width={655} height={702}
         />

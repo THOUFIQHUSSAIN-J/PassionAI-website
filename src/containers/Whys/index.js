@@ -31,46 +31,50 @@ export default function Whys() {
         </p>
       </div>
 
-      <div className="flex lg:justify-between">
+      <div className="flex lg:justify-between relative">
         <div className="p-10 md:p-0 md:mt-20 md:ml-20">
-          <video width="768" height="500" className="" controls autoplay>
+          <video width="768" height="500" className="rounded-2xl" controls autoplay>
             <source src={IntroVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
 
-        {/*to be changed*/}
-        <div className="md:absolute md:right-0 md:top-18 md:-z-50">
-          <img src={helloGIF} width="300" height="300"></img>
-        </div>
+        <div  className="md:absolute md:right-96 md:top-18 md:-z-50 transform -scale-x-100">
+            <img src={helloGIF} width="300" height="300"></img>
+          </div>
+        
 
-        <div className="mt-40 mr-60 hidden md:block">
+        <div className="mt-40 mr-40 hidden md:block relative pl-10">
           <p className="text-why-passion-heading text-why-passion-heading-sz font-bold">
             <span>“</span>Get to know it <br /> from <span className="text-heading-title">Ram</span>, our <br /> Passion
             guru <span>"</span>
           </p>
           {/*to be changed*/}
-          <div className="md:absolute md:right-0 md:top-15 md:-z-50">
+          <div className="md:absolute md:right-48 md:top-15 md:-z-50">
             <img src={VideoPointer} width="437" height="466"></img>
           </div>
         </div>
       </div>
 
-      <div className="guidance mt-20">
+      <div className="guidance mt-60 relative">
         <div className="flex flex-col">
           <div className="flex justify-center">
-            <p className="font-semibold text-why-passion-heading text-mobile-heading-sz md:text-mini-heading-sz">
+            <p className="font-semibold text-why-passion-heading text-mobile-heading-sz md:text-mini-heading-sz mb-10">
               Let’s choose wisely this time...
             </p>{" "}
           </div>
           {/*to be changed*/}
-          <div className="md:absolute md:right-0 md:top-15 md:-z-50">
+          <div className="md:absolute md:right-0 md:-bottom-12 md:-z-50">
             <img src={BriefcaseGirl} width="437" height="466"></img>
           </div>
-          <div className="flex justify-center mt-4">
-            <p className="font-light text-regular text-mini-regular-sz md:text-regular-sz w-627">
-              Get career guidance and kick start your career In Marketing & Sales
-            </p>
+          <div className="flex flex-col items-center  mt-4 ">
+            <div> <p className="font-light text-regular text-mini-regular-sz md:text-regular-sz ">
+              Get career guidance and kick start your career 
+            </p></div>
+            <div> <p className="font-light text-regular text-mini-regular-sz md:text-regular-sz">
+            In Marketing & sales
+            </p></div>
+
           </div>
         </div>
 
