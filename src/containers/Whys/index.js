@@ -31,17 +31,19 @@ export default function Whys() {
         </p>
       </div>
 
-      <div className="flex lg:justify-between relative">
-        <div className="p-10 md:p-0 md:mt-20 md:ml-20">
-          <video width="768" height="500" className="rounded-2xl" controls autoplay>
+      <div className="flex lg:justify-between ">
+        <div className="p-10 md:p-0 md:mt-20 md:ml-20 relative">
+          <video width="768" height="500" className="rounded-2xl md:z-10" controls autoplay>
             <source src={IntroVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-        </div>
-
-        <div  className="md:absolute md:right-96 md:top-18 md:-z-50 transform -scale-x-100">
+          <div  className="md:absolute md:-right-[285px] top-0 transform -scale-x-100 md:-z-10">
             <img src={helloGIF} width="300" height="300"></img>
           </div>
+
+        </div>
+
+
         
 
         <div className="mt-40 mr-40 hidden md:block relative pl-10">
@@ -50,7 +52,7 @@ export default function Whys() {
             guru <span>"</span>
           </p>
           {/*to be changed*/}
-          <div className="md:absolute md:right-48 md:top-15 md:-z-50">
+          <div className="md:absolute md:right-48 md:top-15">
             <img src={VideoPointer} width="437" height="466"></img>
           </div>
         </div>
@@ -63,8 +65,7 @@ export default function Whys() {
               Let’s choose wisely this time...
             </p>{" "}
           </div>
-          {/*to be changed*/}
-          <div className="md:absolute md:right-0 md:-bottom-12 md:-z-50">
+          <div className="md:absolute md:right-10 md:-bottom-12 md:-z-10">
             <img src={BriefcaseGirl} width="437" height="466"></img>
           </div>
           <div className="flex flex-col items-center  mt-4 ">

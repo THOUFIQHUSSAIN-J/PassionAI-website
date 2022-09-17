@@ -13,7 +13,6 @@ export default function Signin() {
       </div>
       <div className="flex flex-row">
         <div className="basis-8/12">
-          <p>Welcome to passionAi</p>
         </div>
         <div className="basis-4/12 rounded-2xl flex flex-col bg-white w-full p-10 m-10 md:ml-20 rounded">
           <div className="flex justify-center mt-8 mb-8">

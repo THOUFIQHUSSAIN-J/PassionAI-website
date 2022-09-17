@@ -54,5 +54,5 @@ module.exports = {
       "xs-1": "14px"
     },
   },
-  plugins: [require("tailwindcss-flip")],
+  plugins: [],
 };
