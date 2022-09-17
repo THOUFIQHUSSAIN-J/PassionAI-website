@@ -35,7 +35,8 @@ module.exports = {
       modalGradient: "#B49EF9",
       modalText:"#979797",
       testimonialBg:"#E9EBFC",
-      violet: "#40457E"
+      violet: "#40457E",
+      buttonHoverColor: "#979797"
     },
     fontFamily: {
       body: ['"Open Sans"'],
@@ -49,6 +50,7 @@ module.exports = {
       "mini-regular-sz": "17px",
       "xs": "12px",
       "mobile-heading-sz": "22px",
+      "xs-1": "14px"
     },
   },
   plugins: [],
