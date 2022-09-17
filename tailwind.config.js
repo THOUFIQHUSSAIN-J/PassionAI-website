@@ -43,6 +43,7 @@ module.exports = {
     },
     fontSize: {
       "heading-title-sz": "52px",
+      "home-regular-sz": "14px",
       "mini-heading-sz": "52px",
       "why-passion-heading-sz": "52px",
       "sub-heading-sz": "35px",

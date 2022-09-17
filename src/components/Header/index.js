@@ -1,7 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from "react";
-import HomeImage from "../../images/home.svg";
-import HomeLogo from "../../images/home-logo.png";
+import HomeLogo from "../../images/home-logo.svg";
 
 const Headings = [
   {

@@ -26,7 +26,7 @@ export default function Whys() {
   return (
     <div className="pb-20">
       <div className="flex justify-center md:block pt-10 md:p-0 md:ml-20 md:pt-20">
-        <p className="text-mini-heading text-mobile-heading-sz md:text-mini-heading-sz leading-tight">
+        <p className="text-mini-heading font-bold text-mobile-heading-sz md:text-mini-heading-sz leading-tight">
           <span className="text-heading-title">Why</span> PassionAi ?
         </p>
       </div>
@@ -45,7 +45,7 @@ export default function Whys() {
         </div>
 
         <div className="mt-40 mr-60 hidden md:block">
-          <p className="text-why-passion-heading text-why-passion-heading-sz">
+          <p className="text-why-passion-heading text-why-passion-heading-sz font-bold">
             <span>“</span>Get to know it <br /> from <span className="text-heading-title">Ram</span>, our <br /> Passion
             guru <span>"</span>
           </p>
@@ -59,7 +59,7 @@ export default function Whys() {
       <div className="guidance mt-20">
         <div className="flex flex-col">
           <div className="flex justify-center">
-            <p className="text-mini-heading text-mobile-heading-sz md:text-mini-heading-sz">
+            <p className="font-semibold text-why-passion-heading text-mobile-heading-sz md:text-mini-heading-sz">
               Let’s choose wisely this time...
             </p>{" "}
           </div>
@@ -68,7 +68,7 @@ export default function Whys() {
             <img src={BriefcaseGirl} width="437" height="466"></img>
           </div>
           <div className="flex justify-center mt-4">
-            <p className="text-regular text-mini-regular-sz md:text-regular-sz w-627">
+            <p className="font-light text-regular text-mini-regular-sz md:text-regular-sz w-627">
               Get career guidance and kick start your career In Marketing & Sales
             </p>
           </div>
