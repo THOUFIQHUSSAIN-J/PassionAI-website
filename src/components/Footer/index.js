@@ -80,10 +80,10 @@ export default function Footer() {
         </p>
       </div>
 
-      <div className="flex justify-center  md:absolute left-0 bottom-0">
+      <div className="hidden md:block flex justify-center  md:absolute left-0 bottom-0">
           <img src={footerLeftImage} width="85" height="100"></img>
         </div>
-        <div className="flex justify-center md:absolute right-0 top-0">
+        <div className="hidden md:block flex justify-center md:absolute right-0 top-0">
           <img src={footerRightImage} width="85" height="200"></img> 
         </div>
      
