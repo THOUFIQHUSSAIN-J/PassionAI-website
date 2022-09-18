@@ -7,6 +7,7 @@ module.exports = {
         "home-background": "url('/src/images/home-background.svg')",
         "roadmap-background": "url('/src/images/roadmap.svg')",
         "response-background": "url('/src/images/response-background.svg)",
+        "testimonial-bg": "url('/src/images/testimonial-bg.svg)"
       },
     },
     colors: {
@@ -38,6 +39,7 @@ module.exports = {
       testimonialBg: "#E9EBFC",
       violet: "#40457E",
       buttonHoverColor: "#979797",
+      testimonialbg: "#F7F7FF"
     },
     fontFamily: {
       body: ['"Open Sans"'],

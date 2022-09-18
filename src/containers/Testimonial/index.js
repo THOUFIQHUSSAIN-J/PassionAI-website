@@ -28,7 +28,7 @@ const testimonials = [
 export default function Testimonial() {
   return (
     <Fragment>
-      <div className="bg-hoverBorderColor pt-10 pb-20 flex flex-col">
+      <div className="bg-home-background pt-10 pb-20 flex flex-col">
         <div className="flex justify-center">
           <p className="text-regular-sz text-primary">Testimonial</p>
         </div>
