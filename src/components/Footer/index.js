@@ -26,7 +26,7 @@ const company = [
 
 export default function Footer() {
   return (
-    <footer class="p-4 bg-footer-bg sm:p-6 dark:bg-gray-900">
+    <footer class="p-4 bg-footer-bg sm:p-6 dark:bg-gray-900 relative">
       <div class="md:flex md:justify-between relative">
         <div class="mb-6 md:mb-0 mt-4 md:pl-20">
           <div className="flex justify-center">
@@ -68,12 +68,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center mt-10 mb-10 md:absolute left-0 -bottom-28 z-50">
-          <img src={footerLeftImage} width="85" height="100"></img>
-        </div>
-        <div className="flex justify-center mt-10 mb-10 md:absolute right-0   z-50">
-          <img src={footerRightImage} width="85" height="200"></img>
-        </div>
+      
         <div className="flex justify-center mt-10 mb-10 md:absolute right-0 -bottom-28  z-50">
           <img src={footerImage} width="200" height="200"></img>
         </div>
@@ -84,6 +79,14 @@ export default function Footer() {
           Copyright 2021 Passion Ai Ari Inc. All rights Reserved
         </p>
       </div>
+
+      <div className="flex justify-center  md:absolute left-0 bottom-0">
+          <img src={footerLeftImage} width="85" height="100"></img>
+        </div>
+        <div className="flex justify-center md:absolute right-0 top-0">
+          <img src={footerRightImage} width="85" height="200"></img> 
+        </div>
+     
     </footer>
   );
 }

@@ -44,6 +44,9 @@ module.exports = {
     fontFamily: {
       body: ['"Open Sans"'],
     },
+    boxShadow: {
+      'primary': '0 8px 20px  rgba(255, 122, 0, 0.1)',
+    },
     fontSize: {
       "heading-title-sz": "52px",
       "home-regular-sz": "14px",
