@@ -25,7 +25,7 @@ module.exports = {
       "heading-secondary": "#282B45",
       "border-1": "#CCD1FF",
       "footer-bg": "#2B2E4A",
-      copyright: "#858DCE",
+        copyright: "#858DCE",
       formGradient0: "#FF7A00",
       formGradient100: "#FF9D44",
       formBackground: "#F7F7FE",
