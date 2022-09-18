@@ -1,6 +1,7 @@
-import passionai from "images/passionai.png";
-import passionaiLogo from "images/passionai-logo.png";
+import passionaiLogo from "images/footer-passionai-logo.svg";
 import footerImage from "images/footer-image.png";
+import footerLeftImage from "images/footer-bottom-left.svg";
+import footerRightImage from "images/footer-bottom-right.svg";
 import instagram from "images/instagram.png";
 import linkedin from "images/linkedin.png";
 
@@ -29,10 +30,7 @@ export default function Footer() {
       <div class="md:flex md:justify-between relative">
         <div class="mb-6 md:mb-0 mt-4 md:pl-20">
           <div className="flex justify-center">
-            <img src={passionaiLogo} class="mr-3 h-8" alt="FlowBite Logo" />
-          </div>
-          <div className="flex justify-center mt-10">
-            <img src={passionai} class="mr-3 h-8" alt="FlowBite Logo" />
+            <img src={passionaiLogo} class="mr-3 h-183" alt="FlowBite Logo" />
           </div>
         </div>
         <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -70,14 +68,20 @@ export default function Footer() {
             </div>
           </div>
         </div>
+        <div className="flex justify-center mt-10 mb-10 md:absolute left-0 -bottom-28 z-50">
+          <img src={footerLeftImage} width="85" height="100"></img>
+        </div>
+        <div className="flex justify-center mt-10 mb-10 md:absolute right-0   z-50">
+          <img src={footerRightImage} width="85" height="200"></img>
+        </div>
         <div className="flex justify-center mt-10 mb-10 md:absolute right-0 -bottom-28  z-50">
           <img src={footerImage} width="200" height="200"></img>
         </div>
       </div>
 
       <div className="flex justify-center mt-10">
-        <p className="text-copyright text-xs md:text-mini-regular-sz">
-          Copyright 2021 PassionAi Inc. All rights Reserved
+        <p className="text-copyright font-light text-mobile-heading-sz md:text-mini-regular-sz">
+          Copyright 2021 Passion Ai Ari Inc. All rights Reserved
         </p>
       </div>
     </footer>

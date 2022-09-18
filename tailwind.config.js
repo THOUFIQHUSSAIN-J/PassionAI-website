@@ -6,8 +6,8 @@ module.exports = {
       backgroundImage: {
         "home-background": "url('/src/images/home-background.svg')",
         "roadmap-background": "url('/src/images/roadmap.svg')",
-        "response-background": "url('/src/images/response-background.svg)",
-        "testimonial-bg": "url('/src/images/testimonial-bg.svg)"
+        "response-background": "url('/src/images/response-background-1.svg')",
+        "testimonial-bg": "url('/src/images/testimonial-bg.png')"
       },
     },
     colors: {
