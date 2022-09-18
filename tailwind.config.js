@@ -6,6 +6,7 @@ module.exports = {
       backgroundImage: {
         "home-background": "url('/src/images/home-background.svg')",
         "roadmap-background": "url('/src/images/roadmap.svg')",
+        "response-background": "url('/src/images/response-background.svg)"
       },
     },
     colors: {
@@ -51,7 +52,9 @@ module.exports = {
       "mini-regular-sz": "17px",
       "xs": "12px",
       "mobile-heading-sz": "22px",
-      "xs-1": "14px"
+      "xs-1": "14px",
+      "lg": "40px",
+      "md": "28px"
     },
   },
   plugins: [],
