@@ -33,22 +33,25 @@ export default function Whys() {
 
       <div className="flex lg:justify-between ">
         <div className="p-10 md:p-0 md:mt-20 md:ml-20 relative">
-          <video width="768" height="500" className="rounded-2xl md:z-10" controls autoplay>
+          <video
+            width="768"
+            height="500"
+            className="rounded-2xl md:z-10"
+            controls
+            autoplay
+          >
             <source src={IntroVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div  className="md:absolute md:-right-[285px] top-0 transform -scale-x-100 md:-z-10">
+          <div className="md:absolute md:-right-[285px] top-0 transform -scale-x-100 md:-z-10">
             <img src={helloGIF} width="300" height="300"></img>
           </div>
-
         </div>
-
-
-        
 
         <div className="mt-40 mr-40 hidden md:block relative pl-10">
           <p className="text-why-passion-heading text-why-passion-heading-sz font-bold">
-            <span>“</span>Get to know it <br /> from <span className="text-heading-title">Ram</span>, our <br /> Passion
+            <span>“</span>Get to know it <br /> from{" "}
+            <span className="text-heading-title">Ram</span>, our <br /> Passion
             guru <span>"</span>
           </p>
           {/*to be changed*/}
@@ -69,13 +72,18 @@ export default function Whys() {
             <img src={BriefcaseGirl} width="437" height="466"></img>
           </div>
           <div className="flex flex-col items-center  mt-4 ">
-            <div> <p className="font-light text-regular text-mini-regular-sz md:text-regular-sz ">
-              Get career guidance and kick start your career 
-            </p></div>
-            <div> <p className="font-light text-regular text-mini-regular-sz md:text-regular-sz">
-            In Marketing & sales
-            </p></div>
-
+            <div>
+              {" "}
+              <p className="font-light text-regular text-mini-regular-sz md:text-regular-sz ">
+                Get career guidance and kick start your career
+              </p>
+            </div>
+            <div>
+              {" "}
+              <p className="font-light text-regular text-mini-regular-sz md:text-regular-sz">
+                In Marketing & sales
+              </p>
+            </div>
           </div>
         </div>
 
@@ -85,7 +93,6 @@ export default function Whys() {
           ))}
         </div>
       </div>
-
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { Fragment } from "react";
-import mailGIF from "images/mail.gif"
-import teamGIF from "images/team.gif"
+import mailGIF from "images/mail.gif";
+import teamGIF from "images/team.gif";
 
 export default function ContactUs() {
   return (
@@ -11,10 +11,9 @@ export default function ContactUs() {
         </div>
 
         <div className="flex flex-row mt-10">
-            {/**
-             * Form
-             */
-            }
+          {/**
+           * Form
+           */}
           <div class="flex flex-col p-6 bg-formBackground w-96 m-10 md:ml-20 rounded items-center">
             <div class="form-group mb-6">
               <input
@@ -49,30 +48,29 @@ export default function ContactUs() {
               Submit
             </button>
           </div>
-          {
-            /**
-             * GIFs
-             */
-          }
+          {/**
+           * GIFs
+           */}
 
           <div className="gif-container hidden md:block">
             <div className="flex flex-col">
-             <div className="inline-flex ml-10"> 
-                    <p className="mt-6 text-primary text-regular-sz">Drop us a line</p>
-                    <img src={mailGIF} className="" width="100" height="100"></img>
-             </div>
+              <div className="inline-flex ml-10">
+                <p className="mt-6 text-primary text-regular-sz">
+                  Drop us a line
+                </p>
+                <img src={mailGIF} className="" width="100" height="100"></img>
+              </div>
 
-             <div className="">
-                 <p className="ml-10 font-semibold text-sub-heading-sz">Finish it off to stay on track.</p>
-             </div>
+              <div className="">
+                <p className="ml-10 font-semibold text-sub-heading-sz">
+                  Finish it off to stay on track.
+                </p>
+              </div>
             </div>
-           
-           
-           
+
             <div className="md:absolute md:right-0 md:top-18 md:-z-50">
-                <img src={teamGIF} width="500" height="200"></img>
+              <img src={teamGIF} width="500" height="200"></img>
             </div>
-           
           </div>
         </div>
       </div>

@@ -48,12 +48,12 @@ export default function Gains() {
        */}
       <div className="flex flex-row pt-20 pb-20">
         <div className="students-gain">
-        <p className="text-regular ml-10 mr-10 text-regular-sz md:text-heading-title-sz md:ml-20">
+          <p className="text-regular ml-10 mr-10 text-regular-sz md:text-heading-title-sz md:ml-20">
             What do <span className="text-primary">Students</span> gain from
             PassionAi ?{" "}
           </p>
           <div className="flex flex-col  md:flex-row justify-between">
-          <div className="p-10 md:pl-20 md:pt-10">
+            <div className="p-10 md:pl-20 md:pt-10">
               <img src={studentgainsimage} width="600" height="400" />
             </div>
 
@@ -70,10 +70,10 @@ export default function Gains() {
       {/***
        * Road Map Image
        */}
-        {/*to be changed*/}
+      {/*to be changed*/}
       <div className="flex flex-row pt-20 pb-20">
         <div className="students-gain">
-            <img src={RoadMap} />
+          <img src={RoadMap} />
         </div>
       </div>
 
@@ -83,12 +83,12 @@ export default function Gains() {
       <div className="flex flex-row  md:pt-20 md:pb-20">
         <div className="expert-gain">
           <p className="text-regular ml-10 mr-10 text-regular-sz md:text-heading-title-sz md:ml-20">
-              What do <span className="text-primary">Experts</span> gain from
-              PassionAi ?{" "}
-            </p>
+            What do <span className="text-primary">Experts</span> gain from
+            PassionAi ?{" "}
+          </p>
 
           <div className="flex flex-col  md:flex-row justify-between">
-          <div className="p-10 md:pt-10 md:pl-20">
+            <div className="p-10 md:pt-10 md:pl-20">
               <GainList
                 heading={experts.heading}
                 subheading={experts.subheading}
@@ -96,7 +96,7 @@ export default function Gains() {
               />
             </div>
 
-              {/*to be changed*/}
+            {/*to be changed*/}
             <div className="p-10 md:pl-20 md:pt-10">
               <img src={expertgainsimage} width="600" height="460" />
             </div>
@@ -104,11 +104,10 @@ export default function Gains() {
         </div>
       </div>
 
-
       {/***
        * World Map Image
        */}
-        {/*to be changed*/}
+      {/*to be changed*/}
       <div className="flex flex-row pt-20 pb-20">
         <div className="students-gain pl-25">
           <img src={WorldMap} />
@@ -126,7 +125,7 @@ export default function Gains() {
           </p>
           <div className="flex flex-col  md:flex-row justify-between">
             <div className="p-10 md:pl-20 md:pt-10">
-                {/*to be changed*/}
+              {/*to be changed*/}
               <img src={institutegainsimage} width="600" height="400" />
             </div>
 

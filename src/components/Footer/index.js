@@ -1,7 +1,7 @@
 import passionai from "images/passionai.png";
 import passionaiLogo from "images/passionai-logo.png";
 import footerImage from "images/footer-image.png";
-import instagram from "images/instagram.png"
+import instagram from "images/instagram.png";
 import linkedin from "images/linkedin.png";
 
 const company = [
@@ -71,14 +71,13 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex justify-center mt-10 mb-10 md:absolute right-0 -bottom-28  z-50">
-            <img src={footerImage} width="200" height="200"></img>
-            </div>
+          <img src={footerImage} width="200" height="200"></img>
+        </div>
       </div>
 
       <div className="flex justify-center mt-10">
         <p className="text-copyright text-xs md:text-mini-regular-sz">
-          Copyright 2021 PassionAi Inc. 
-          All rights Reserved
+          Copyright 2021 PassionAi Inc. All rights Reserved
         </p>
       </div>
     </footer>

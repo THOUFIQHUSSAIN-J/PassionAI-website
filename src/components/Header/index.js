@@ -26,23 +26,26 @@ export default function Header() {
             <a href="#">
               <span className="sr-only">PassionAi</span>
 
-              <img src={HomeLogo} alt="image not found"
-                   width={120} height={40} left={33} top={16}
+              <img
+                src={HomeLogo}
+                alt="image not found"
+                width={120}
+                height={40}
+                left={33}
+                top={16}
               />
-
             </a>
           </div>
-          <div  className="hidden md:block">
-          {Headings.map((item) => (
-            <a
-              href="#"
-              className="text-base ml-10 font-medium text-gray-500 hover:text-gray-900"
-            >
-              {item.name}
-            </a>
-          ))}
+          <div className="hidden md:block">
+            {Headings.map((item) => (
+              <a
+                href="#"
+                className="text-base ml-10 font-medium text-gray-500 hover:text-gray-900"
+              >
+                {item.name}
+              </a>
+            ))}
           </div>
-         
 
           <div className="hidden md:block items-center justify-end md:flex md:flex-1 lg:w-0  pr-10">
             <a

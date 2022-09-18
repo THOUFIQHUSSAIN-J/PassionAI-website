@@ -38,13 +38,18 @@ export default function GainList({ heading, subheading, list }) {
         ))}
       </ul>
 
-      <button class="mt-10 mb-10 w-40 bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md bg-gradient-to-r from-buttonGradient0 to-buttonGradient100" type="button" onClick={() => setShowModal(true)}>
-            {" "}
-            Learn more
+      <button
+        class="mt-10 mb-10 w-40 bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md bg-gradient-to-r from-buttonGradient0 to-buttonGradient100"
+        type="button"
+        onClick={() => setShowModal(true)}
+      >
+        {" "}
+        Learn more
       </button>
-  
-     {showModal ? <ContactModal  setShowModal={setShowModal} showModal={showModal} /> : null}   
-      
+
+      {showModal ? (
+        <ContactModal setShowModal={setShowModal} showModal={showModal} />
+      ) : null}
     </div>
   );
 }
