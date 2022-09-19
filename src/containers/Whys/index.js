@@ -7,8 +7,9 @@ import VideoPointer from "images/video-pointer.svg";
 import IntroVideo from "images/introVideo.mp4";
 import helloGIF from "images/hello.gif";
 import Quotes from "images/why-quotes.svg";
-import rightDotted from "../../images/right-side-dotted.svg";
-import leftDotted from "../../images/left-side-dotted.svg";
+import rightDotted from "images/right-side-dotted.svg";
+import leftDotted from "images/left-side-dotted.svg";
+import VideoThumbnail from "images/video-thumbnail.svg";
 
 const guidance = [
   {
@@ -36,13 +37,15 @@ export default function Whys() {
       </div>
 
       <div className="flex lg:justify-between ">
-        <div className="p-10 md:p-0 md:mt-20 md:ml-20 relative">
+        <div className="p-10 md:p-0 md:mt-20 md:ml-20 relative cursor-pointer">
           <video
             width="768"
             height="500"
             className="rounded-2xl md:z-10"
+
             controls
             autoplay
+            poster={VideoThumbnail}
           >
             <source src={IntroVideo} type="video/mp4" />
             Your browser does not support the video tag.
