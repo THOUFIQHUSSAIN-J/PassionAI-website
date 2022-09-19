@@ -40,7 +40,7 @@ export default function Footer() {
             </h2>
             <ul class="text-white no-underline">
               {company.map((item) => (
-                <li className="font-4 mt-2">
+                <li className="font-4 mt-2 border-2 border-primary">
                   <a href={item.link}>{item.name}</a>
                 </li>
               ))}
@@ -68,7 +68,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      
+
         <div className="flex justify-center mt-10 mb-10 md:absolute right-0 -bottom-28  z-50">
           <img src={footerImage} width="200" height="200"></img>
         </div>
@@ -81,12 +81,11 @@ export default function Footer() {
       </div>
 
       <div className="hidden md:block flex justify-center  md:absolute left-0 bottom-0">
-          <img src={footerLeftImage} width="85" height="100"></img>
-        </div>
-        <div className="hidden md:block flex justify-center md:absolute right-0 top-0">
-          <img src={footerRightImage} width="85" height="200"></img> 
-        </div>
-     
+        <img src={footerLeftImage} width="85" height="100"></img>
+      </div>
+      <div className="hidden md:block flex justify-center md:absolute right-0 top-0">
+        <img src={footerRightImage} width="85" height="200"></img>
+      </div>
     </footer>
   );
 }

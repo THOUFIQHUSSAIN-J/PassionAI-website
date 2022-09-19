@@ -72,7 +72,7 @@ export default function Gains() {
        */}
       {/*to be changed*/}
       <div className="flex flex-row pt-20 pb-20">
-          <img src={RoadMap} className="w-full"/>
+        <img src={RoadMap} className="w-full" />
       </div>
 
       {/***
@@ -107,7 +107,7 @@ export default function Gains() {
        */}
       {/*to be changed*/}
       <div className="flex justify-center pt-20 pb-20">
-          <img src={WorldMap}/>
+        <img src={WorldMap} />
       </div>
 
       {/***

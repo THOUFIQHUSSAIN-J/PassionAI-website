@@ -36,14 +36,17 @@ export default function Header() {
               />
             </a>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden md:flex h-full items-center relative">
             {Headings.map((item) => (
-              <a
-                href="#"
-                className="text-base ml-10 font-medium text-gray-500 hover:text-gray-900"
-              >
-                {item.name}
-              </a>
+              <div className="flex flex-col items-center ml-10 group">
+                <a
+                  href="#"
+                  className="text-base font-medium hover:text-primary"
+                >
+                  {item.name}
+                </a>
+                <div className="absolute -bottom-0 rounded-t-xl w-4 h-2 group-hover:border group-hover:border-primary group-hover:bg-primary"></div>
+              </div>
             ))}
           </div>
 

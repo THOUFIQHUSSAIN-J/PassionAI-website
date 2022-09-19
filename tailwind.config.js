@@ -7,7 +7,7 @@ module.exports = {
         "home-background": "url('/src/images/home-background.svg')",
         "roadmap-background": "url('/src/images/roadmap.svg')",
         "response-background": "url('/src/images/response-background-1.svg')",
-        "testimonial-bg": "url('/src/images/testimonial-bg.png')"
+        "testimonial-bg": "url('/src/images/testimonial-bg.png')",
       },
     },
     colors: {
@@ -25,7 +25,7 @@ module.exports = {
       "heading-secondary": "#282B45",
       "border-1": "#CCD1FF",
       "footer-bg": "#2B2E4A",
-        copyright: "#858DCE",
+      copyright: "#858DCE",
       formGradient0: "#FF7A00",
       formGradient100: "#FF9D44",
       formBackground: "#F7F7FE",
@@ -39,13 +39,13 @@ module.exports = {
       testimonialBg: "#E9EBFC",
       violet: "#40457E",
       buttonHoverColor: "#979797",
-      testimonialbg: "#F7F7FF"
+      testimonialbg: "#F7F7FF",
     },
     fontFamily: {
       body: ['"Open Sans"'],
     },
     boxShadow: {
-      'primary': '0 8px 20px  rgba(255, 122, 0, 0.1)',
+      primary: "0 8px 20px  rgba(255, 122, 0, 0.1)",
     },
     fontSize: {
       "heading-title-sz": "52px",

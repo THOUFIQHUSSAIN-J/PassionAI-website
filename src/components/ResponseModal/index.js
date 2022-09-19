@@ -62,7 +62,6 @@ export default function ResponseModal({ status, closeModal }) {
         >
           {status === "success" ? "Cool" : "Ok"}
         </button>
-      
       </div>
     </div>
   );
