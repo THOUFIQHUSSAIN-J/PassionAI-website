@@ -7,6 +7,8 @@ import VideoPointer from "images/video-pointer.svg";
 import IntroVideo from "images/introVideo.mp4";
 import helloGIF from "images/hello.gif";
 import Quotes from "images/why-quotes.svg";
+import rightDotted from "../../images/right-side-dotted.svg";
+import leftDotted from "../../images/left-side-dotted.svg";
 
 const guidance = [
   {
@@ -26,7 +28,8 @@ const guidance = [
 export default function Whys() {
   return (
     <div className="pb-20" id="WhyPassion">
-      <div className="flex justify-center md:block pt-10 md:p-0 md:ml-20 md:pt-20">
+      <div className="flex justify-center md:block pt-10 md:p-0 md:ml-20 md:pt-0 relative">
+        <img src={rightDotted} className="absolute right-0 top-[50px]" />
         <p className="text-mini-heading font-bold text-mobile-heading-sz md:text-mini-heading-sz leading-tight">
           <span className="text-heading-title">Why</span> PassionAi ?
         </p>
@@ -76,9 +79,10 @@ export default function Whys() {
       </div>
 
       <div className="guidance mt-40 relative">
+        <img src={leftDotted} className="absolute left-0 -top-[50px]" />
         <div className="flex flex-col">
           <div className="flex justify-center">
-            <p className="font-semibold text-why-passion-heading text-mobile-heading-sz md:text-mini-heading-sz mb-10">
+            <p className="font-semibold text-why-passion-heading text-mobile-heading-sz md:text-mini-heading-sz">
               Let’s choose wisely this time...
             </p>{" "}
           </div>

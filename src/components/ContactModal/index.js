@@ -19,7 +19,7 @@ export default function ContactModal({ showModal, setShowModal }) {
             {/*body*/}
             {response === "" ? (
               <Fragment>
-                <div className="imageContainer p-32  bg-gradient-to-r from-modalGradient to-modalGradient">
+                <div className="imageContainer p-32  bg-gradient-to-r from-modalGradient0 to-modalGradient100">
                   <img
                     className="absolute -bottom-6 right-96"
                     src={ModalImage}
@@ -30,9 +30,10 @@ export default function ContactModal({ showModal, setShowModal }) {
 
                 <div class="flex flex-col p-6 w-96  rounded items-center">
                   <div className="flex flex-row  w-full justify-between">
-                    <p>Hi There</p>
+                    <p className="font-bold text-header-bg text-regular-sz ml-2">Hiii There!!!</p>
                     <svg
                       width="30"
+                      cursor="pointer"
                       height="30"
                       viewBox="0 0 30 30"
                       fill="none"
@@ -48,7 +49,7 @@ export default function ContactModal({ showModal, setShowModal }) {
                       />
                     </svg>
                   </div>
-                  <div className="flex justify-start w-full mt-5">
+                  <div className="flex justify-start w-full mt-5 ml-4">
                     <p className="text-modalText text-xs">
                       Please fill out the details to level-up our interaction...
                       <br />
@@ -69,7 +70,7 @@ export default function ContactModal({ showModal, setShowModal }) {
                       type="email"
                       className="form-control block w-80 h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
                       id="exampleInputPassword1"
-                      placeholder="email"
+                      placeholder="Email"
                     />
                   </div>
 
@@ -85,7 +86,7 @@ export default function ContactModal({ showModal, setShowModal }) {
                     <textarea
                       id="message"
                       rows="6"
-                      className="form-control block p-2.5 w-80 h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
+                      className="form-control block p-2.5 w-80 h-24 px-3 py-1.5 border border-solid border-formBorder rounded"
                       placeholder="Comments"
                     ></textarea>
                   </div>

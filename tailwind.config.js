@@ -8,6 +8,7 @@ module.exports = {
         "roadmap-background": "url('/src/images/roadmap.svg')",
         "response-background": "url('/src/images/response-background-1.svg')",
         "testimonial-bg": "url('/src/images/testimonial-bg.png')",
+        "contact-us-bg": "url('/src/images/contact-us-background.svg')",
       },
     },
     colors: {
@@ -34,7 +35,8 @@ module.exports = {
       buttonGradient100: "#FF9D44",
       hoverColor: "#EBEDFF",
       hoverBorderColor: "#6973CD",
-      modalGradient: "#B49EF9",
+      modalGradient0: "#B49EF9",
+      modalGradient100: "#E9E2FD",
       modalText: "#979797",
       testimonialBg: "#E9EBFC",
       violet: "#40457E",
@@ -45,7 +47,7 @@ module.exports = {
       body: ['"Open Sans"'],
     },
     boxShadow: {
-      primary: "0 8px 20px  rgba(255, 122, 0, 0.1)",
+      "box-primary": "0 8px 20px rgba(255, 125, 0, 0.19)",
       "institute-box": "1px 1px 10px rgba(162,133,255,0.53)"
     },
     fontSize: {

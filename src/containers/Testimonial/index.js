@@ -1,5 +1,6 @@
 import TestimonialCard from "components/TestimonialCard";
 import { Fragment } from "react";
+import rightDotted from "../../images/right-side-dotted.svg";
 
 const testimonials = [
   {
@@ -28,7 +29,8 @@ const testimonials = [
 export default function Testimonial() {
   return (
     <Fragment>
-      <div className="bg-testimonial-bg pt-10 pb-20 flex flex-col">
+      <div className="bg-testimonial-bg pt-10 pb-20 flex flex-col relative">
+        <img src={rightDotted} className="absolute right-0 -top-[100px]" />
         <div className="flex justify-center">
           <p className="text-regular-sz text-primary">Testimonial</p>
         </div>
@@ -36,7 +38,7 @@ export default function Testimonial() {
           <p className="text-heading-title-sz text-violet">Success stories</p>
         </div>
         <div className="flex justify-center">
-          <p className="text-regular-sz text-violet">
+          <p className="text-regular-sz text-violet font-light">
             Let's hear it out from the never-ending journey of our succeeders.{" "}
           </p>
         </div>

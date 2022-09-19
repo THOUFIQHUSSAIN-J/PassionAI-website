@@ -3,25 +3,25 @@ import footerImage from "images/footer-image.png";
 import footerLeftImage from "images/footer-bottom-left.svg";
 import footerRightImage from "images/footer-bottom-right.svg";
 import instagram from "images/instagram.png";
-import linkedin from "images/linkedin.png";
+import linkedin from "images/linkedin-footer.svg";
 
 const company = [
   {
     name: "Home",
-    link: "",
+    link: "#",
   },
   {
-    name: "Why PassionAi",
-    link: "",
+    name: "Why PassionAi ?",
+    link: "#WhyPassion",
   },
-  {
-    name: "Blogs",
-    link: "",
-  },
-  {
-    name: "About us",
-    link: "",
-  },
+  // {
+  //   name: "Blogs",
+  //   link: "",
+  // },
+  // {
+  //   name: "About us",
+  //   link: "",
+  // },
 ];
 
 export default function Footer() {
@@ -51,15 +51,15 @@ export default function Footer() {
               Let's catch up
             </h2>
             <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-              <a
-                href="#"
+              <a target="_blank"
+                href="https://www.linkedin.com/company/passion-ai-ari-llp/"
                 class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
               >
                 <img src={linkedin} width={51} height={51} />
                 <span class="sr-only">Facebook page</span>
               </a>
-              <a
-                href="#"
+              <a target="_blank"
+                href="https://www.instagram.com/passionai_ari/"
                 class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
               >
                 <img src={instagram} width={51} height={51} />

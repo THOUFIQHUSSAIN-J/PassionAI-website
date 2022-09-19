@@ -8,7 +8,7 @@ const Headings = [
     link: "#",
   },
   {
-    name: "Why PassionAi?",
+    name: "Why PassionAi ?",
     link: "#WhyPassion",
   },
   {
