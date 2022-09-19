@@ -5,6 +5,8 @@ import WorldMap from "images/worldmap.svg";
 import expertgainsimage from "images/expert-gains.svg";
 import institutegainsimage from "images/institute-gains.svg";
 import { Fragment } from "react";
+import studentDotted from "images/students-dotted.svg";
+import expertsDotted from "images/experts-dotted.svg";
 
 const student = {
   heading: "Self development  journey",
@@ -32,7 +34,7 @@ const experts = {
 const institutes = {
   heading:
     "The best assistant to innovate a standard career guidance journey for every last aspirant.",
-  subheading: "We will make you a complete All-round professional.",
+
   gains: [
     "To comprehend and evaluate each student's competency level.",
     "To make your students more skilled and employable.",
@@ -52,12 +54,18 @@ export default function Gains() {
             What do <span className="text-primary">Students</span> gain from
             PassionAi ?{" "}
           </p>
-          <div className="flex flex-col  md:flex-row justify-between">
-            <div className="p-10 md:pl-20 md:pt-10">
-              <img src={studentgainsimage} width="600" height="400" />
+          <div className="flex flex-col  md:flex-row justify-evenly">
+            <div className="p-10 md:pl-20 md:pt-10 relative w-6/12">
+              <img src={studentgainsimage} />
+              <img
+                src={studentDotted}
+                width="60"
+                height="60"
+                className="absolute bottom-14 left-16 -z-10"
+              />
             </div>
 
-            <div className="p-10 md:pt-10 md:pl-20">
+            <div className="p-10 md:pt-10 md:pl-0 w-6/12">
               <GainList
                 heading={student.heading}
                 subheading={student.subheading}
@@ -71,22 +79,22 @@ export default function Gains() {
        * Road Map Image
        */}
       {/*to be changed*/}
-      <div className="flex flex-row pt-20 pb-20">
+      <div className="flex flex-row pt-0 pb-20">
         <img src={RoadMap} className="w-full" />
       </div>
 
       {/***
        * EXPERT GAINS
        */}
-      <div className="flex flex-row  md:pt-20 md:pb-20">
+      <div className="flex flex-row  md:pt-10 md:pb-20">
         <div className="expert-gain">
           <p className="text-regular font-semibold ml-10 mr-10 text-regular-sz md:text-heading-title-sz md:ml-20">
             What do <span className="text-primary">Experts</span> gain from
             PassionAi ?{" "}
           </p>
 
-          <div className="flex flex-col  md:flex-row justify-between">
-            <div className="p-10 md:pt-10 md:pl-20">
+          <div className="flex flex-col  md:flex-row justify-evenly">
+            <div className="md:pt-10 md:pl-20 w-5/12">
               <GainList
                 heading={experts.heading}
                 subheading={experts.subheading}
@@ -95,8 +103,14 @@ export default function Gains() {
             </div>
 
             {/*to be changed*/}
-            <div className="p-10 md:pl-20 md:pt-10">
-              <img src={expertgainsimage} width="600" height="460" />
+            <div className="p-10  md:pt-10 w-7/12 relative">
+              <img src={expertgainsimage} />
+              <img
+                src={expertsDotted}
+                width="60"
+                height="60"
+                className="absolute bottom-28 right-28 -z-10"
+              />
             </div>
           </div>
         </div>
@@ -105,8 +119,7 @@ export default function Gains() {
       {/***
        * World Map Image
        */}
-      {/*to be changed*/}
-      <div className="flex justify-center pt-20 pb-20">
+      <div className="flex justify-center pb-20">
         <img src={WorldMap} />
       </div>
 
@@ -115,21 +128,24 @@ export default function Gains() {
        */}
       <div className="flex flex-row pt-20 pb-20">
         <div className="institute-gain">
-          <p className="text-regular font-semibold ml-10 mr-10 text-regular-sz md:text-heading-title-sz md:ml-20">
-            What do <span className="text-primary">Institutes</span> gain from
-            PassionAi ?{" "}
-          </p>
-          <div className="flex flex-col  md:flex-row justify-between">
-            <div className="p-10 md:pl-20 md:pt-10">
-              {/*to be changed*/}
-              <img src={institutegainsimage} width="600" height="400" />
+          <div className="flex justify-center">
+            <p className="text-regular font-semibold ml-10 mr-10 text-regular-sz md:text-heading-title-sz md:ml-20">
+              What do <span className="text-primary">Institutes</span> gain from
+              PassionAi ?{" "}
+            </p>
+          </div>
+
+          <div className="flex flex-col  md:flex-row justify-evenly">
+            <div className="p-10 md:pl-20 md:pt-10 w-7/12">
+              <img src={institutegainsimage} width="647" height="647"/>
             </div>
 
-            <div className="p-10 md:pt-10 md:pl-20">
+            <div className="p-10 md:pt-10 md:pl-20 w-5/12">
               <GainList
                 heading={institutes.heading}
                 subheading={institutes.subheading}
                 list={institutes.gains}
+                institute={true}
               />
             </div>
           </div>

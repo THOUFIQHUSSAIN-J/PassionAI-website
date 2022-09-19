@@ -10,15 +10,15 @@ import Quotes from "images/why-quotes.svg";
 
 const guidance = [
   {
-    text: "Choose your  career path",
+    text: "Choose Your Career Path",
     image: careerpath,
   },
   {
-    text: "1-on-1 membership",
+    text: "1-on-1 Membership",
     image: mentorship,
   },
   {
-    text: "Get industry ready",
+    text: "Get Industry Ready",
     image: suitcase,
   },
 ];

@@ -40,7 +40,7 @@ export default function Footer() {
             </h2>
             <ul class="text-white no-underline">
               {company.map((item) => (
-                <li className="font-4 mt-2 border-2 border-primary">
+                <li className="font-4 mt-2">
                   <a href={item.link}>{item.name}</a>
                 </li>
               ))}

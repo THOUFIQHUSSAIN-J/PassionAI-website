@@ -1,24 +1,27 @@
 import { Fragment } from "react";
 import mailGIF from "images/mail.gif";
 import teamGIF from "images/team.gif";
+import contactDotted from "images/contact-us-dotted.svg"
+import rightDotted from "images/right-side-dotted.png"
 
 export default function ContactUs() {
   return (
     <Fragment>
-      <div className="contact-us relative mb-40" id="ContactUs">
+      <div className="contact-us relative mb-10" id="ContactUs">
+        <img src={rightDotted} className="absolute right-0 top-0" />
         <div className="flex justify-center">
-          <p className="text-regular text-heading-title-sz"> Get in Touch</p>
+          <p className="text-regular text-heading-title-sz mt-10"> Get in Touch</p>
         </div>
 
-        <div className="flex flex-row mt-10">
+        <div className="flex flex-row-reverse mt-10  justify-around">
           {/**
            * Form
            */}
-          <div class="flex flex-col p-6 bg-formBackground w-96 m-10 md:ml-20 rounded items-center">
+          <div class="flex  flex-col p-6 bg-formBackground w-4/12 m-10 md:ml-20 rounded-lg">
             <div class="form-group mb-6">
               <input
                 type="text"
-                class="form-control block w-64 h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
+                class="form-control block w-full  h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
                 placeholder="Name"
@@ -27,7 +30,7 @@ export default function ContactUs() {
             <div class="form-group mb-6">
               <input
                 type="email"
-                className="form-control block w-64 h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
+                className="form-control block w-full  h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
                 id="exampleInputPassword1"
                 placeholder="email"
               />
@@ -36,9 +39,18 @@ export default function ContactUs() {
             <div className="form-group mb-6">
               <input
                 type="text"
-                className="form-control block w-64  h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
+                className="form-control block w-full  h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
                 id="exampleInputPassword1"
                 placeholder="Phone Number"
+              />
+            </div>
+
+            <div className="form-group mb-6">
+              <textarea
+                type="text"
+                className="form-control block w-full   h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
+                id="exampleInputPassword1"
+                placeholder="Comments"
               />
             </div>
             <button
@@ -52,9 +64,9 @@ export default function ContactUs() {
            * GIFs
            */}
 
-          <div className="gif-container hidden md:block">
-            <div className="flex flex-col">
-              <div className="inline-flex ml-10">
+          <div className="gif-container hidden md:flex ">
+            <div className="flex flex-col ">
+              <div className="inline-flex">
                 <p className="mt-6 text-primary text-regular-sz">
                   Drop us a line
                 </p>
@@ -62,17 +74,18 @@ export default function ContactUs() {
               </div>
 
               <div className="">
-                <p className="ml-10 font-semibold text-sub-heading-sz">
+                <p className="font-semibold text-sub-heading-sz">
                   Finish it off to stay on track.
                 </p>
               </div>
             </div>
 
-            <div className="md:absolute md:right-0 md:top-18 md:-z-50">
+            <div className="md:absolute md:left-28 md:-bottom-[135px] md:-z-50">
               <img src={teamGIF} width="500" height="200"></img>
             </div>
           </div>
         </div>
+        <img src={contactDotted} className="absolute -bottom-12 left-0" />
       </div>
     </Fragment>
   );

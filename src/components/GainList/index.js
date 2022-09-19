@@ -2,19 +2,21 @@ import ContactModal from "components/ContactModal";
 import tickImage from "images/tick.png";
 import React from "react";
 
-export default function GainList({ heading, subheading, list }) {
+export default function GainList({ heading, subheading, list,institute }) {
   const [showModal, setShowModal] = React.useState(false);
   return (
     <div className="flex flex-col">
-      <div className="text-primary text-mobile-heading-sz md:text-regular-sz">
+      {institute ?  
+        <div className="text-violet leading-10 shadow-institute-box p-5 rounded-lg text-mobile-heading-sz md:text-regular-sz"> {heading}</div>
+      :<div className="text-primary text-mobile-heading-sz md:text-regular-sz">
         {heading}
-      </div>
-      <div className="text-regular mt-10 md:mt-0 text-mini-regular-sz md:text-sub-heading-sz">
+      </div>}
+      {institute ? null :<div className="text-regular mt-10 md:mt-0 text-mini-regular-sz md:text-sub-heading-sz">
         {subheading}
-      </div>
-      <ul>
+      </div>}
+      <ul className="mt-8">
         {list.map((item) => (
-          <li className="font-4 mt-8 md:mt-2">
+          <li className="font-4  md:mt-6">
             <div className="inline-flex">
               <svg
                 width="23"

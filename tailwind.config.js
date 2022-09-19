@@ -46,6 +46,7 @@ module.exports = {
     },
     boxShadow: {
       primary: "0 8px 20px  rgba(255, 122, 0, 0.1)",
+      "institute-box": "1px 1px 10px rgba(162,133,255,0.53)"
     },
     fontSize: {
       "heading-title-sz": "52px",
@@ -60,6 +61,7 @@ module.exports = {
       "xs-1": "14px",
       lg: "40px",
       md: "28px",
+      "md-s":"25px"
     },
   },
   plugins: [],
