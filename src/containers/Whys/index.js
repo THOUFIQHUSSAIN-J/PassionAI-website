@@ -5,7 +5,8 @@ import careerpath from "images/careerpath.svg";
 import BriefcaseGirl from "images/briefcase-girl.svg";
 import VideoPointer from "images/video-pointer.svg";
 import IntroVideo from "images/introVideo.mp4";
-import helloGIF from "../../images/hello.gif";
+import helloGIF from "images/hello.gif";
+import Quotes from "images/why-quotes.svg";
 
 const guidance = [
   {
@@ -24,7 +25,7 @@ const guidance = [
 
 export default function Whys() {
   return (
-    <div className="pb-20">
+    <div className="pb-20" id="WhyPassion">
       <div className="flex justify-center md:block pt-10 md:p-0 md:ml-20 md:pt-20">
         <p className="text-mini-heading font-bold text-mobile-heading-sz md:text-mini-heading-sz leading-tight">
           <span className="text-heading-title">Why</span> PassionAi ?
@@ -43,25 +44,38 @@ export default function Whys() {
             <source src={IntroVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="md:absolute md:-right-[285px] top-0 transform -scale-x-100 md:-z-10">
+          <div className="md:absolute md:-right-[285px] -top-24 transform -scale-x-100 md:-z-10">
             <img src={helloGIF} width="300" height="300"></img>
           </div>
         </div>
 
-        <div className="mt-40 mr-40 hidden md:block relative pl-10">
-          <p className="text-why-passion-heading text-why-passion-heading-sz font-bold">
-            <span>“</span>Get to know it <br /> from{" "}
-            <span className="text-heading-title">Ram</span>, our <br /> Passion
-            guru <span>"</span>
-          </p>
-          {/*to be changed*/}
-          <div className="md:absolute md:right-48 md:top-15">
-            <img src={VideoPointer} width="437" height="466"></img>
+        <div className="flex mt-48 mr-28 hidden md:block relative">
+          <div className="quotes relative">
+            <img
+              src={Quotes}
+              width={20}
+              height={10}
+              className="absolute -left-6 top-0"
+            />
+            <p className="text-why-passion-heading text-why-passion-heading-sz font-bold leading-[70px]">
+              Get to know it <br /> from{" "}
+              <span className="text-heading-title">Ram</span>, our <br />{" "}
+              Passion guru.
+            </p>
+            <img
+              src={Quotes}
+              width={20}
+              height={20}
+              className="absolute -right-5 bottom-2 rotate-180"
+            />
+          </div>
+          <div className="md:absolute md:right-48 md:top-15 w-8/12">
+            <img src={VideoPointer} width="400" height="300"></img>
           </div>
         </div>
       </div>
 
-      <div className="guidance mt-60 relative">
+      <div className="guidance mt-40 relative">
         <div className="flex flex-col">
           <div className="flex justify-center">
             <p className="font-semibold text-why-passion-heading text-mobile-heading-sz md:text-mini-heading-sz mb-10">

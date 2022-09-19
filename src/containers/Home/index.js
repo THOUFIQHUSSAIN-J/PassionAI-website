@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="flex flex-row bg-home-background -mt-0 pb-18">
       <div className="flex flex-col borde">
-        <div className="m-10 md:m-20 w-616">
+        <div className="m-10 md:ml-20 md:mt-20 md:mb-10 w-616">
           <p className="text-mini-heading text-mobile-heading-sz font-bold md:text-mini-heading-sz leading-tight">
             Want to Kickstart your career in{" "}
             <span className="text-primary">Marketing</span> and{" "}

@@ -5,15 +5,15 @@ import HomeLogo from "../../images/home-logo.svg";
 const Headings = [
   {
     name: "Home",
-    link: "",
+    link: "#",
   },
   {
     name: "Why PassionAi?",
-    link: "",
+    link: "#WhyPassion",
   },
   {
     name: "Contact us",
-    link: "",
+    link: "#ContactUs",
   },
 ];
 
@@ -23,7 +23,7 @@ export default function Header() {
       <div className="bg-header-bg text-white">
         <div className="flex items-center justify-between h-14 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1 pl-10">
-            <a href="#">
+            <a href="/">
               <span className="sr-only">PassionAi</span>
 
               <img
@@ -40,7 +40,7 @@ export default function Header() {
             {Headings.map((item) => (
               <div className="flex flex-col items-center ml-10 group">
                 <a
-                  href="#"
+                  href={item.link}
                   className="text-base font-medium hover:text-primary"
                 >
                   {item.name}

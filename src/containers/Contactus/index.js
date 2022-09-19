@@ -5,7 +5,7 @@ import teamGIF from "images/team.gif";
 export default function ContactUs() {
   return (
     <Fragment>
-      <div className="contact-us relative mb-40">
+      <div className="contact-us relative mb-40" id="ContactUs">
         <div className="flex justify-center">
           <p className="text-regular text-heading-title-sz"> Get in Touch</p>
         </div>
