@@ -5,8 +5,8 @@ export default function GuidanceCard({ image, text }) {
         <img
           className="z-50"
           src={image}
-          width={100}
-          height={100}
+          width={65}
+          height={65}
           alt="not available"
         />
       </div>

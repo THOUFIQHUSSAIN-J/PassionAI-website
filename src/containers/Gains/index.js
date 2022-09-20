@@ -3,7 +3,7 @@ import studentgainsimage from "images/student-gains.svg";
 import RoadMap from "images/roadmap.svg";
 import WorldMap from "images/worldmap.svg";
 import expertgainsimage from "images/expert-gains.svg";
-import institutegainsimage from "images/institute-gains.svg";
+import institutegainsimage from "images/graduations.svg";
 import { Fragment } from "react";
 import studentDotted from "images/students-dotted.svg";
 import expertsDotted from "images/experts-dotted.svg";
@@ -51,7 +51,7 @@ export default function Gains() {
        * STUDENT GAINS
        */}
       <div className="flex flex-row pt-20 pb-20 relative">
-        <img src={rightDotted} className="absolute right-0 top-10" />
+        <img src={rightDotted} alt="dotted" className="absolute right-0 top-10" />
         <div className="students-gain">
           <p className="text-regular font-semibold ml-10 mr-10 text-regular-sz md:text-heading-title-sz md:ml-20">
             What do <span className="text-primary">Students</span> gain from
@@ -59,9 +59,9 @@ export default function Gains() {
           </p>
           <div className="flex flex-col  md:flex-row justify-evenly">
             <div className="p-10 md:pl-20 md:pt-10 relative w-6/12">
-              <img src={studentgainsimage} />
+              <img src={studentgainsimage} alt="students"/>
               <img
-                src={studentDotted}
+                src={studentDotted} alt="students"
                 width="60"
                 height="60"
                 className="absolute bottom-14 left-16 -z-10"
@@ -83,7 +83,7 @@ export default function Gains() {
        */}
       {/*to be changed*/}
       <div className="flex flex-row pt-0 pb-20">
-        <img src={RoadMap} className="w-full" />
+        <img src={RoadMap} alt="road map" className="w-full" />
       </div>
 
       {/***
@@ -106,9 +106,9 @@ export default function Gains() {
             </div>
 
             <div className="p-10  md:pt-10 w-7/12 relative">
-              <img src={expertgainsimage} />
+              <img src={expertgainsimage} alt="experts"/>
               <img
-                src={expertsDotted}
+                src={expertsDotted} alt="experts"
                 width="60"
                 height="60"
                 className="absolute bottom-28 right-28 -z-10"
@@ -122,14 +122,14 @@ export default function Gains() {
        * World Map Image
        */}
       <div className="flex justify-center pb-20">
-        <img src={WorldMap} />
+        <img src={WorldMap} alt="world map"/>
       </div>
 
       {/***
        * INSITITUTE GAINS
        */}
       <div className="flex flex-row pt-20 pb-20 relative">
-        <img src={leftDotted} className="absolute left-0 -top-[175px]" />
+        <img src={leftDotted} alt="dotted" className="absolute left-0 -top-[175px]" />
         <div className="institute-gain">
           <div className="flex justify-center">
             <p className="text-regular font-semibold ml-10 mr-10 text-regular-sz md:text-heading-title-sz md:ml-20">
@@ -140,9 +140,9 @@ export default function Gains() {
 
           <div className="flex flex-col  md:flex-row justify-evenly">
             <div className="p-10 md:pl-20 md:pt-10 relative w-6/12">
-              <img src={institutegainsimage} width="647" height="647"/>
+              <img src={institutegainsimage} alt="institute" width="647" height="647"/>
               <img
-                  src={expertsDotted}
+                  src={expertsDotted} alt="institute"
                   width="60"
                   height="60"
                   className="absolute bottom-6 right-2 -z-10"

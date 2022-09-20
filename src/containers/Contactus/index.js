@@ -1,14 +1,13 @@
 import { Fragment } from "react";
 import mailGIF from "images/mail.gif";
 import teamGIF from "images/team.gif";
-import contactDotted from "images/contact-us-dotted.svg"
 import rightDotted from "images/right-side-dotted.svg"
 
 export default function ContactUs() {
   return (
     <Fragment>
       <div className="contact-us bg-contact-us-bg relative mb-10" id="ContactUs">
-        <img src={rightDotted} className="absolute right-0 top-0" />
+        <img src={rightDotted} className="absolute right-0 top-0" alt="dotted"/>
         <div className="flex justify-center">
           <p className="text-regular text-heading-title-sz mt-10 font-bold"> Get in Touch</p>
         </div>
@@ -70,7 +69,7 @@ export default function ContactUs() {
                 <p className="mt-6 text-primary text-regular-sz">
                   Drop us a line
                 </p>
-                <img src={mailGIF} className="" width="100" height="100"></img>
+                <img src={mailGIF} alt="mail gif" className="" width="100" height="100"></img>
               </div>
 
               <div className="">
@@ -81,11 +80,10 @@ export default function ContactUs() {
             </div>
 
             <div className="md:absolute md:left-28 md:-bottom-[135px] md:-z-50">
-              <img src={teamGIF} width="500" height="200"></img>
+              <img src={teamGIF} alt="team gif" width="500" height="200"></img>
             </div>
           </div>
         </div>
-        <img src={contactDotted} className="absolute -bottom-12 left-0" />
       </div>
     </Fragment>
   );
