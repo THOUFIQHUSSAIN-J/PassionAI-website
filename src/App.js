@@ -14,6 +14,10 @@ function App() {
     <Fragment>
       <Routes>
         <Route path="/signin" element={<Signin />} />
+        <Route path="/terms" element={<Fragment>
+            <Header />
+            <Footer />
+        </Fragment>}></Route>
         <Route
           path="/"
           element={

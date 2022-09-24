@@ -5,15 +5,15 @@ import HomeLogo from "../../images/home-logo.svg";
 const Headings = [
   {
     name: "Home",
-    link: "#",
+    link: "/",
   },
   {
     name: "Why PassionAi ?",
-    link: "#WhyPassion",
+    link: "/#WhyPassion",
   },
   {
     name: "Contact us",
-    link: "#ContactUs",
+    link: "/#ContactUs",
   },
 ];
 
