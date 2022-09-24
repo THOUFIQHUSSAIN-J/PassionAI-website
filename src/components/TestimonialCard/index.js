@@ -10,7 +10,7 @@ export default function TestimonialCard({
 }) {
   return (
     <Fragment>
-      <div class="p-4 max-w-sm bg-white rounded-lg w-80 h-full mt-10 md:mt-0 md:ml-20 relative group hover:cursor-pointer hover:shadow-box-primary">
+      <div class="p-4 max-w-sm m-auto bg-white rounded-lg w-80 h-full mt-20  md:mt-0 md:ml-20 relative group hover:cursor-pointer hover:shadow-box-primary">
         <div className="absolute -top-6 left-8 w-16 h-16 rounded-full bg-regular group-hover:bg-primary">
           <img src={Quotes} alt="quotes" className="mt-4 ml-4" width={28} height={18} />
         </div>

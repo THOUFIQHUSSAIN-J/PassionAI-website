@@ -33,7 +33,7 @@ export default function ContactUs() {
       >
         <img
           src={rightDotted}
-          className="md:absolute right-0 top-0"
+          className="hidden md:block md:absolute right-0 top-0"
           alt="dotted"
         />
         <div className="flex justify-center">

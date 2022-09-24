@@ -33,7 +33,7 @@ export default function Whys() {
         <img
           src={rightDotted}
           alt="dotted"
-          className="md:absolute right-0 top-[50px]"
+          className="hidden md:block md:absolute right-0 top-[50px]"
         />
         <p className="text-mini-heading font-bold text-mobile-heading-sz md:text-mini-heading-sz leading-tight">
           <span className="text-heading-title">Why</span> PassionAi ?
@@ -101,7 +101,7 @@ export default function Whys() {
         <img
           src={leftDotted}
           alt="dotted"
-          className="md:absolute left-0 -top-[50px]"
+          className="hidden md:block md:absolute left-0 -top-[50px]"
         />
         <div className="flex flex-col">
           <div className="flex justify-center">

@@ -4,10 +4,10 @@ import ContactModal from "../../components/ContactModal";
 export default function Home() {
   const [showModal, setShowModal] = React.useState(false);
   return (
-    <div className="flex flex-row bg-home-background bg-no-repeat bg-cover relative -mt-0 pb-20">
+    <div className="flex flex-row bg-home-background bg-no-repeat bg-cover relative -mt-0 pb-20 max-w-max">
       {/*<img src={HomeIcons} className="absolute w-full -z-10" />*/}
       <div className="flex flex-col">
-        <div className="m-10 md:ml-20 md:mt-32 w-616">
+        <div className="m-10 md:ml-20 md:mt-32">
           <p className="text-sub-heading text-mobile-heading-sz font-bold font-Nunito md:tracking-wide md:text-xl md:text-sub-heading md:font-extrabold md:w-[482px] leading-tight">
             <span className="text-primary">EXPLORE.</span> FIND. CHOOSE.
           </p>

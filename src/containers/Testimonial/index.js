@@ -32,20 +32,20 @@ const testimonials = [
 export default function Testimonial() {
   return (
     <Fragment>
-      <div className="bg-testimonial-bg pt-10 pb-20 flex flex-col relative">
-        <img src={rightDotted} alt="dotted" className="md:absolute right-0 -top-[100px]" />
-        <div className="flex justify-center">
+      <div className="bg-testimonial-bg pt-10 pb-20 relative">
+        <img src={rightDotted} alt="dotted" className="hidden md:block md:absolute right-0 -top-[100px]" />
+        <div className="flex justify-center pl-4 pr-4 md:p-0">
           <p className="text-regular-sz text-primary">Testimonials</p>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center pl-4 pr-4 md:p-0">
           <p className="text-heading-title-sz text-violet font-bold">Success stories</p>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center pl-4 pr-4 pt-4 md:p-0">
           <p className="text-regular-sz text-violet">
             Let's hear it out from the never-ending journey of our succeeders.{" "}
           </p>
         </div>
-        <div className="md:flex md:flex-row justify-around mt-20">
+        <div className="flex flex-col md:flex md:flex-row md:justify-around mt-20">
           {testimonials.map((item) => (
             <TestimonialCard
               key={item.username}

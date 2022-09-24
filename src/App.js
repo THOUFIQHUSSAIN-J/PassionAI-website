@@ -31,7 +31,7 @@ function App() {
           element={
             <Fragment>
               <Header />
-              <Home />
+              {/* <Home /> */}
               <Whys />
               <Gains />
               <Testimonial />
