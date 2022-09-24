@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import Quotes from "images/quotes.svg";
+import Smilie from "images/smilie.svg";
 
 export default function TestimonialCard({
   testimonial,
@@ -23,7 +24,9 @@ export default function TestimonialCard({
             <div class="text-xs text-modalText">{role}</div>
           </div>
         </figcaption>
+        <img src={Smilie} width={84} height={81} className="hidden group-hover:block group-hover:-right-10 group-hover:-bottom-14 group-hover:absolute" />
       </div>
+
     </Fragment>
   );
 }
