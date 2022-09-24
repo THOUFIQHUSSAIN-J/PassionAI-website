@@ -4,7 +4,7 @@ import suitcase from "images/briefcase.svg";
 import careerpath from "images/careerpath.svg";
 import BriefcaseGirl from "images/briefcase-girl.svg";
 import VideoPointer from "images/video-pointer.svg";
-import IntroVideo from "images/introVideo.mp4";
+import IntroVideo from "../../images/introVideo.mp4";
 import helloGIF from "images/hello.gif";
 import Quotes from "images/why-quotes.svg";
 import rightDotted from "images/right-side-dotted.svg";
@@ -121,10 +121,9 @@ export default function Whys() {
             <div>
               {" "}
               <p className="font-light text-regular text-mini-regular-sz p-8 md:p-0 md:text-regular-sz ">
-                Preparation to create an impact everyday  starts right here!
+                Preparation to create an impact everyday starts right here!
               </p>
             </div>
-
           </div>
         </div>
 

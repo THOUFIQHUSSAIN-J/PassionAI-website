@@ -8,10 +8,7 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 
 export default function Signin() {
-  const {
-    register,
-    handleSubmit,
-  } = useForm();
+  const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     axios
       .post("https://passionaiari.com/api/contact_details/", data)

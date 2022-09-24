@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "home-background": "url('/src/images/home-background.svg')",
+        "home-background": "url('/src/images/home-background.gif')",
+        "mobile-home-background": "url('/src/images/mobile-background.svg')",
         "roadmap-background": "url('/src/images/roadmap.svg')",
         "response-background": "url('/src/images/response-background-1.svg')",
         "testimonial-bg": "url('/src/images/testimonial-bg.png')",
@@ -49,7 +50,6 @@ module.exports = {
       MerriweatherSans: ["MerriweatherSans"],
       Lato: ["Lato"],
       Poppins: ["Poppins"],
-
     },
     boxShadow: {
       "box-primary": "0 8px 20px rgba(255, 125, 0, 0.19)",

@@ -48,7 +48,8 @@ export default function ContactUs() {
            * Form
            */}
           <div class="flex flex-col p-6 bg-formBackground  m-10 md:ml-20 md:w-4/12 rounded-lg ">
-            {responseStatus != 0 && responseStatus != 200 ? (
+            {responseStatus != 0 &&
+            !(responseStatus >= 200 && responseStatus <= 300) ? (
               <div className="pb-10">
                 <p className="text-buttonHoverColor text-md ">
                   {" "}
@@ -60,9 +61,8 @@ export default function ContactUs() {
                 </p>
               </div>
             ) : null}
-            {responseStatus == 200 ? (
+            {responseStatus >= 200 && responseStatus <= 300 ? (
               <div className="p-10">
-
                 <img src={SuccessImage} alt="success" className="z-50" />
                 <p className="text-md text-sub-heading">
                   {" "}
