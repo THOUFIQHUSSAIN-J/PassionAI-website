@@ -18,7 +18,7 @@ export default function ContactModal({ showModal, setShowModal }) {
 
   const onSubmit = (data) => {
     axios
-      .post(`${API_URL}/api/contact_details/`, data)
+      .post("http://3.7.51.78/api/contact_details/", data)
       .then(function (response) {
         console.log(response);
       })
