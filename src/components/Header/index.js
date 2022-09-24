@@ -52,14 +52,14 @@ export default function Header() {
 
           <div className="hidden md:block items-center justify-end md:flex md:flex-1 lg:w-0  pr-10">
             <a
-              href="#"
+              href="https://app.passionaiari.com/register"
               className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900 bg-gradient-to-r from-formGradient0 to-formGradient100 px-4 py-1 rounded-md"
             >
               Sign Up
             </a>
             <a
               target="_blank"
-              href="/signin"
+              href="https://app.passionaiari.com/login"
               className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md  bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
             >
               Sign In

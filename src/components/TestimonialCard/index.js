@@ -17,11 +17,7 @@ export default function TestimonialCard({
           {testimonial}
         </p>
         <figcaption class="flex justify-start  space-x-3 mt-10">
-          <img
-            class="w-9 h-9 rounded-full"
-            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
-            alt="profile picture"
-          />
+          <img class="w-9 h-9 rounded-full" src={image} alt="profile" />
           <div class="space-y-0.5 font-medium dark:text-white text-left">
             <div className="text-black">{username}</div>
             <div class="text-xs text-modalText">{role}</div>

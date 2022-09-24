@@ -24,7 +24,7 @@ export default function ResponseModal({ status, closeModal }) {
         <Fragment>
           <img src={ResponseBG} className="absolute"></img>
           {status === "success" ? (
-            <img src={SuccessImage} className="z-50"/>
+            <img src={SuccessImage} className="z-50" />
           ) : (
             <img src={FailureImage} className="z-50" />
           )}

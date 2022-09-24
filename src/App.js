@@ -5,6 +5,7 @@ import Footer from "components/Footer";
 import Gains from "containers/Gains";
 import ContactUs from "containers/Contactus";
 import Signin from "containers/Signin";
+import Terms from "containers/Terms";
 import { Fragment } from "react";
 import Testimonial from "containers/Testimonial";
 import { Routes, Route, Link } from "react-router-dom";
@@ -14,10 +15,16 @@ function App() {
     <Fragment>
       <Routes>
         <Route path="/signin" element={<Signin />} />
-        <Route path="/terms" element={<Fragment>
-            <Header />
-            <Footer />
-        </Fragment>}></Route>
+        <Route
+          path="/terms"
+          element={
+            <Fragment>
+              <Header />
+              <Terms />
+              <Footer />
+            </Fragment>
+          }
+        ></Route>
         <Route
           path="/"
           element={

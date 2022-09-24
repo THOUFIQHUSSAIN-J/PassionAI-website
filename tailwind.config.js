@@ -48,7 +48,7 @@ module.exports = {
     },
     boxShadow: {
       "box-primary": "0 8px 20px rgba(255, 125, 0, 0.19)",
-      "institute-box": "1px 1px 10px rgba(162,133,255,0.53)"
+      "institute-box": "1px 1px 10px rgba(162,133,255,0.53)",
     },
     fontSize: {
       "heading-title-sz": "52px",
@@ -59,11 +59,13 @@ module.exports = {
       "regular-sz": "30px",
       "mini-regular-sz": "17px",
       xs: "12px",
+      s: "20px",
       "mobile-heading-sz": "22px",
       "xs-1": "14px",
       lg: "40px",
       md: "28px",
-      "md-s":"25px"
+      xl: "55px",
+      "md-s": "25px",
     },
   },
   plugins: [],

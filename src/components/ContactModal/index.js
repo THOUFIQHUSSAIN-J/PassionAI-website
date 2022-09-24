@@ -1,33 +1,32 @@
 import { Fragment, useState } from "react";
 import ModalImage from "images/modal-image.svg";
 import ResponseModal from "components/ResponseModal";
-import {useForm} from "react-hook-form"
-import axios from "axios"
+import { useForm } from "react-hook-form";
+import axios from "axios";
 
 export default function ContactModal({ showModal, setShowModal }) {
   const [response, setResponse] = useState("");
- 
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  
-  
+
   const onSubmit = (data) => {
-    axios.post("https://passionaiari.com/api/contact_details/", data).then(function (response) {
-      console.log(response);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
+    axios
+      .post("https://passionaiari.com/api/contact_details/", data)
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   };
 
   const closeModal = () => {
     setShowModal(false);
-  }
-
-
+  };
 
   return (
     <Fragment>
@@ -50,7 +49,9 @@ export default function ContactModal({ showModal, setShowModal }) {
 
                 <div class="flex flex-col p-6 w-96  rounded items-center">
                   <div className="flex flex-row  w-full justify-between">
-                    <p className="font-bold text-header-bg text-regular-sz ml-2">Hiii There!!!</p>
+                    <p className="font-bold text-header-bg text-regular-sz ml-2">
+                      Hiii There!!!
+                    </p>
                     <svg
                       width="30"
                       cursor="pointer"

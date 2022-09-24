@@ -14,6 +14,14 @@ const company = [
     name: "Why PassionAi ?",
     link: "#WhyPassion",
   },
+  {
+    name: "Terms of Service",
+    link: "#WhyPassion",
+  },
+  {
+    name: "Privacy Policy",
+    link: "#WhyPassion",
+  },
   // {
   //   name: "Blogs",
   //   link: "",
@@ -51,14 +59,16 @@ export default function Footer() {
               Let's catch up
             </h2>
             <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-              <a target="_blank"
+              <a
+                target="_blank"
                 href="https://www.linkedin.com/company/passion-ai-ari-llp/"
                 class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
               >
                 <img src={linkedin} width={51} height={51} />
                 <span class="sr-only">Facebook page</span>
               </a>
-              <a target="_blank"
+              <a
+                target="_blank"
                 href="https://www.instagram.com/passionai_ari/"
                 class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
               >
