@@ -56,47 +56,74 @@ export default function ContactModal({ showModal, setShowModal }) {
                       We’ll catch-up soon!!!
                     </p>
                   </div>
-                  <div class="form-group mb-6 mt-10">
-                    <input
-                      type="text"
-                      class="form-control block w-80 h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
-                      id="exampleInputEmail1"
-                      aria-describedby="emailHelp"
-                      placeholder="Name"
-                    />
-                  </div>
-                  <div class="form-group mb-6">
-                    <input
-                      type="email"
-                      className="form-control block w-80 h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
-                      id="exampleInputPassword1"
-                      placeholder="Email"
-                    />
-                  </div>
+                  <form onSubmit={handleSubmit(onSubmit)}>
+                    <div class="form-group mb-6 mt-10">
+                      <input
+                        type="text"
+                        class="form-control block w-80 h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                        placeholder="name"
+                        {...register("name", {
+                          required: true,
+                          maxLength: 100,
+                        })}
+                      />
+                    </div>
+                    <div class="form-group mb-6">
+                      {/**
+                       * EMAIL
+                       */}
+                      <input
+                        type="email"
+                        className="form-control block w-80 h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
+                        id="exampleInputPassword1"
+                        placeholder="email"
+                        {...register("email", {
+                          required: true,
+                          pattern: /^\S+@\S+$/i,
+                        })}
+                      />
+                    </div>
 
-                  <div className="form-group mb-6">
-                    <input
-                      type="text"
-                      className="form-control block w-80  h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
-                      id="exampleInputPassword1"
-                      placeholder="Phone Number"
-                    />
-                  </div>
-                  <div className="form-group mb-6">
-                    <textarea
-                      id="message"
-                      rows="6"
-                      className="form-control block p-2.5 w-80 h-24 px-3 py-1.5 border border-solid border-formBorder rounded"
-                      placeholder="Comments"
-                    ></textarea>
-                  </div>
-                  <button
-                    type="submit"
-                    className="px-6 py-2.5  w-80 rounded-md text-white bg-gradient-to-r from-formGradient0 to-formGradient100"
-                    onClick={() => setResponse("failure")}
-                  >
-                    Submit
-                  </button>
+                    <div className="form-group mb-6">
+                      {/**
+                       * Phone Number
+                       */}
+                      <input
+                        type="text"
+                        className="form-control block w-80  h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
+                        id="exampleInputPassword1"
+                        placeholder="phone_number"
+                        {...register("phone_number", {
+                          required: true,
+                          maxLength: 100,
+                        })}
+                      />
+                    </div>
+                    <div className="form-group mb-6">
+                      {/**
+                       * Text area
+                       */}
+                      <textarea
+                        id="message"
+                        rows="6"
+                        className="form-control block p-2.5 w-80 h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
+                        placeholder="comment"
+                        {...register("comment", {
+                          required: false,
+                          maxLength: 100,
+                        })}
+                      ></textarea>
+                    </div>
+
+                    <button
+                      type="submit"
+                      className="px-6 py-2.5  w-80 rounded-md text-white bg-gradient-to-r from-formGradient0 to-formGradient100"
+                    >
+                      Submit
+                    </button>
+                  </form>
                 </div>
               </Fragment>
             ) : (

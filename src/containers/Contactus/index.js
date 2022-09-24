@@ -1,9 +1,26 @@
 import { Fragment } from "react";
 import mailGIF from "images/mail.gif";
 import teamGIF from "images/team.gif";
-import rightDotted from "images/right-side-dotted.svg"
+import contactDotted from "images/contact-us-dotted.svg"
+import rightDotted from "images/right-side-dotted.png"
+import { useForm } from 'react-hook-form';
+import axios from "axios"
 
 export default function ContactUs() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => {
+    axios.post("https://passionaiari.com/api/contact_details/", data).then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+
+  };
   return (
     <Fragment>
       <div className="contact-us bg-contact-us-bg relative mb-10" id="ContactUs">
@@ -16,14 +33,19 @@ export default function ContactUs() {
           {/**
            * Form
            */}
-          <div class="flex  flex-col p-6 bg-formBackground w-5/12 m-10 md:ml-20 rounded-lg">
+          <div class="flex  flex-col p-6 bg-formBackground w-4/12 m-10 md:ml-20 rounded-lg">
+          <form onSubmit={handleSubmit(onSubmit)}>
             <div class="form-group mb-6">
               <input
                 type="text"
                 class="form-control block w-full  h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
-                placeholder="Name"
+                placeholder="name"
+                {...register("name", {
+                  required: true,
+                  maxLength: 100,
+                })}
               />
             </div>
             <div class="form-group mb-6">
@@ -31,7 +53,11 @@ export default function ContactUs() {
                 type="email"
                 className="form-control block w-full  h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
                 id="exampleInputPassword1"
-                placeholder="Email"
+                placeholder="email"
+                {...register("email", {
+                  required: true,
+                  pattern: /^\S+@\S+$/i,
+                })}
               />
             </div>
 
@@ -40,7 +66,11 @@ export default function ContactUs() {
                 type="text"
                 className="form-control block w-full  h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
                 id="exampleInputPassword1"
-                placeholder="Phone Number"
+                placeholder="phone_number"
+                {...register("phone_number", {
+                  required: true,
+                  maxLength: 100,
+                })}
               />
             </div>
 
@@ -49,7 +79,11 @@ export default function ContactUs() {
                 type="text"
                 className="form-control block w-full h-24 px-3 py-1.5 border border-solid border-formBorder rounded"
                 id="exampleInputPassword1"
-                placeholder="Comments"
+                placeholder="comment"
+                {...register("comment", {
+                  required: false,
+                  maxLength: 100,
+                })}
               />
             </div>
             <button
@@ -58,6 +92,7 @@ export default function ContactUs() {
             >
               Submit
             </button>
+            </form>
           </div>
           {/**
            * GIFs
