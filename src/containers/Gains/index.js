@@ -53,7 +53,7 @@ export default function Gains() {
         <img
           src={rightDotted}
           alt="dotted"
-          className="md:absolute right-0 top-10"
+          className="hidden md:block md:absolute right-0 top-10"
         />
         <div className="students-gain">
           <p className="text-regular font-semibold ml-10 mr-10 text-regular-sz md:text-heading-title-sz md:ml-20">
@@ -61,12 +61,11 @@ export default function Gains() {
             PassionAi ?{" "}
           </p>
           <div className="flex flex-col  md:flex-row justify-evenly">
-            <div className="p-10 md:pl-20 md:pt-10 relative w-6/12">
+            <div className="p-10 md:pl-20 md:pt-10 relative md:w-6/12">
               <img src={studentgainsimage} alt="students" />
-             
             </div>
 
-            <div className="p-10 md:pt-10 md:pl-0 w-6/12">
+            <div className="p-10 md:pt-10 md:pl-0 md:w-6/12">
               <GainList
                 heading={student.heading}
                 subheading={student.subheading}
@@ -94,8 +93,12 @@ export default function Gains() {
             PassionAi ?{" "}
           </p>
 
-          <div className="flex flex-col  md:flex-row justify-evenly">
-            <div className="md:pt-10 md:pl-20 w-5/12">
+          <div className="flex flex-col md:hidden">
+            <div className="p-10">
+              <img src={expertgainsimage} alt="experts" />
+            </div>
+
+            <div className="pt-10 pl-10 md:pt-10 md:pl-20 md:w-5/12">
               <GainList
                 heading={experts.heading}
                 subheading={experts.subheading}
@@ -103,9 +106,8 @@ export default function Gains() {
               />
             </div>
 
-            <div className="p-10  md:pt-10 w-7/12 relative">
+            <div className="hidden md:block p-10  md:pt-10 md:w-7/12 relative">
               <img src={expertgainsimage} alt="experts" />
-
             </div>
           </div>
         </div>
@@ -114,7 +116,7 @@ export default function Gains() {
       {/***
        * World Map Image
        */}
-      <div className="flex justify-center pb-20">
+      <div className="flex justify-center md:pb-20 ">
         <img src={WorldMap} alt="world map" />
       </div>
 
@@ -125,7 +127,7 @@ export default function Gains() {
         <img
           src={leftDotted}
           alt="dotted"
-          className="md:absolute left-0 -top-[175px]"
+          className="hidden md:block md:absolute left-0 -top-[175px]"
         />
         <div className="institute-gain">
           <p className="text-regular font-semibold ml-10 mr-10 text-regular-sz md:text-heading-title-sz md:ml-20">
@@ -134,17 +136,16 @@ export default function Gains() {
           </p>
 
           <div className="flex flex-col  md:flex-row justify-evenly">
-            <div className="p-10 md:pl-20 md:pt-10 relative w-6/12">
+            <div className="p-10 md:pl-20 md:pt-10 relative md:w-6/12">
               <img
                 src={institutegainsimage}
                 alt="institute"
                 width="647"
                 height="647"
               />
-
             </div>
 
-            <div className="p-10 md:pt-10 md:pl-0 w-6/12">
+            <div className="p-10 md:pt-10 md:pl-0 md:w-6/12">
               <GainList
                 heading={institutes.heading}
                 subheading={institutes.subheading}

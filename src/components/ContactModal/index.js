@@ -7,7 +7,7 @@ import axios from "axios";
 export default function ContactModal({ showModal, setShowModal }) {
   // eslint-disable-next-line
   const [response, setResponse] = useState("");
-  const API_URL = process.env.REACT_APP_API_URL
+  const API_URL = process.env.REACT_APP_API_URL;
 
   const {
     register,
@@ -18,9 +18,11 @@ export default function ContactModal({ showModal, setShowModal }) {
 
   const onSubmit = (data) => {
     axios
-      .post("http://3.7.51.78/api/contact_details/", data)
+      .post(`${API_URL}/api/contact_details/`, data)
       .then(function (response) {
-        console.log(response);
+        if (response.status === 200) {
+          setResponse(200);
+        }
       })
       .catch(function (error) {
         console.log(error);
@@ -37,14 +39,15 @@ export default function ContactModal({ showModal, setShowModal }) {
         <div className="relative w-auto my-6 mx-auto max-w-3xl">
           {/*content*/}
 
-          <div className="flex flex-row rounded-lg shadow-lg relative w-full bg-white ">
+          <div className="flex flex-row rounded-2xl shadow-lg relative w-full bg-white ">
             {/*body*/}
             {response === "" ? (
               <Fragment>
-                <div className="imageContainer p-32  bg-gradient-to-r from-modalGradient0 to-modalGradient100">
+                <div className="imageContainer rounded-l-2xl p-32  bg-gradient-to-r from-modalGradient0 to-modalGradient100">
                   <img
                     className="absolute -bottom-6 right-96"
-                    src={ModalImage}  alt="modal"
+                    src={ModalImage}
+                    alt="modal"
                     width={272}
                     height={473}
                   />
@@ -151,7 +154,8 @@ export default function ContactModal({ showModal, setShowModal }) {
                 </div>
               </Fragment>
             ) : (
-              <ResponseModal status={response} closeModal={closeModal} />
+              <ResponseModal status={response !== 0 &&
+              !(response >= 200 && response <= 300) ? 'failure' : 'success' } closeModal={closeModal} />
             )}
           </div>
         </div>

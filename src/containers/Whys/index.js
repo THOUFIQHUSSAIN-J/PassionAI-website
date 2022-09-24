@@ -4,7 +4,7 @@ import suitcase from "images/briefcase.svg";
 import careerpath from "images/careerpath.svg";
 import BriefcaseGirl from "images/briefcase-girl.svg";
 import VideoPointer from "images/video-pointer.svg";
-import IntroVideo from "images/introVideo.mp4";
+import IntroVideo from "../../images/introVideo.mp4";
 import helloGIF from "images/hello.gif";
 import Quotes from "images/why-quotes.svg";
 import rightDotted from "images/right-side-dotted.svg";
@@ -33,7 +33,7 @@ export default function Whys() {
         <img
           src={rightDotted}
           alt="dotted"
-          className="md:absolute right-0 top-[50px]"
+          className="hidden md:block md:absolute right-0 top-[50px]"
         />
         <p className="text-mini-heading font-bold text-mobile-heading-sz md:text-mini-heading-sz leading-tight">
           <span className="text-heading-title">Why</span> PassionAi ?
@@ -101,11 +101,11 @@ export default function Whys() {
         <img
           src={leftDotted}
           alt="dotted"
-          className="md:absolute left-0 -top-[50px]"
+          className="hidden md:block md:absolute left-0 -top-[50px]"
         />
         <div className="flex flex-col">
           <div className="flex justify-center">
-            <p className="font-semibold text-why-passion-heading text-mobile-heading-sz md:text-mini-heading-sz">
+            <p className="md:m-0 font-semibold text-why-passion-heading text-mobile-heading-sz md:text-mini-heading-sz">
               Let’s choose wisely this time...
             </p>{" "}
           </div>
@@ -117,18 +117,17 @@ export default function Whys() {
               height="466"
             ></img>
           </div>
-          <div className="flex flex-col items-center  mt-4 ">
+          <div className="flex flex-col items-center mt-4 ">
             <div>
               {" "}
-              <p className="font-light text-regular text-mini-regular-sz md:text-regular-sz ">
-                Preparation to create an impact everyday  starts right here!
+              <p className="font-light text-regular text-mini-regular-sz p-8 md:p-0 md:text-regular-sz ">
+                Preparation to create an impact everyday starts right here!
               </p>
             </div>
-
           </div>
         </div>
 
-        <div className="guidance-cards md:mt-20 flex flex-col items-center md:flex-row md:justify-around">
+        <div className="guidance-cards p-10 md:mt-20 flex flex-col items-center md:flex-row md:justify-around">
           {guidance.map((item) => (
             <GuidanceCard image={item.image} text={item.text} />
           ))}
