@@ -1,13 +1,33 @@
 import { Fragment, useState } from "react";
 import ModalImage from "images/modal-image.svg";
 import ResponseModal from "components/ResponseModal";
+import {useForm} from "react-hook-form"
+import axios from "axios"
 
 export default function ContactModal({ showModal, setShowModal }) {
   const [response, setResponse] = useState("");
+ 
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  
+  
+  const onSubmit = (data) => {
+    axios.post("https://passionaiari.com/api/contact_details/", data).then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  };
 
   const closeModal = () => {
     setShowModal(false);
-  };
+  }
+
+
 
   return (
     <Fragment>

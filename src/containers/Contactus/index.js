@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import mailGIF from "images/mail.gif";
 import teamGIF from "images/team.gif";
 import contactDotted from "images/contact-us-dotted.svg"
-import rightDotted from "images/right-side-dotted.png"
+import rightDotted from "images/right-side-dotted.svg"
 import { useForm } from 'react-hook-form';
 import axios from "axios"
 

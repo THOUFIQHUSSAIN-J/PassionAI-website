@@ -4,8 +4,23 @@ import FacebookImage from "images/facebook.svg";
 import GoogleImage from "images/google.svg";
 import LinkedInImage from "images/linkedIn-signin.svg";
 import PasswordEye from "images/password-eye.svg";
+import {useForm} from "react-hook-form";
+import axios from "axios"
 
 export default function Signin() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => {
+    axios.post("https://passionaiari.com/api/contact_details/", data).then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  };
   return (
     <Fragment>
       <div className="absolute top-0 left-0 w-full -z-50">
@@ -17,6 +32,7 @@ export default function Signin() {
           <div className="flex justify-center mt-8 mb-8">
             <p className="text-sub-heading-sz ">Sign In</p>
           </div>
+        <form onSubmit={handleSubmit(onSubmit)}>
           <div class="mb-6">
             <label for="base-input" class="block mb-2 text-xs-1">
               Username
@@ -26,6 +42,10 @@ export default function Signin() {
               id="base-input"
               placeholder="Username"
               class="bg-formBackground border text-black dark:border-primary  rounded-lg block w-full p-2.5"
+              {...register("email", {
+                required: true,
+                pattern: /^\S+@\S+$/i,
+              })}
             />
           </div>
           <div class="mb-6 relative ">
@@ -37,6 +57,9 @@ export default function Signin() {
               placeholder="*********"
               id="base-input"
               class="bg-formBackground relative border text-black dark:border-primary rounded-lg block w-full p-2.5"
+              {...register("password", {
+                required: true
+              })}
             />
 
             <div className="absolute top-12 right-4">
@@ -55,6 +78,7 @@ export default function Signin() {
           >
             Submit
           </button>
+        </form>
 
           <div class="relative flex py-5 items-center mt-14">
             <div class="flex-grow border-t border-gray-400"></div>
@@ -91,6 +115,7 @@ export default function Signin() {
               New user? <span className="text-primary">Sign up</span>
             </p>
           </div>
+       
         </div>
       </div>
     </Fragment>
