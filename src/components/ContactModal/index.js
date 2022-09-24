@@ -5,12 +5,14 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 
 export default function ContactModal({ showModal, setShowModal }) {
+  // eslint-disable-next-line
   const [response, setResponse] = useState("");
   const API_URL = process.env.REACT_APP_API_URL
 
   const {
     register,
     handleSubmit,
+    // eslint-disable-next-line
     formState: { errors },
   } = useForm();
 
@@ -42,7 +44,7 @@ export default function ContactModal({ showModal, setShowModal }) {
                 <div className="imageContainer p-32  bg-gradient-to-r from-modalGradient0 to-modalGradient100">
                   <img
                     className="absolute -bottom-6 right-96"
-                    src={ModalImage}
+                    src={ModalImage}  alt="modal"
                     width={272}
                     height={473}
                   />
@@ -85,7 +87,7 @@ export default function ContactModal({ showModal, setShowModal }) {
                         class="form-control block w-80 h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
-                        placeholder="name"
+                        placeholder="Name"
                         {...register("name", {
                           required: true,
                           maxLength: 100,
@@ -100,7 +102,7 @@ export default function ContactModal({ showModal, setShowModal }) {
                         type="email"
                         className="form-control block w-80 h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
                         id="exampleInputPassword1"
-                        placeholder="email"
+                        placeholder="Email"
                         {...register("email", {
                           required: true,
                           pattern: /^\S+@\S+$/i,
@@ -116,10 +118,10 @@ export default function ContactModal({ showModal, setShowModal }) {
                         type="text"
                         className="form-control block w-80  h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
                         id="exampleInputPassword1"
-                        placeholder="phone_number"
+                        placeholder="Phone Number"
                         {...register("phone_number", {
                           required: true,
-                          maxLength: 100,
+                          maxLength: 15,
                         })}
                       />
                     </div>
@@ -130,8 +132,8 @@ export default function ContactModal({ showModal, setShowModal }) {
                       <textarea
                         id="message"
                         rows="6"
-                        className="form-control block p-2.5 w-80 h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
-                        placeholder="comment"
+                        className="form-control block p-2.5 w-80 h-20 px-3 py-1.5 border border-solid border-formBorder rounded"
+                        placeholder="Comment"
                         {...register("comment", {
                           required: false,
                           maxLength: 100,

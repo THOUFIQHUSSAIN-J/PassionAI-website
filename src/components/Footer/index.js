@@ -60,19 +60,19 @@ export default function Footer() {
             </h2>
             <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
               <a
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 href="https://www.linkedin.com/company/passion-ai-ari-llp/"
                 class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
               >
-                <img src={linkedin} width={51} height={51} />
+                <img src={linkedin} alt="linkedin" width={51} height={51} />
                 <span class="sr-only">Facebook page</span>
               </a>
               <a
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 href="https://www.instagram.com/passionai_ari/"
                 class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
               >
-                <img src={instagram} width={51} height={51} />
+                <img src={instagram}  alt="instagram" width={51} height={51} />
                 <span class="sr-only">Instagram page</span>
               </a>
             </div>
@@ -80,21 +80,21 @@ export default function Footer() {
         </div>
 
         <div className="flex justify-center mt-10 mb-10 md:absolute right-0 -bottom-28  z-50">
-          <img src={footerImage} width="200" height="200"></img>
+          <img src={footerImage}  alt="footer" width="200" height="200"></img>
         </div>
       </div>
 
       <div className="flex justify-center mt-10">
         <p className="text-copyright font-light text-mobile-heading-sz md:text-mini-regular-sz">
-          Copyright 2021 Passion Ai Ari Inc. All rights Reserved
+          Copyright 2022 Passion Ai Ari Inc. All rights Reserved
         </p>
       </div>
 
       <div className="hidden md:block flex justify-center  md:absolute left-0 bottom-0">
-        <img src={footerLeftImage} width="85" height="100"></img>
+        <img src={footerLeftImage}  alt="footer" width="85" height="100"></img>
       </div>
       <div className="hidden md:block flex justify-center md:absolute right-0 top-0">
-        <img src={footerRightImage} width="85" height="200"></img>
+        <img src={footerRightImage}  alt="footer" width="85" height="200"></img>
       </div>
     </footer>
   );

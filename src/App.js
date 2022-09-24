@@ -8,6 +8,7 @@ import Signin from "containers/Signin";
 import Terms from "containers/Terms";
 import { Fragment } from "react";
 import Testimonial from "containers/Testimonial";
+// eslint-disable-next-line
 import { Routes, Route, Link } from "react-router-dom";
 
 function App() {

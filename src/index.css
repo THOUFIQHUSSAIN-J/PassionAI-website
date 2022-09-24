@@ -12,3 +12,14 @@
       font-family: "MerriweatherSans";
       src: url("../src/fonts/MerriweatherSans-Regular.ttf") format("truetype");
 }
+
+@font-face {
+      font-family: "Lato";
+      src: url("../src/fonts/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+      font-family: "Poppins";
+      src: url("../src/fonts/Poppins-Regular.ttf") format("truetype");
+}
+

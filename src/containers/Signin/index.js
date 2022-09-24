@@ -11,7 +11,6 @@ export default function Signin() {
   const {
     register,
     handleSubmit,
-    formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
     axios
@@ -26,7 +25,7 @@ export default function Signin() {
   return (
     <Fragment>
       <div className="absolute top-0 left-0 w-full -z-50">
-        <img src={Login} className="w-full h-fit " />
+        <img src={Login} alt="login" className="w-full h-fit " />
       </div>
       <div className="flex flex-row">
         <div className="basis-8/12"></div>
@@ -65,11 +64,11 @@ export default function Signin() {
               />
 
               <div className="absolute top-12 right-4">
-                <img src={PasswordEye} />
+                <img src={PasswordEye} alt="passwordeye" />
               </div>
 
               <div className="flex justify-end">
-                <a href="#">
+                <a href="#ContactUs">
                   <p className="text-primary text-xs-1">Forget Password?</p>
                 </a>
               </div>
@@ -93,21 +92,21 @@ export default function Signin() {
               type="submit"
               className="px-6 py-2.5 h-12 mr-10  w-full text-black rounded-md bg-formBackground inline-flex hover:bg-white hover:border hover:border-buttonHoverColor justify-center"
             >
-              <img src={GoogleImage} width={17} height={23} />
+              <img src={GoogleImage} alt="google" width={17} height={23} />
               <p className="ml-4">Google</p>
             </button>
             <button
               type="submit"
               className="px-6 py-2.5 h-12 mr-10  w-full text-black rounded-md bg-formBackground inline-flex hover:bg-white hover:border hover:border-buttonHoverColor justify-center"
             >
-              <img src={FacebookImage} width={17} height={23} />
+              <img src={FacebookImage} alt="facebook" width={17} height={23} />
               <p className="ml-4">Facebook</p>
             </button>
             <button
               type="submit"
               className="px-6 py-2.5 h-12 mr-10  w-full text-black rounded-md bg-formBackground inline-flex hover:bg-white hover:border hover:border-buttonHoverColor justify-center"
             >
-              <img src={LinkedInImage} width={17} height={23} />
+              <img src={LinkedInImage} alt="linkedin" width={17} height={23} />
               <p className="ml-4">LinkedIn</p>
             </button>
           </div>

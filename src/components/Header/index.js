@@ -28,7 +28,7 @@ export default function Header() {
 
               <img
                 src={HomeLogo}
-                alt="image not found"
+                alt="home logo"
                 width={120}
                 height={40}
                 left={33}
@@ -51,14 +51,14 @@ export default function Header() {
           </div>
 
           <div className="hidden md:block items-center justify-end md:flex md:flex-1 lg:w-0  pr-10">
-            <a target="_blank"
+            <a target="_blank" rel="noreferrer"
               href={`${process.env.REACT_APP_APP_URL}/register`}
               className="whitespace-nowrap text-base font-medium hover:bg-gradient-to-r hover:from-formGradient0 hover:to-formGradient100 px-4 py-1 rounded-md"
             >
               Sign Up
             </a>
             <a
-              target="_blank"
+              target="_blank" rel="noreferrer"
               href={`${process.env.REACT_APP_APP_URL}/login`}
               className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md  bg-indigo-600 px-4 py-1 text-base font-medium text-white shadow-sm hover:bg-indigo-700 hover:bg-gradient-to-r hover:from-formGradient0 hover:to-formGradient100"
             >

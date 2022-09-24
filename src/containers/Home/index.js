@@ -1,5 +1,3 @@
-import HomeImage from "images/home.svg";
-import HomeIcons from "images/home-icons.svg";
 import React from "react";
 import ContactModal from "../../components/ContactModal";
 
@@ -20,7 +18,7 @@ export default function Home() {
             <span className="text-primary">Sales.</span>{" "}
           </p>
 
-          <p className="md:tracking-tight md:text-mini-heading md:s md:leading-[55px] md:font-medium mt-4 md:leading-[43px] w-[585px]">
+          <p className="md:font-Lato md:tracking-tight md:text-mini-heading md:s md:leading-[55px] md:font-medium mt-4 md:leading-[43px] w-[585px]">
             #We’ll help you choose the{" "}
             <span className="text-primary">best career</span> path in it.
           </p>

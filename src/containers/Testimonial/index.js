@@ -33,15 +33,15 @@ export default function Testimonial() {
   return (
     <Fragment>
       <div className="bg-testimonial-bg pt-10 pb-20 flex flex-col relative">
-        <img src={rightDotted} className="md:absolute right-0 -top-[100px]" />
+        <img src={rightDotted} alt="dotted" className="md:absolute right-0 -top-[100px]" />
         <div className="flex justify-center">
           <p className="text-regular-sz text-primary">Testimonials</p>
         </div>
         <div className="flex justify-center">
-          <p className="text-heading-title-sz text-violet">Success stories</p>
+          <p className="text-heading-title-sz text-violet font-bold">Success stories</p>
         </div>
         <div className="flex justify-center">
-          <p className="text-regular-sz text-violet font-light">
+          <p className="text-regular-sz text-violet">
             Let's hear it out from the never-ending journey of our succeeders.{" "}
           </p>
         </div>
