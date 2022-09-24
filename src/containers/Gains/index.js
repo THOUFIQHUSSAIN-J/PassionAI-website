@@ -70,6 +70,7 @@ export default function Gains() {
                 heading={student.heading}
                 subheading={student.subheading}
                 list={student.gains}
+                student={true}
               />
             </div>
           </div>

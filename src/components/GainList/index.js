@@ -1,7 +1,7 @@
 import ContactModal from "components/ContactModal";
 import React from "react";
 
-export default function GainList({ heading, subheading, list, institute }) {
+export default function GainList({ heading, subheading, list, institute, student }) {
   const [showModal, setShowModal] = React.useState(false);
   return (
     <div className="flex flex-col">
@@ -43,14 +43,27 @@ export default function GainList({ heading, subheading, list, institute }) {
         ))}
       </ul>
 
-      <button
-        class="mt-10 mb-10 w-40 bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg bg-gradient-to-r from-buttonGradient0 to-buttonGradient100"
-        type="button"
-        onClick={() => setShowModal(true)}
-      >
-        {" "}
-        Learn more
-      </button>
+        {student ? (
+            <button
+                className="mt-10 mb-10 w-40 bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg bg-gradient-to-r from-buttonGradient0 to-buttonGradient100"
+                type="button"
+                onClick={() => setShowModal(true)}
+            >
+                {" "}
+                Get Started!
+            </button>
+        ) : (
+            <button
+                className="mt-10 mb-10 w-40 bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg bg-gradient-to-r from-buttonGradient0 to-buttonGradient100"
+                type="button"
+                onClick={() => setShowModal(true)}
+            >
+                {" "}
+                Learn more
+            </button>
+        )}
+
+
 
       {showModal ? (
         <ContactModal setShowModal={setShowModal} showModal={showModal} />
