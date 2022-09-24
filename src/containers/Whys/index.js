@@ -121,15 +121,10 @@ export default function Whys() {
             <div>
               {" "}
               <p className="font-light text-regular text-mini-regular-sz md:text-regular-sz ">
-                Get career guidance and kick start your career
+                Preparation to create an impact everyday  starts right here!
               </p>
             </div>
-            <div>
-              {" "}
-              <p className="font-light text-regular text-mini-regular-sz md:text-regular-sz">
-                In Marketing & sales
-              </p>
-            </div>
+
           </div>
         </div>
 

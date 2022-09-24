@@ -45,6 +45,11 @@ module.exports = {
     },
     fontFamily: {
       body: ['"Open Sans"'],
+      Nunito: ["Nunito"],
+      MerriweatherSans: ["MerriweatherSans"],
+      Lato: ["Lato"],
+      Poppins: ["Poppins"],
+
     },
     boxShadow: {
       "box-primary": "0 8px 20px rgba(255, 125, 0, 0.19)",

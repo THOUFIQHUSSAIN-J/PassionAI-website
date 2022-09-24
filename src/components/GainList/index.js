@@ -1,12 +1,11 @@
 import ContactModal from "components/ContactModal";
-import tickImage from "images/tick.png";
 import React from "react";
 
 export default function GainList({ heading, subheading, list, institute }) {
   const [showModal, setShowModal] = React.useState(false);
   return (
     <div className="flex flex-col">
-      <div className="text-primary text-mobile-heading-sz md:text-regular-sz">
+      <div className="font-Poppins text-primary text-mobile-heading-sz md:text-regular-sz">
         {heading}
       </div>
       {institute ? (

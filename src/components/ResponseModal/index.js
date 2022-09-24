@@ -1,9 +1,7 @@
 import { Fragment } from "react";
-import ModalImage from "images/modal-image.svg";
 import SuccessImage from "images/response-success.svg";
 import FailureImage from "images/response-failure.svg";
 import ResponseBG from "images/response-background.svg";
-import ResponseCornerBg from "images/response-corner-bg.svg";
 
 export default function ResponseModal({ status, closeModal }) {
   return (
@@ -22,11 +20,11 @@ export default function ResponseModal({ status, closeModal }) {
 
       <div className="image flex justify-center relative">
         <Fragment>
-          <img src={ResponseBG} className="absolute"></img>
+          <img src={ResponseBG} alt="response" className="absolute"></img>
           {status === "success" ? (
-            <img src={SuccessImage} className="z-50" />
+            <img src={SuccessImage} alt="success" className="z-50" />
           ) : (
-            <img src={FailureImage} className="z-50" />
+            <img src={FailureImage} alt="failure" className="z-50" />
           )}
         </Fragment>
       </div>
