@@ -45,7 +45,8 @@ module.exports = {
     },
     fontFamily: {
       body: ['"Open Sans"'],
-      Nunito: ["Nunito"]
+      Nunito: ["Nunito"],
+      MerriweatherSans: ["MerriweatherSans"]
 
     },
     boxShadow: {

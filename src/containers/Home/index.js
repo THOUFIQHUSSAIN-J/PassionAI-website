@@ -14,7 +14,7 @@ export default function Home() {
             <span className="text-primary">EXPLORE.</span> FIND. CHOOSE.
           </p>
 
-          <p className="md:text-mini-heading md:text-regular-sz mt-4 md:leading-[43px] w-[585px]">
+          <p className="md:font-MerriweatherSans md:text-mini-heading md:text-regular-sz mt-4 md:leading-[43px] w-[600px]">
             Want to Kickstart your career in{" "}
             <span className="text-primary">Marketing</span> and{" "}
             <span className="text-primary">Sales.</span>{" "}
