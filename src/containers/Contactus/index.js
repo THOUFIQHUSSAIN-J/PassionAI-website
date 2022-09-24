@@ -14,7 +14,7 @@ export default function ContactUs() {
   } = useForm();
   const onSubmit = (data) => {
     axios
-      .post("https://passionaiari.com/api/contact_details/", data)
+      .post(`${process.env.REACT_APP_API_URL}/api/contact_details/`, data)
       .then(function (response) {
         console.log(response);
       })
