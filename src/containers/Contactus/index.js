@@ -24,7 +24,7 @@ export default function ContactUs() {
   return (
     <Fragment>
       <div className="contact-us bg-contact-us-bg relative mb-10" id="ContactUs">
-        <img src={rightDotted} className="absolute right-0 top-0" alt="dotted"/>
+        <img src={rightDotted} className="hidden md:absolute right-0 top-0" alt="dotted"/>
         <div className="flex justify-center">
           <p className="text-regular text-heading-title-sz mt-10 font-bold"> Get in Touch</p>
         </div>

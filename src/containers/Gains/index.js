@@ -51,7 +51,7 @@ export default function Gains() {
        * STUDENT GAINS
        */}
       <div className="flex flex-row pt-20 pb-20 relative">
-        <img src={rightDotted} alt="dotted" className="absolute right-0 top-10" />
+        <img src={rightDotted} alt="dotted" className="hidden md:absolute right-0 top-10" />
         <div className="students-gain">
           <p className="text-regular font-semibold ml-10 mr-10 text-regular-sz md:text-heading-title-sz md:ml-20">
             What do <span className="text-primary">Students</span> gain from
@@ -64,7 +64,6 @@ export default function Gains() {
                 src={studentDotted} alt="students"
                 width="60"
                 height="60"
-                className="absolute bottom-14 left-16 -z-10"
               />
             </div>
 
@@ -129,7 +128,7 @@ export default function Gains() {
        * INSITITUTE GAINS
        */}
       <div className="flex flex-row pt-20 pb-20 relative">
-        <img src={leftDotted} alt="dotted" className="absolute left-0 -top-[175px]" />
+        <img src={leftDotted} alt="dotted" className="hidden md:absolute left-0 -top-[175px]" />
         <div className="institute-gain">
           <div className="flex justify-center">
             <p className="text-regular font-semibold ml-10 mr-10 text-regular-sz md:text-heading-title-sz md:ml-20">

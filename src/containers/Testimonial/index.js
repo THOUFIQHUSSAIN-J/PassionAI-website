@@ -30,7 +30,7 @@ export default function Testimonial() {
   return (
     <Fragment>
       <div className="bg-testimonial-bg pt-10 pb-20 flex flex-col relative">
-        <img src={rightDotted} className="absolute right-0 -top-[100px]" />
+        <img src={rightDotted} className="hidden md:absolute right-0 -top-[100px]" />
         <div className="flex justify-center">
           <p className="text-regular-sz text-primary">Testimonial</p>
         </div>
