@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+      font-family: "Nunito";
+      /* src: url("../src/fonts/Nunito-VariableFont_wght.ttf") format("truetype"); */
+      src: url("../src/fonts/Nunito-ExtraBold.ttf") format("truetype");
+}

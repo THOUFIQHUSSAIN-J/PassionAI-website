@@ -10,7 +10,7 @@ export default function Home() {
       {/*<img src={HomeIcons} className="absolute w-full -z-10" />*/}
       <div className="flex flex-col">
         <div className="m-10 md:ml-20 md:mt-32 w-616">
-          <p className="text-sub-heading text-mobile-heading-sz font-bold md:tracking-wide md:text-xl md:text-sub-heading md:font-extrabold md:w-[482px] leading-tight">
+          <p className="text-sub-heading text-mobile-heading-sz font-bold font-Nunito md:tracking-wide md:text-xl md:text-sub-heading md:font-extrabold md:w-[482px] leading-tight">
             <span className="text-primary">EXPLORE.</span> FIND. CHOOSE.
           </p>
 

@@ -45,6 +45,7 @@ module.exports = {
     },
     fontFamily: {
       body: ['"Open Sans"'],
+      Nunito: ["Nunito"]
     },
     boxShadow: {
       "box-primary": "0 8px 20px rgba(255, 125, 0, 0.19)",
