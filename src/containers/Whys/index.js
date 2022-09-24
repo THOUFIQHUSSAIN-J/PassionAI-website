@@ -117,10 +117,10 @@ export default function Whys() {
               height="466"
             ></img>
           </div>
-          <div className="flex flex-col items-center  mt-4 ">
+          <div className="flex flex-col items-center mt-4 ">
             <div>
               {" "}
-              <p className="font-light text-regular text-mini-regular-sz md:text-regular-sz ">
+              <p className="font-light text-regular text-mini-regular-sz p-8 md:p-0 md:text-regular-sz ">
                 Preparation to create an impact everyday  starts right here!
               </p>
             </div>

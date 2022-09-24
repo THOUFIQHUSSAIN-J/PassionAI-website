@@ -34,18 +34,18 @@ export default function Testimonial() {
     <Fragment>
       <div className="bg-testimonial-bg pt-10 pb-20 relative">
         <img src={rightDotted} alt="dotted" className="hidden md:block md:absolute right-0 -top-[100px]" />
-        <div className="flex justify-center pl-4 pr-4 md:p-0">
+        <div className="flex justify-center ml-4 mr-4 md:m-0">
           <p className="text-regular-sz text-primary">Testimonials</p>
         </div>
-        <div className="flex justify-center pl-4 pr-4 md:p-0">
-          <p className="text-heading-title-sz text-violet font-bold">Success stories</p>
+        <div className="flex justify-center  mr-4 ml-4 mt-8 md:m-0">
+          <p className="text-mobile-heading-sz md:text-heading-title-sz text-violet font-bold">Success stories</p>
         </div>
-        <div className="flex justify-center pl-4 pr-4 pt-4 md:p-0">
-          <p className="text-regular-sz text-violet">
+        <div className="flex justify-center ml-10 mr-4 mt-8 md:m-0">
+          <p className="text-mobile-heading-sz md:text-regular-sz text-violet">
             Let's hear it out from the never-ending journey of our succeeders.{" "}
           </p>
         </div>
-        <div className="flex flex-col md:flex md:flex-row md:justify-around mt-20">
+        <div className="flex flex-col md:flex md:flex-row md:justify-around mt-8 md:mt-20">
           {testimonials.map((item) => (
             <TestimonialCard
               key={item.username}

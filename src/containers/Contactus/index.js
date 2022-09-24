@@ -47,7 +47,7 @@ export default function ContactUs() {
           {/**
            * Form
            */}
-          <div class="flex flex-col p-6 bg-formBackground w-4/12 m-10 md:ml-20 rounded-lg ">
+          <div class="flex flex-col p-6 bg-formBackground  m-10 md:ml-20 md:w-4/12 rounded-lg ">
             {responseStatus != 0 && responseStatus != 200 ? (
               <div className="pb-10">
                 <p className="text-buttonHoverColor text-md ">
