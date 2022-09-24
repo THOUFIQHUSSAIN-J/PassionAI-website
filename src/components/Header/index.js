@@ -51,7 +51,7 @@ export default function Header() {
           </div>
 
           <div className="hidden md:block items-center justify-end md:flex md:flex-1 lg:w-0  pr-10">
-            <a
+            <a target="_blank"
               href={`${process.env.REACT_APP_APP_URL}/register`}
               className="whitespace-nowrap text-base font-medium hover:bg-gradient-to-r hover:from-formGradient0 hover:to-formGradient100 px-4 py-1 rounded-md"
             >

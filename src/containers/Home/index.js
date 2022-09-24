@@ -6,7 +6,7 @@ import ContactModal from "../../components/ContactModal";
 export default function Home() {
   const [showModal, setShowModal] = React.useState(false);
   return (
-    <div className="flex flex-row bg-home-background bg-no-repeat relative -mt-0 pb-20">
+    <div className="flex flex-row bg-home-background bg-no-repeat bg-cover relative -mt-0 pb-20">
       {/*<img src={HomeIcons} className="absolute w-full -z-10" />*/}
       <div className="flex flex-col">
         <div className="m-10 md:ml-20 md:mt-32 w-616">
