@@ -35,7 +35,7 @@ export default function Testimonial() {
       <div className="bg-testimonial-bg pt-10 pb-20 flex flex-col relative">
         <img src={rightDotted} className="md:absolute right-0 -top-[100px]" />
         <div className="flex justify-center">
-          <p className="text-regular-sz text-primary">Testimonial</p>
+          <p className="text-regular-sz text-primary">Testimonials</p>
         </div>
         <div className="flex justify-center">
           <p className="text-heading-title-sz text-violet">Success stories</p>

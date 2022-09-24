@@ -6,8 +6,8 @@ import ContactModal from "../../components/ContactModal";
 export default function Home() {
   const [showModal, setShowModal] = React.useState(false);
   return (
-    <div className="flex flex-row bg-home-background relative -mt-0 pb-20">
-      <img src={HomeIcons} className="absolute w-full -z-10" />
+    <div className="flex flex-row bg-home-background bg-no-repeat relative -mt-0 pb-20">
+      {/*<img src={HomeIcons} className="absolute w-full -z-10" />*/}
       <div className="flex flex-col">
         <div className="m-10 md:ml-20 md:mt-32 w-616">
           <p className="text-sub-heading text-mobile-heading-sz font-bold md:tracking-wide md:text-xl md:text-sub-heading md:font-extrabold md:w-[482px] leading-tight">
@@ -41,9 +41,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full hidden md:block flex flex-row justify-around pt-16 md:ml-20">
-        <img src={HomeImage} alt="image not found" width={685} height={702} />
-      </div>
+      {/*<div className="w-full hidden md:block flex flex-row justify-around pt-16 md:ml-20">*/}
+      {/*  <img src={HomeImage} alt="image not found" width={685} height={702} />*/}
+      {/*</div>*/}
     </div>
   );
 }

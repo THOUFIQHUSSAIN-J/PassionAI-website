@@ -1,12 +1,10 @@
 import GainList from "components/GainList";
-import studentgainsimage from "images/student-gains.svg";
 import RoadMap from "images/roadmap.svg";
 import WorldMap from "images/worldmap.svg";
+import studentgainsimage from "images/student-gains.svg";
 import expertgainsimage from "images/expert-gains.svg";
 import institutegainsimage from "images/graduations.svg";
 import { Fragment } from "react";
-import studentDotted from "images/students-dotted.svg";
-import expertsDotted from "images/experts-dotted.svg";
 import rightDotted from "../../images/right-side-dotted.svg";
 import leftDotted from "../../images/left-side-dotted.svg";
 
@@ -34,7 +32,7 @@ const experts = {
 };
 
 const institutes = {
-  heading: "TO BE CHANGED",
+  heading: "Institutes Journey",
   subheading:
     "The best assistant to innovate a standard career guidance journey for every last aspirant.",
 
@@ -65,13 +63,7 @@ export default function Gains() {
           <div className="flex flex-col  md:flex-row justify-evenly">
             <div className="p-10 md:pl-20 md:pt-10 relative w-6/12">
               <img src={studentgainsimage} alt="students" />
-              <img
-                src={studentDotted}
-                alt="students"
-                width="60"
-                height="60"
-                className="absolute bottom-[50px] left-14 -z-10"
-              />
+             
             </div>
 
             <div className="p-10 md:pt-10 md:pl-0 w-6/12">
@@ -113,13 +105,7 @@ export default function Gains() {
 
             <div className="p-10  md:pt-10 w-7/12 relative">
               <img src={expertgainsimage} alt="experts" />
-              <img
-                src={expertsDotted}
-                alt="experts"
-                width="60"
-                height="60"
-                className="absolute bottom-28 right-28 -z-10"
-              />
+
             </div>
           </div>
         </div>
@@ -155,13 +141,7 @@ export default function Gains() {
                 width="647"
                 height="647"
               />
-              <img
-                src={expertsDotted}
-                alt="institute"
-                width="60"
-                height="60"
-                className="absolute bottom-8 right-4 -z-10"
-              />
+
             </div>
 
             <div className="p-10 md:pt-10 md:pl-0 w-6/12">
