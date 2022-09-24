@@ -105,7 +105,7 @@ export default function Whys() {
         />
         <div className="flex flex-col">
           <div className="flex justify-center">
-            <p className="font-semibold text-why-passion-heading text-mobile-heading-sz md:text-mini-heading-sz">
+            <p className="md:m-0 font-semibold text-why-passion-heading text-mobile-heading-sz md:text-mini-heading-sz">
               Let’s choose wisely this time...
             </p>{" "}
           </div>
@@ -128,7 +128,7 @@ export default function Whys() {
           </div>
         </div>
 
-        <div className="guidance-cards md:mt-20 flex flex-col items-center md:flex-row md:justify-around">
+        <div className="guidance-cards p-10 md:mt-20 flex flex-col items-center md:flex-row md:justify-around">
           {guidance.map((item) => (
             <GuidanceCard image={item.image} text={item.text} />
           ))}
