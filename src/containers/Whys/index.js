@@ -28,7 +28,7 @@ const guidance = [
 
 export default function Whys() {
   return (
-    <div className="pb-20" id="WhyPassion">
+    <section className="pb-20" id="WhyPassion">
       <div className="flex justify-center md:block pt-10 md:p-0 md:ml-20 md:pt-0 relative">
         <img
           src={rightDotted}
@@ -132,6 +132,6 @@ export default function Whys() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

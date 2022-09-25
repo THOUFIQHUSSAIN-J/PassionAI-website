@@ -31,7 +31,7 @@ const testimonials = [
 
 export default function Testimonial() {
   return (
-    <Fragment>
+    <section id="testimonial">
       <div className="bg-testimonial-bg pt-10 pb-20 relative">
         <img
           src={rightDotted}
@@ -63,6 +63,6 @@ export default function Testimonial() {
           ))}
         </div>
       </div>
-    </Fragment>
+    </section>
   );
 }

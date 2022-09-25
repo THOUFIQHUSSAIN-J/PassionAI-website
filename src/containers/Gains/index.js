@@ -45,7 +45,7 @@ const institutes = {
 
 export default function Gains() {
   return (
-    <Fragment>
+    <section>
       {/***
        * STUDENT GAINS
        */}
@@ -157,6 +157,6 @@ export default function Gains() {
           </div>
         </div>
       </div>
-    </Fragment>
+    </section>
   );
 }

@@ -25,10 +25,9 @@ export default function ContactUs() {
       });
   };
   return (
-    <Fragment>
+    <section id="ContactUs">
       <div
-        className="contact-us bg-contact-us-bg relative mb-10 "
-        id="ContactUs"
+        className="contact-us bg-contact-us-bg relative mb-10"
       >
         <img
           src={rightDotted}
@@ -169,6 +168,6 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-    </Fragment>
+    </section>
   );
 }
