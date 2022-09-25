@@ -5,7 +5,7 @@ import HomeImage from "../../images/home.svg";
 export default function Home() {
   const [showModal, setShowModal] = React.useState(false);
   return (
-    <div className="flex flex-row bg-home-background bg-no-repeat bg-cover relative -mt-0 pb-20">
+    <div className="flex justify-around bg-home-background bg-no-repeat bg-cover relative -mt-0 pb-20">
       {/*<img src={HomeIcons} className="absolute w-full -z-10" />*/}
       <div className="flex flex-col">
         <div className="m-10 md:ml-20 md:mt-32">
@@ -40,7 +40,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full hidden md:block flex flex-row justify-around pt-16 md:ml-20">
+      <div className="hidden md:flex flex-row justify-around pt-16 md:ml-20">
         <img src={HomeImage} alt="home" width={685} height={702} />
       </div>
     </div>

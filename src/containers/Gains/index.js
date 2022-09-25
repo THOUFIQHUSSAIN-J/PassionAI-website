@@ -79,8 +79,8 @@ export default function Gains() {
        * Road Map Image
        */}
       {/*to be changed*/}
-      <div className="flex flex-row pt-0 pb-20">
-        <img src={RoadMap} alt="road map" className="w-full" />
+      <div className="flex justify-center pt-0 pb-20">
+        <img src={RoadMap} alt="road map"/>
       </div>
 
       {/***
