@@ -2,7 +2,7 @@
   "name": "passion-ai-website",
   "version": "1.0.0",
   "private": true,
-  "proxy": "http://3.7.51.78",
+  "proxy": "https://api.passionaiari.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
