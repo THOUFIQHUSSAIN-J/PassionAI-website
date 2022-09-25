@@ -7,53 +7,53 @@ import ContactUs from "containers/Contactus";
 import Signin from "containers/Signin";
 import Terms from "containers/Terms";
 import Privacy from "containers/Privacy";
-import {Fragment} from "react";
+import { Fragment } from "react";
 import Testimonial from "containers/Testimonial";
 // eslint-disable-next-line
-import {Routes, Route, Link} from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
-    return (
-        <Fragment>
-            <Routes>
-                <Route path="/signin" element={<Signin/>}/>
-                <Route
-                    path="/terms"
-                    element={
-                        <Fragment>
-                            <Header/>
-                            <Terms/>
-                            <Footer/>
-                        </Fragment>
-                    }
-                ></Route>
-                <Route
-                    path="/privacy"
-                    element={
-                        <Fragment>
-                            <Header/>
-                            <Privacy/>
-                            <Footer/>
-                        </Fragment>
-                    }
-                ></Route>
-                <Route
-                    path="/"
-                    element={
-                        <Fragment>
-                            <Header/>
-                            <Home/>
-                            <Whys/>
-                            <Gains/>
-                            <Testimonial/>
-                            <ContactUs/>
-                            <Footer/>
-                        </Fragment>
-                    }
-                />
-            </Routes>
-        </Fragment>
-    );
+  return (
+    <Fragment>
+      <Routes>
+        <Route path="/signin" element={<Signin />} />
+        <Route
+          path="/terms"
+          element={
+            <Fragment>
+              <Header />
+              <Terms />
+              <Footer />
+            </Fragment>
+          }
+        ></Route>
+        <Route
+          path="/privacy"
+          element={
+            <Fragment>
+              <Header />
+              <Privacy />
+              <Footer />
+            </Fragment>
+          }
+        ></Route>
+        <Route
+          path="/"
+          element={
+            <Fragment>
+              <Header />
+              <Home />
+              <Whys />
+              <Gains />
+              <Testimonial />
+              <ContactUs />
+              <Footer />
+            </Fragment>
+          }
+        />
+      </Routes>
+    </Fragment>
+  );
 }
 
 export default App;

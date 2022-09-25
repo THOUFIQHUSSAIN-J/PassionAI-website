@@ -60,7 +60,8 @@ export default function Header() {
               Sign Up
             </a>
             <a
-              target="_blank" rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
               href={`${process.env.REACT_APP_APP_URL}/login`}
               className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md  bg-indigo-600 px-4 py-1 text-base font-medium text-white shadow-sm hover:bg-indigo-700 hover:bg-gradient-to-r hover:from-formGradient0 hover:to-formGradient100"
             >
