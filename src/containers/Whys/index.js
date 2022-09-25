@@ -40,15 +40,15 @@ export default function Whys() {
       </div>
 
       <div className="flex lg:justify-between ">
-        <div className="p-10 md:p-0 md:mt-20 md:ml-20 relative cursor-pointer">
+        <div className="p-10 md:p-0 md:mt-20 md:ml-20 md:rounded-2xl relative cursor-pointer">
           <video
             width="768"
             height="500"
-            className="rounded-2xl md:z-10"
+            className="md:z-10 md:rounded-2xl "
             controls
             poster={VideoThumbnail}
           >
-            <source src={"https://passionaiaripro.s3.ap-south-1.amazonaws.com/website/introVideo.mp4"} type="video/mp4" />
+            <source src={`https://passionaiaripro.s3.ap-south-1.amazonaws.com/website/${process.env.REACT_APP_VIDEO_NAME}`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <div className="md:absolute md:-right-[285px] -top-24 transform -scale-x-100 md:-z-10">
