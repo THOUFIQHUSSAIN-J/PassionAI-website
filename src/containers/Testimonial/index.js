@@ -31,7 +31,7 @@ const testimonials = [
 export default function Testimonial() {
   return (
     <section id="testimonial">
-      <div className="bg-testimonial-bg pt-10 pb-20 relative">
+      <div className="bg-testimonial-bg pt-10 pb-20 relative justify-around">
         <img
           src={rightDotted}
           alt="dotted"
@@ -50,7 +50,7 @@ export default function Testimonial() {
             Let's hear it out from the never-ending journey of our succeeders.{" "}
           </p>
         </div>
-        <div className="flex flex-col md:flex md:flex-row md:justify-around mt-8 md:mt-20">
+        <div className="flex flex-col md:flex md:flex-row  mt-8 md:mt-20 justify-around">
           {testimonials.map((item) => (
             <TestimonialCard
               key={item.username}

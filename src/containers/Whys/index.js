@@ -28,30 +28,32 @@ const guidance = [
 export default function Whys() {
   return (
     <section className="pb-20" id="WhyPassion">
-      <div className="flex justify-center md:block pt-10 md:p-0 md:ml-20 md:pt-0 relative">
+      <div className="relative">
         <img
           src={rightDotted}
           alt="dotted"
           className="hidden md:block md:absolute right-0 top-[50px]"
         />
-        <p className="text-mini-heading font-bold text-mobile-heading-sz md:text-mini-heading-sz leading-tight">
-          <span className="text-heading-title">Why</span> PassionAi ?
-        </p>
       </div>
 
-      <div className="flex lg:justify-between ">
-        <div className="p-10 md:p-0 md:mt-20 md:ml-20 md:rounded-2xl relative cursor-pointer">
+      <div className="flex lg:justify-around">
+        <div className="p-10 md:p-0 md:mt-20 md:rounded-2xl relative cursor-pointer">
+       
+        <div className="text-mini-heading font-bold text-mobile-heading-sz md:text-mini-heading-sz leading-tight">
+          <span className="text-heading-title">Why</span> PassionAi ?
+        </div>
+
           <video
             width="768"
             height="500"
-            className="md:z-10 md:rounded-2xl "
+            className="mt-20 md:z-10 md:rounded-2xl "
             controls
             poster={VideoThumbnail}
           >
             <source src={`https://passionaiaripro.s3.ap-south-1.amazonaws.com/website/${process.env.REACT_APP_VIDEO_NAME}`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="md:absolute md:-right-[285px] -top-24 transform -scale-x-100 md:-z-10">
+          <div className="md:absolute md:-right-[285px] -top-0 transform -scale-x-100 md:-z-10">
             <img
               src={helloGIF}
               alt="hello"
@@ -62,7 +64,7 @@ export default function Whys() {
           </div>
         </div>
 
-        <div className="flex mt-48 mr-28 hidden md:block relative">
+        <div className="flex mt-80 mr-28 hidden md:block relative">
           <div className="quotes relative">
             <img
               src={Quotes}

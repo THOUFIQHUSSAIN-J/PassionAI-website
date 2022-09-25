@@ -35,7 +35,7 @@ const company = [
 export default function Footer() {
   return (
     <footer className="p-4 bg-footer-bg sm:p-6 dark:bg-gray-900 relative">
-      <div className="md:flex md:justify-between relative">
+      <div className="md:flex md:justify-around relative">
         <div className="mb-6 md:mb-0 mt-4 md:pl-20">
           <div className="flex justify-center">
             <img src={passionaiLogo} className="mr-3 h-183" alt="FlowBite Logo" />
