@@ -10,7 +10,7 @@ export default function ContactUs() {
   const {
     register,
     handleSubmit,
-    // formState: { errors },
+    formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
     axios
@@ -87,6 +87,7 @@ export default function ContactUs() {
                       maxLength: 100,
                     })}
                   />
+                  {errors.name && errors.name.type === "required" && <span className="mt-10 text-primary">Name is required</span>}
                 </div>
                 <div className="form-group mb-6">
                   <input
@@ -99,6 +100,7 @@ export default function ContactUs() {
                       pattern: /^\S+@\S+$/i,
                     })}
                   />
+                   {errors.email && errors.email.type === "required" && <span className="mt-10 text-primary">Email is required</span>}
                 </div>
 
                 <div className="form-group mb-6">
@@ -112,6 +114,7 @@ export default function ContactUs() {
                       maxLength: 100,
                     })}
                   />
+                  {errors.phone_number && errors.phone_number.type === "required" && <span className="mt-10 text-primary">Phone number is required</span>}
                 </div>
 
                 <div className="form-group mb-6">
