@@ -1,6 +1,8 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from "react";
 import HomeLogo from "../../images/home-logo.svg";
+import { NavHashLink } from 'react-router-hash-link';
+
 
 const Headings = [
   {
@@ -39,12 +41,12 @@ export default function Header() {
           <div className="hidden md:flex h-full items-center relative">
             {Headings.map((item) => (
               <div key={item.name} className="flex flex-col items-center ml-10 group">
-                <a
-                  href={item.link}
+                <NavHashLink
+                  to={item.link}
                   className="text-base font-medium hover:text-primary"
                 >
                   {item.name}
-                </a>
+                </NavHashLink>
                 <div key={item.name} className="absolute -bottom-0 rounded-t-xl w-4 h-2 group-hover:border group-hover:border-primary group-hover:bg-primary"></div>
               </div>
             ))}
