@@ -25,7 +25,7 @@ export default function GainList({
       )}
       <ul className="mt-8">
         {list.map((item) => (
-          <li className="font-4  md:mt-6">
+          <li key={item} className="font-4  md:mt-6">
             <div className="inline-flex">
               <svg
                 width="23"
@@ -37,9 +37,9 @@ export default function GainList({
                 <path
                   d="M21 2L6.38462 17L2 12.5045"
                   stroke="#FF7A00"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
 

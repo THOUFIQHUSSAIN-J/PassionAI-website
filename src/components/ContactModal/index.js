@@ -53,7 +53,7 @@ export default function ContactModal({ showModal, setShowModal }) {
                   />
                 </div>
 
-                <div class="flex flex-col p-6 w-96  rounded items-center">
+                <div className="flex flex-col p-6 w-96  rounded items-center">
                   <div className="flex flex-row  w-full justify-between">
                     <p className="font-bold text-header-bg text-regular-sz ml-2">
                       Hiii There!!!
@@ -70,9 +70,9 @@ export default function ContactModal({ showModal, setShowModal }) {
                       <path
                         d="M19.2 10.8L10.8 19.2M10.8 10.8L19.2 19.2M29 15C29 22.732 22.732 29 15 29C7.26801 29 1 22.732 1 15C1 7.26801 7.26801 1 15 1C22.732 1 29 7.26801 29 15Z"
                         stroke="#263238"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </svg>
                   </div>
@@ -84,10 +84,10 @@ export default function ContactModal({ showModal, setShowModal }) {
                     </p>
                   </div>
                   <form onSubmit={handleSubmit(onSubmit)}>
-                    <div class="form-group mb-6 mt-10">
+                    <div className="form-group mb-6 mt-10">
                       <input
                         type="text"
-                        class="form-control block w-80 h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
+                        className="form-control block w-80 h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
                         placeholder="Name"
@@ -98,7 +98,7 @@ export default function ContactModal({ showModal, setShowModal }) {
                         })}
                       />
                     </div>
-                    <div class="form-group mb-6">
+                    <div className="form-group mb-6">
                       {/**
                        * EMAIL
                        */}

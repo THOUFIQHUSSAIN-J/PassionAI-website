@@ -34,48 +34,48 @@ const company = [
 
 export default function Footer() {
   return (
-    <footer class="p-4 bg-footer-bg sm:p-6 dark:bg-gray-900 relative">
-      <div class="md:flex md:justify-between relative">
-        <div class="mb-6 md:mb-0 mt-4 md:pl-20">
+    <footer className="p-4 bg-footer-bg sm:p-6 dark:bg-gray-900 relative">
+      <div className="md:flex md:justify-between relative">
+        <div className="mb-6 md:mb-0 mt-4 md:pl-20">
           <div className="flex justify-center">
-            <img src={passionaiLogo} class="mr-3 h-183" alt="FlowBite Logo" />
+            <img src={passionaiLogo} className="mr-3 h-183" alt="FlowBite Logo" />
           </div>
         </div>
-        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+        <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
           <div>
-            <h2 class="mb-6 text-sm font-semibold  text-primary uppercase">
+            <h2 className="mb-6 text-sm font-semibold  text-primary uppercase">
               Company
             </h2>
-            <ul class="text-white no-underline">
+            <ul className="text-white no-underline">
               {company.map((item) => (
-                <li className="font-4 mt-2">
+                <li key={item.name} className="font-4 mt-2">
                   <a href={item.link}>{item.name}</a>
                 </li>
               ))}
             </ul>
           </div>
           <div>
-            <h2 class="mb-6 text-sm font-semibold text-primary">
+            <h2 className="mb-6 text-sm font-semibold text-primary">
               Let's catch up
             </h2>
-            <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+            <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
               <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.linkedin.com/company/passion-ai-ari-llp/"
-                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
               >
                 <img src={linkedin} alt="linkedin" width={51} height={51} />
-                <span class="sr-only">Facebook page</span>
+                <span className="sr-only">Facebook page</span>
               </a>
               <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.instagram.com/passionai_ari/"
-                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
               >
                 <img src={instagram} alt="instagram" width={51} height={51} />
-                <span class="sr-only">Instagram page</span>
+                <span className="sr-only">Instagram page</span>
               </a>
             </div>
           </div>

@@ -46,7 +46,7 @@ export default function ContactUs() {
           {/**
            * Form
            */}
-          <div class="flex flex-col p-6 bg-formBackground  m-10 md:ml-20 md:w-4/12 rounded-lg ">
+          <div className="flex flex-col p-6 bg-formBackground  m-10 md:ml-20 md:w-4/12 rounded-lg ">
             {responseStatus !== 0 &&
             !(responseStatus >= 200 && responseStatus <= 300) ? (
               <div className="pb-10">
@@ -76,10 +76,10 @@ export default function ContactUs() {
               </div>
             ) : (
               <form onSubmit={handleSubmit(onSubmit)}>
-                <div class="form-group mb-6">
+                <div className="form-group mb-6">
                   <input
                     type="text"
-                    class="form-control block w-full  h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
+                    className="form-control block w-full  h-14 px-3 py-1.5 border border-solid border-formBorder rounded"
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
                     placeholder="Name"
@@ -89,7 +89,7 @@ export default function ContactUs() {
                     })}
                   />
                 </div>
-                <div class="form-group mb-6">
+                <div className="form-group mb-6">
                   <input
                     type="email"
                     className="form-control block w-full  h-14 px-3 py-1.5 border border-solid border-formBorder rounded"

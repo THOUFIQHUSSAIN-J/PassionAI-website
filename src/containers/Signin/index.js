@@ -31,30 +31,30 @@ export default function Signin() {
             <p className="text-sub-heading-sz ">Sign In</p>
           </div>
           <form onSubmit={handleSubmit(onSubmit)}>
-            <div class="mb-6">
-              <label for="base-input" class="block mb-2 text-xs-1">
+            <div className="mb-6">
+              <label for="base-input" className="block mb-2 text-xs-1">
                 Username
               </label>
               <input
                 type="text"
                 id="base-input"
                 placeholder="Username"
-                class="bg-formBackground border text-black dark:border-primary  rounded-lg block w-full p-2.5"
+                className="bg-formBackground border text-black dark:border-primary  rounded-lg block w-full p-2.5"
                 {...register("email", {
                   required: true,
                   pattern: /^\S+@\S+$/i,
                 })}
               />
             </div>
-            <div class="mb-6 relative ">
-              <label for="base-input" class="block mb-2 text-xs-1">
+            <div className="mb-6 relative ">
+              <label for="base-input" className="block mb-2 text-xs-1">
                 Password
               </label>
               <input
                 type="password"
                 placeholder="*********"
                 id="base-input"
-                class="bg-formBackground relative border text-black dark:border-primary rounded-lg block w-full p-2.5"
+                className="bg-formBackground relative border text-black dark:border-primary rounded-lg block w-full p-2.5"
                 {...register("password", {
                   required: true,
                 })}
@@ -78,10 +78,10 @@ export default function Signin() {
             </button>
           </form>
 
-          <div class="relative flex py-5 items-center mt-14">
-            <div class="flex-grow border-t border-gray-400"></div>
-            <span class="flex-shrink mx-4 text-gray-400">or login with</span>
-            <div class="flex-grow border-t border-gray-400"></div>
+          <div className="relative flex py-5 items-center mt-14">
+            <div className="flex-grow border-t border-gray-400"></div>
+            <span className="flex-shrink mx-4 text-gray-400">or login with</span>
+            <div className="flex-grow border-t border-gray-400"></div>
           </div>
 
           <div className="button-container flex flex-row">

@@ -38,14 +38,14 @@ export default function Header() {
           </div>
           <div className="hidden md:flex h-full items-center relative">
             {Headings.map((item) => (
-              <div className="flex flex-col items-center ml-10 group">
+              <div key={item.name} className="flex flex-col items-center ml-10 group">
                 <a
                   href={item.link}
                   className="text-base font-medium hover:text-primary"
                 >
                   {item.name}
                 </a>
-                <div className="absolute -bottom-0 rounded-t-xl w-4 h-2 group-hover:border group-hover:border-primary group-hover:bg-primary"></div>
+                <div key={item.name} className="absolute -bottom-0 rounded-t-xl w-4 h-2 group-hover:border group-hover:border-primary group-hover:bg-primary"></div>
               </div>
             ))}
           </div>
