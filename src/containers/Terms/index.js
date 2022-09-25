@@ -5,14 +5,14 @@ export default function Terms() {
   return (
     <Fragment>
       <div className="flex relative -mt-40 mb-10 -z-10">
-        <img src={HeaderImage} alt="privacy" className="absolute w-full" />
+        <img src={HeaderImage} alt="privacy" className="hidden lg:block absolute w-full" />
       </div>
       <div className="flex justify-center pt-16 mt-40">
-        <p className="text-heading-title-sz text-white font-bold">
+        <p className="text-heading-title-sz lg:text-white text-black font-bold">
           Terms of Service
         </p>
       </div>
-      <div className="flex flex-col justify-around ml-20 mr-20 mt-40 mb-40 text-mini-regular-sz">
+      <div className="flex flex-col justify-around ml-20 mr-20 mt-20 md:mt-40 mb-40 text-mini-regular-sz">
         <p className="mt-4">
           This website is operated by Passion Ai Ari LLP. Throughout the site,
           the terms “we”, “us” and “our” refer to Passion Ai Ari LLP. Passion Ai
