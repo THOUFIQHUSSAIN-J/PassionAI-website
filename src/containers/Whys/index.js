@@ -47,7 +47,6 @@ export default function Whys() {
             height="500"
             className="rounded-2xl md:z-10"
             controls
-            autoplay
             poster={VideoThumbnail}
           >
             <source src={IntroVideo} type="video/mp4" />

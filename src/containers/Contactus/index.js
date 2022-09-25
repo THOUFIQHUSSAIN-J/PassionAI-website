@@ -4,7 +4,6 @@ import teamGIF from "images/team.gif";
 import rightDotted from "images/right-side-dotted.svg";
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import SuccessImage from "images/response-success.svg";
 
 export default function ContactUs() {
   const [responseStatus, setResponseStatus] = useState(0);
@@ -48,7 +47,7 @@ export default function ContactUs() {
            * Form
            */}
           <div class="flex flex-col p-6 bg-formBackground  m-10 md:ml-20 md:w-4/12 rounded-lg ">
-            {responseStatus != 0 &&
+            {responseStatus !== 0 &&
             !(responseStatus >= 200 && responseStatus <= 300) ? (
               <div className="pb-10">
                 <p className="text-buttonHoverColor text-md ">
@@ -63,7 +62,6 @@ export default function ContactUs() {
             ) : null}
             {responseStatus >= 200 && responseStatus <= 300 ? (
               <div className="p-10">
-                <img src={SuccessImage} alt="success" className="z-50" />
                 <p className="text-md text-sub-heading">
                   {" "}
                   Thanks for being Awesome !!!

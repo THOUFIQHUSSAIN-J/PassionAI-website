@@ -6,6 +6,7 @@ import Gains from "containers/Gains";
 import ContactUs from "containers/Contactus";
 import Signin from "containers/Signin";
 import Terms from "containers/Terms";
+import Privacy from "containers/Privacy";
 import { Fragment } from "react";
 import Testimonial from "containers/Testimonial";
 // eslint-disable-next-line
@@ -22,6 +23,16 @@ function App() {
             <Fragment>
               <Header />
               <Terms />
+              <Footer />
+            </Fragment>
+          }
+        ></Route>
+        <Route
+          path="/privacy"
+          element={
+            <Fragment>
+              <Header />
+              <Privacy />
               <Footer />
             </Fragment>
           }

@@ -41,7 +41,7 @@ export default function Home() {
       </div>
 
       <div className="w-full hidden md:block flex flex-row justify-around pt-16 md:ml-20">
-        <img src={HomeImage} alt="image not found" width={685} height={702} />
+        <img src={HomeImage} alt="home" width={685} height={702} />
       </div>
     </div>
   );

@@ -93,7 +93,8 @@ export default function ContactModal({ showModal, setShowModal }) {
                         placeholder="Name"
                         {...register("name", {
                           required: true,
-                          maxLength: 100,
+                          message: "Please Enter a Valid Name",
+                          maxLength: 36,
                         })}
                       />
                     </div>
@@ -125,6 +126,9 @@ export default function ContactModal({ showModal, setShowModal }) {
                         {...register("phone_number", {
                           required: true,
                           maxLength: 15,
+                          message: "Please Enter a Valid Phone Number",
+                          pattern:
+                            /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/i,
                         })}
                       />
                     </div>
@@ -139,7 +143,8 @@ export default function ContactModal({ showModal, setShowModal }) {
                         placeholder="Comment"
                         {...register("comment", {
                           required: false,
-                          maxLength: 100,
+                          minLength: 100,
+                          maxLength: 255,
                         })}
                       ></textarea>
                     </div>
@@ -154,8 +159,14 @@ export default function ContactModal({ showModal, setShowModal }) {
                 </div>
               </Fragment>
             ) : (
-              <ResponseModal status={response !== 0 &&
-              !(response >= 200 && response <= 300) ? 'failure' : 'success' } closeModal={closeModal} />
+              <ResponseModal
+                status={
+                  response !== 0 && !(response >= 200 && response <= 300)
+                    ? "failure"
+                    : "success"
+                }
+                closeModal={closeModal}
+              />
             )}
           </div>
         </div>

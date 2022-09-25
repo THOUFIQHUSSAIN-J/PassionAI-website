@@ -8,19 +8,19 @@ import linkedin from "images/linkedin-footer.svg";
 const company = [
   {
     name: "Home",
-    link: "#",
+    link: "/",
   },
   {
     name: "Why PassionAi ?",
-    link: "#WhyPassion",
+    link: "/#WhyPassion",
   },
   {
     name: "Terms of Service",
-    link: "#WhyPassion",
+    link: "/terms",
   },
   {
     name: "Privacy Policy",
-    link: "#WhyPassion",
+    link: "/privacy",
   },
   // {
   //   name: "Blogs",
