@@ -1,7 +1,6 @@
 import TestimonialCard from "components/TestimonialCard";
-import { Fragment } from "react";
 import InstituteImage from "images/institue-image.jpg";
-import MentorImage from "images/mentor-image.jpeg";
+import MentorImage from "images/mentor-image.jpg";
 import rightDotted from "images/right-side-dotted.svg";
 import StudentImage from "images/student-image.jpg";
 

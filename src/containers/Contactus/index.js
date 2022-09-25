@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import { Fragment, useState } from "react";
 import mailGIF from "images/mail.gif";
 import teamGIF from "images/team.gif";

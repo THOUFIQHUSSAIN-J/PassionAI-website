@@ -4,7 +4,6 @@ import suitcase from "images/briefcase.svg";
 import careerpath from "images/careerpath.svg";
 import BriefcaseGirl from "images/briefcase-girl.svg";
 import VideoPointer from "images/video-pointer.svg";
-import IntroVideo from "../../images/introVideo.mp4";
 import helloGIF from "images/hello.gif";
 import Quotes from "images/why-quotes.svg";
 import rightDotted from "images/right-side-dotted.svg";
@@ -49,7 +48,7 @@ export default function Whys() {
             controls
             poster={VideoThumbnail}
           >
-            <source src={IntroVideo} type="video/mp4" />
+            <source src={"https://passionaiaripro.s3.ap-south-1.amazonaws.com/website/introVideo.mp4"} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <div className="md:absolute md:-right-[285px] -top-24 transform -scale-x-100 md:-z-10">
