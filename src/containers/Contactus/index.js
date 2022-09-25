@@ -126,7 +126,6 @@ export default function ContactUs() {
                     placeholder="Comment"
                     {...register("comment", {
                       required: false,
-                      maxLength: 100,
                     })}
                   />
                 </div>

@@ -143,8 +143,6 @@ export default function ContactModal({ showModal, setShowModal }) {
                         placeholder="Comment"
                         {...register("comment", {
                           required: false,
-                          minLength: 100,
-                          maxLength: 255,
                         })}
                       ></textarea>
                     </div>
