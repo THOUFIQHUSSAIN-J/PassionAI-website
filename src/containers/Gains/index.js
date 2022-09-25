@@ -86,19 +86,19 @@ export default function Gains() {
       {/***
        * EXPERT GAINS
        */}
-      <div className="flex flex-row  md:pt-10 md:pb-20 justify-around">
-        <div className="expert-gain">
+      <div className="flex flex-row  md:pt-10 md:pb-20 justify-around ">
+        <div className="expert-gain ">
           <p className="text-regular font-semibold ml-10 mr-10 text-regular-sz md:text-heading-title-sz md:ml-20">
             What do <span className="text-primary">Experts</span> gain from
             PassionAi ?{" "}
           </p>
 
-          <div className="flex flex-col md:hidden">
-            <div className="p-10">
+          <div className="flex flex-col md:flex-row">
+            <div className="p-10 md:hidden">
               <img src={expertgainsimage} alt="experts" />
             </div>
 
-            <div className="pt-10 pl-10 md:pt-10 md:pl-20 md:w-5/12">
+            <div className="pt-10 pl-10 md:pt-10 md:pl-20 md:w-5/12 ">
               <GainList
                 heading={experts.heading}
                 subheading={experts.subheading}
