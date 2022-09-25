@@ -1,18 +1,18 @@
 import {Fragment} from "react";
+import HeaderImage from "../../images/terms-privacy.svg";
 
 export default function Terms() {
     return (
         <Fragment>
-            <div>
-                <div>
-                    <div className="flex justify-center">
-                        <p className="text-heading-title-sz text-black font-bold">
-                            Testimonial
-                        </p>
-                    </div>
-                </div>
+            <div className="flex relative -mt-40 mb-10 -z-10">
+                <img src={HeaderImage} alt="privacy" className="absolute w-full"/>
             </div>
-            <div className="flex flex-col justify-around ml-20 mr-20 mt-20 mb-40 text-mini-regular-sz">
+            <div className="flex justify-center pt-16 mt-40">
+                <p className="text-heading-title-sz text-white font-bold">
+                    Terms & Conditions
+                </p>
+            </div>
+            <div className="flex flex-col justify-around ml-20 mr-20 mt-40 mb-40 text-mini-regular-sz">
                 <p className="mt-4">
                     This website is operated by <b>Passion Ai Ari LLP</b>. Throughout the
                     site, the terms <b>“we”</b>, <b>“us”</b> and <b>“our”</b> refer to
