@@ -14,14 +14,14 @@ const testimonials = [
   },
   {
     testimonial:
-      "I'm happy that PassionAi for providing me with this fantastic opportunity to guide young people's extraordinary minds. This platform also gave me wonderful memories to treasure forever, and I personally explored and improvised alongside the students.",
+      "I'm happy that PassionAi provided me with this fantastic opportunity to guide young people's extraordinary minds. This platform also gave me wonderful memories to treasure forever, and I personally explored and improvised alongside the students.",
     username: "Abilash",
     role: "Mentor",
     image: MentorImage,
   },
   {
     testimonial:
-      "PassionAi made it possible for me to interact with eminent mentors and industry experts, who gave me in-depth knowledge regarding our chosen industry. Additionally, it taught us how to write resumes and how to sharpen our soft skills in order to succeed in interviews. I'm grateful to PassionAi for assisting me in securing my ideal career and ace interviews.",
+      "PassionAi made it possible for me to interact with eminent mentors and industry experts, who gave me in-depth knowledge regarding my chosen career. Additionally, it taught us how to write resumes and how to sharpen our soft skills in order to succeed in interviews. I'm grateful to PassionAi for assisting me in securing my ideal career and ace interviews.",
     username: "Sri Hari",
     role: "Student",
     image: StudentImage,
