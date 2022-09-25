@@ -48,7 +48,7 @@ export default function Gains() {
       {/***
        * STUDENT GAINS
        */}
-      <div className="flex flex-row pt-20 pb-20 relative">
+      <div className="flex flex-row pt-20 pb-20 relative justify-around">
         <img
           src={rightDotted}
           alt="dotted"
@@ -86,7 +86,7 @@ export default function Gains() {
       {/***
        * EXPERT GAINS
        */}
-      <div className="flex flex-row  md:pt-10 md:pb-20">
+      <div className="flex flex-row  md:pt-10 md:pb-20 justify-around">
         <div className="expert-gain">
           <p className="text-regular font-semibold ml-10 mr-10 text-regular-sz md:text-heading-title-sz md:ml-20">
             What do <span className="text-primary">Experts</span> gain from
@@ -123,7 +123,7 @@ export default function Gains() {
       {/***
        * INSITITUTE GAINS
        */}
-      <div className="flex flex-row pt-20 pb-20 relative">
+      <div className="flex flex-row pt-20 pb-20 relative justify-around">
         <img
           src={leftDotted}
           alt="dotted"

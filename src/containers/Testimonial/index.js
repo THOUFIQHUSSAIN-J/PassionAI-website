@@ -31,7 +31,7 @@ const testimonials = [
 export default function Testimonial() {
   return (
     <section id="testimonial">
-      <div className="bg-testimonial-bg pt-10 pb-20 relative">
+      <div className="bg-testimonial-bg pt-10 pb-20 relative justify-around border-2">
         <img
           src={rightDotted}
           alt="dotted"

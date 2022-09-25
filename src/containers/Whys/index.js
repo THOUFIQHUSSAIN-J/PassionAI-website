@@ -28,19 +28,19 @@ const guidance = [
 export default function Whys() {
   return (
     <section className="pb-20" id="WhyPassion">
-      <div className="flex justify-center md:block pt-10 md:p-0 md:ml-20 md:pt-0 relative">
+      <div className="flex justify-start md:ml-20 pt-10 md:p-0  md:pt-0 relative">
         <img
           src={rightDotted}
           alt="dotted"
           className="hidden md:block md:absolute right-0 top-[50px]"
         />
-        <p className="text-mini-heading font-bold text-mobile-heading-sz md:text-mini-heading-sz leading-tight">
+        <div className="text-mini-heading font-bold text-mobile-heading-sz md:text-mini-heading-sz leading-tight">
           <span className="text-heading-title">Why</span> PassionAi ?
-        </p>
+        </div>
       </div>
 
-      <div className="flex lg:justify-between ">
-        <div className="p-10 md:p-0 md:mt-20 md:ml-20 md:rounded-2xl relative cursor-pointer">
+      <div className="flex lg:justify-around">
+        <div className="p-10 md:p-0 md:mt-20 md:rounded-2xl relative cursor-pointer">
           <video
             width="768"
             height="500"
