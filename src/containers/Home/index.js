@@ -29,7 +29,7 @@ export default function Home() {
           <button
             onClick={() => setShowModal(true)}
             type="button"
-            class="animate-bounce mt-10 mb-10 md:w-[211px] md:h-[54px] md:text-md-s md:justify-around bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg bg-gradient-to-r from-formGradient0 to-formGradient100 "
+            className="animate-bounce mt-10 mb-10 md:w-[211px] md:h-[54px] md:text-md-s md:justify-around bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg bg-gradient-to-r from-formGradient0 to-formGradient100 "
           >
             {" "}
             Explore more

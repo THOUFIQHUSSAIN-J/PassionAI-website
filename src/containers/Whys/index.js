@@ -128,7 +128,7 @@ export default function Whys() {
 
         <div className="guidance-cards p-10 md:mt-20 flex flex-col items-center md:flex-row md:justify-around">
           {guidance.map((item) => (
-            <GuidanceCard image={item.image} text={item.text} />
+            <GuidanceCard key={item.text} image={item.image} text={item.text} />
           ))}
         </div>
       </div>
