@@ -23,3 +23,6 @@
       src: url("../src/fonts/Poppins-Regular.ttf") format("truetype");
 }
 
+html {
+    scroll-behavior: smooth;
+}

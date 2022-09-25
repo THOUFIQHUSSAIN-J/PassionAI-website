@@ -1,7 +1,6 @@
 import TestimonialCard from "components/TestimonialCard";
-import { Fragment } from "react";
 import InstituteImage from "images/institue-image.jpg";
-import MentorImage from "images/mentor-image.jpeg";
+import MentorImage from "images/mentor-image.jpg";
 import rightDotted from "images/right-side-dotted.svg";
 import StudentImage from "images/student-image.jpg";
 
@@ -31,7 +30,7 @@ const testimonials = [
 
 export default function Testimonial() {
   return (
-    <Fragment>
+    <section id="testimonial">
       <div className="bg-testimonial-bg pt-10 pb-20 relative">
         <img
           src={rightDotted}
@@ -63,6 +62,6 @@ export default function Testimonial() {
           ))}
         </div>
       </div>
-    </Fragment>
+    </section>
   );
 }

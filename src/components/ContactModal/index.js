@@ -12,7 +12,6 @@ export default function ContactModal({ showModal, setShowModal }) {
   const {
     register,
     handleSubmit,
-    // eslint-disable-next-line
     formState: { errors },
   } = useForm();
 
@@ -35,7 +34,7 @@ export default function ContactModal({ showModal, setShowModal }) {
 
   return (
     <Fragment>
-      <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+      <div className="justify-center items-center  flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50">
         <div className="relative w-auto my-6 mx-auto max-w-3xl">
           {/*content*/}
 
@@ -43,7 +42,7 @@ export default function ContactModal({ showModal, setShowModal }) {
             {/*body*/}
             {response === "" ? (
               <Fragment>
-                <div className="imageContainer rounded-l-2xl p-32  bg-gradient-to-r from-modalGradient0 to-modalGradient100">
+                <div className="hidden md:block imageContainer rounded-l-2xl p-32  bg-gradient-to-r from-modalGradient0 to-modalGradient100">
                   <img
                     className="absolute -bottom-6 right-96"
                     src={ModalImage}
@@ -93,10 +92,10 @@ export default function ContactModal({ showModal, setShowModal }) {
                         placeholder="Name"
                         {...register("name", {
                           required: true,
-                          message: "Please Enter a Valid Name",
                           maxLength: 36,
                         })}
                       />
+                    {errors.name && errors.name.type === "required" && <span className="mt-10 text-primary">Name is required</span>}
                     </div>
                     <div className="form-group mb-6">
                       {/**
@@ -112,6 +111,7 @@ export default function ContactModal({ showModal, setShowModal }) {
                           pattern: /^\S+@\S+$/i,
                         })}
                       />
+                    {errors.email && errors.email.type === "required" && <span className="mt-10 text-primary">Email is required</span>}
                     </div>
 
                     <div className="form-group mb-6">
@@ -126,11 +126,11 @@ export default function ContactModal({ showModal, setShowModal }) {
                         {...register("phone_number", {
                           required: true,
                           maxLength: 15,
-                          message: "Please Enter a Valid Phone Number",
                           pattern:
                             /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/i,
                         })}
                       />
+                    {errors.phone_number && errors.phone_number.type === "required" && <span className="mt-10 text-primary">Phone number is required</span>}
                     </div>
                     <div className="form-group mb-6">
                       {/**

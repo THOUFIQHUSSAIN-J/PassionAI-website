@@ -4,7 +4,6 @@ import WorldMap from "images/worldmap.svg";
 import studentgainsimage from "images/student-gains.svg";
 import expertgainsimage from "images/expert-gains.svg";
 import institutegainsimage from "images/graduations.svg";
-import { Fragment } from "react";
 import rightDotted from "../../images/right-side-dotted.svg";
 import leftDotted from "../../images/left-side-dotted.svg";
 
@@ -45,7 +44,7 @@ const institutes = {
 
 export default function Gains() {
   return (
-    <Fragment>
+    <section>
       {/***
        * STUDENT GAINS
        */}
@@ -157,6 +156,6 @@ export default function Gains() {
           </div>
         </div>
       </div>
-    </Fragment>
+    </section>
   );
 }

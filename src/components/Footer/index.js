@@ -87,7 +87,7 @@ export default function Footer() {
       </div>
 
       <div className="flex justify-center mt-10">
-        <p className="text-copyright font-light text-mobile-heading-sz md:text-mini-regular-sz">
+        <p className="text-copyright font-light text-xs-1 md:text-mini-regular-sz">
           Copyright 2022 Passion Ai Ari Inc. All rights Reserved
         </p>
       </div>

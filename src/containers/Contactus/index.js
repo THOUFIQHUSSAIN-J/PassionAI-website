@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import { Fragment, useState } from "react";
 import mailGIF from "images/mail.gif";
 import teamGIF from "images/team.gif";
@@ -10,7 +11,7 @@ export default function ContactUs() {
   const {
     register,
     handleSubmit,
-    // formState: { errors },
+    formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
     axios
@@ -25,10 +26,9 @@ export default function ContactUs() {
       });
   };
   return (
-    <Fragment>
+    <section id="ContactUs">
       <div
-        className="contact-us bg-contact-us-bg relative mb-10 "
-        id="ContactUs"
+        className="contact-us bg-contact-us-bg relative mb-10"
       >
         <img
           src={rightDotted}
@@ -88,6 +88,7 @@ export default function ContactUs() {
                       maxLength: 100,
                     })}
                   />
+                  {errors.name && errors.name.type === "required" && <span className="mt-10 text-primary">Name is required</span>}
                 </div>
                 <div className="form-group mb-6">
                   <input
@@ -100,6 +101,7 @@ export default function ContactUs() {
                       pattern: /^\S+@\S+$/i,
                     })}
                   />
+                   {errors.email && errors.email.type === "required" && <span className="mt-10 text-primary">Email is required</span>}
                 </div>
 
                 <div className="form-group mb-6">
@@ -113,6 +115,7 @@ export default function ContactUs() {
                       maxLength: 100,
                     })}
                   />
+                  {errors.phone_number && errors.phone_number.type === "required" && <span className="mt-10 text-primary">Phone number is required</span>}
                 </div>
 
                 <div className="form-group mb-6">
@@ -169,6 +172,6 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-    </Fragment>
+    </section>
   );
 }
