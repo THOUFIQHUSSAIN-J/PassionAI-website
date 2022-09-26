@@ -31,7 +31,7 @@ const experts = {
 };
 
 const institutes = {
-  heading: "Institutes Journey",
+  heading: "Holistic career support to the Institutes",
   subheading:
     "The best assistant to innovate a standard career guidance journey for every last aspirant.",
 
