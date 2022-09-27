@@ -41,9 +41,9 @@ export default function Home() {
           <button
               onClick={() => setVideoModal(true)}
               type="button"
-              className="ml-10 mt-10 absolute"
+              className="ml-4 md:ml-10 md:text-md-s mt-10"
           >
-            <img src={WatchVideo} alt="watch" />
+            <img src={WatchVideo} className="w-40 md:w-full" alt="watch" />
           </button>
 
           {showModal ? (
