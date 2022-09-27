@@ -6,15 +6,14 @@ export default function VideoModal({showVideo, setVideoModal}) {
     return (
         <Fragment>
             <div className="justify-center items-center  flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50">
-                <div className="relative w-auto my-6 mx-auto max-w-3xl">
-                    {/*content*/}
+                <div className="relative w-auto my-6 mx-auto max-w-5xl">
 
                     <Fragment>
                         <div className="rounded items-center">
 
-                            <div className="flex relative justify-start w-full mt-5 ml-4 cursor-pointer">
+                            <div className="flex relative justify-start ml-4 cursor-pointer">
                                 <svg
-                                    className="z-10 r-0 absolute"
+                                    className="z-10 absolute"
                                     width="30"
                                     cursor="pointer"
                                     height="30"
@@ -33,10 +32,8 @@ export default function VideoModal({showVideo, setVideoModal}) {
                                 </svg>
                             </div>
                             <video
-                                width="768"
-                                height="500"
-                                className="mt-20 object-cover rounded-2xl "
-                                autoplay="autoplay" controls="controls" id="vid"
+                                className="mt-10 rounded-2xl"
+                                autoplay="autoplay" controls="controls"
                             >
                                 <source
                                     src={`https://passionaiaripro.s3.ap-south-1.amazonaws.com/website/${process.env.REACT_APP_INTRO_VIDEO_NAME}`}
