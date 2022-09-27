@@ -1,9 +1,12 @@
 import React from "react";
 import ContactModal from "../../components/ContactModal";
 import HomeImage from "../../images/home.svg";
+import WatchVideo from "images/watch-video.svg";
+import VideoModal from "../../components/VideoModal";
 
 export default function Home() {
   const [showModal, setShowModal] = React.useState(false);
+  const [showVideo, setVideoModal] = React.useState(false);
   return (
     <div className="flex justify-around bg-home-background bg-no-repeat bg-cover relative -mt-0 pb-20">
       {/*<img src={HomeIcons} className="absolute w-full -z-10" />*/}
@@ -25,7 +28,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="ml-10 md:ml-20 md:-mt-10 border-slate-50 ">
+        <div className="ml-10 md:ml-20 md:-mt-10 relative border-slate-50 ">
           <button
             onClick={() => setShowModal(true)}
             type="button"
@@ -34,8 +37,20 @@ export default function Home() {
             {" "}
             Explore more
           </button>
+
+          <button
+              onClick={() => setVideoModal(true)}
+              type="button"
+              className="ml-10 mt-10 absolute"
+          >
+            <img src={WatchVideo} alt="watch" />
+          </button>
+
           {showModal ? (
             <ContactModal setShowModal={setShowModal} showModal={showModal} />
+          ) : null}
+          {showVideo ? (
+              <VideoModal setVideoModal={setVideoModal} showVideo={showVideo} />
           ) : null}
         </div>
       </div>
