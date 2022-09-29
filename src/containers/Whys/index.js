@@ -52,6 +52,8 @@ export default function Whys() {
             poster={VideoThumbnail}
           >
             <source src={`https://passionaiaripro.s3.ap-south-1.amazonaws.com/website/${process.env.REACT_APP_VIDEO_NAME}`} type="video/mp4" />
+            <source src="https://passionaiaripro.s3.ap-south-1.amazonaws.com/website/introVideo.webm" type="video/webm" />
+
             Your browser does not support the video tag.
           </video>
           <div className="md:absolute md:-right-[285px] top-10 transform -scale-x-100 md:-z-10">
