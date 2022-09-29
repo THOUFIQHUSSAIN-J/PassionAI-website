@@ -38,7 +38,7 @@ export default function Whys() {
 
       <div className="flex lg:justify-around">
         <div className="p-10 md:p-0 md:mt-20 rounded-2xl relative cursor-pointer">
-       
+
         <div className="text-mini-heading font-bold text-mobile-heading-sz md:text-mini-heading-sz leading-tight">
           <span className="text-heading-title">Why</span> PassionAi ?
         </div>
@@ -48,11 +48,10 @@ export default function Whys() {
             height="500"
             className="mt-20 object-cover rounded-2xl "
             controls
-            autoplay muted
+            playsinline
+            poster={VideoThumbnail}
           >
             <source src={`https://passionaiaripro.s3.ap-south-1.amazonaws.com/website/${process.env.REACT_APP_VIDEO_NAME}`} type="video/mp4" />
-            <source src="https://passionaiaripro.s3.ap-south-1.amazonaws.com/website/introVideo.webm" type="video/webm" />
-
             Your browser does not support the video tag.
           </video>
           <div className="md:absolute md:-right-[285px] top-10 transform -scale-x-100 md:-z-10">
