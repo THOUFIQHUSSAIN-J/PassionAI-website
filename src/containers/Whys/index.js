@@ -48,6 +48,7 @@ export default function Whys() {
             height="500"
             className="mt-20 object-cover rounded-2xl "
             controls
+            autoplay muted
           >
             <source src={`https://passionaiaripro.s3.ap-south-1.amazonaws.com/website/${process.env.REACT_APP_VIDEO_NAME}`} type="video/mp4" />
             <source src="https://passionaiaripro.s3.ap-south-1.amazonaws.com/website/introVideo.webm" type="video/webm" />
