@@ -11,6 +11,7 @@ import { Fragment } from "react";
 import Testimonial from "containers/Testimonial";
 // eslint-disable-next-line
 import { Routes, Route, Link } from "react-router-dom";
+import SignUp from "./containers/Signup";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
             <Fragment>
               <Header />
               <Home />
+              <SignUp />
               <Whys />
               <Gains />
               <Testimonial />
