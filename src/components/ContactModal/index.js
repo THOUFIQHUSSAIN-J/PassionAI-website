@@ -18,6 +18,7 @@ export default function ContactModal({ showModal, setShowModal }) {
   } = useForm();
 
   const onSubmit = (data) => {
+    setShowLoader(true);
     axios
       .post(`${API_URL}/api/contact_details/`, data)
       .then(function (response) {

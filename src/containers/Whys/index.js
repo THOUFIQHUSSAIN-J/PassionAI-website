@@ -113,7 +113,7 @@ export default function Whys() {
               Let’s choose wisely this time...
             </p>{" "}
           </div>
-          <div className="hidden md:absolute md:right-10 md:-bottom-12 md:-z-10">
+          <div className="hidden md:block md:absolute md:right-10 md:-bottom-12 md:-z-10">
             <img
               src={BriefcaseGirl}
               alt="briefcase"

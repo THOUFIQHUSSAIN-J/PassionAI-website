@@ -26,6 +26,7 @@ module.exports = {
       primary: "#FF7A00",
       "heading-secondary": "#282B45",
       "border-1": "#CCD1FF",
+      "border-2": "#B49EF926",
       "footer-bg": "#2B2E4A",
       copyright: "#858DCE",
       formGradient0: "#FF7A00",
