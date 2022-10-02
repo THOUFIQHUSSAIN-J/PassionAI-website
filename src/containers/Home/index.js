@@ -24,7 +24,7 @@ export default function Home() {
 
           <p className="md:font-Lato md:tracking-tight md:text-mini-heading md:s md:leading-[55px] md:font-medium mt-4 md:leading-[43px] md:w-[585px]">
             #We’ll help you choose the{" "}
-            <span className="text-primary">best career</span> path in it.
+            <span className="text-primary">best career path</span> in it.
           </p>
         </div>
 

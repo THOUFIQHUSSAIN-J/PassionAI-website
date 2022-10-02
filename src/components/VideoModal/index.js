@@ -13,7 +13,7 @@ export default function VideoModal({showVideo, setVideoModal}) {
 
                             <div className="flex relative justify-start ml-4 cursor-pointer">
                                 <svg
-                                    className="z-10 absolute"
+                                    className="z-10 -top-10 absolute"
                                     width="30"
                                     cursor="pointer"
                                     height="30"
