@@ -8,6 +8,7 @@ import helloGIF from "images/hello.gif";
 import Quotes from "images/why-quotes.svg";
 import rightDotted from "images/right-side-dotted.svg";
 import leftDotted from "images/left-side-dotted.svg";
+import IntroVideo from "images/introVideo.webm";
 import VideoThumbnail from "images/video-thumbnail.svg";
 
 const guidance = [
@@ -46,12 +47,13 @@ export default function Whys() {
           <video
             width="768"
             height="500"
-            className="mt-20 object-cover rounded-2xl "
-            controls
+            className="mt-20 object-cover rounded-2xl bg-red "
+            controls="true"
             playsinline
             poster={VideoThumbnail}
           >
             <source src={`https://passionaiaripro.s3.ap-south-1.amazonaws.com/website/${process.env.REACT_APP_VIDEO_NAME}`} type="video/mp4" />
+            <source src={IntroVideo} type="video/webm" />
             Your browser does not support the video tag.
           </video>
           <div className="md:absolute md:-right-[285px] top-10 transform -scale-x-100 md:-z-10">

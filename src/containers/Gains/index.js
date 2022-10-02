@@ -48,7 +48,7 @@ export default function Gains() {
       {/***
        * STUDENT GAINS
        */}
-      <div className="flex flex-row pt-20 pb-20 relative justify-around">
+      <div className="flex flex-row pt-20 pb-20 relative">
         <img
           src={rightDotted}
           alt="dotted"
@@ -79,8 +79,8 @@ export default function Gains() {
        * Road Map Image
        */}
       {/*to be changed*/}
-      <div className="flex justify-center pt-0 pb-20">
-        <img src={RoadMap} alt="road map"/>
+      <div className="flex pt-0 pb-20">
+        <img src={RoadMap} alt="road map" className="w-full"/>
       </div>
 
       {/***
