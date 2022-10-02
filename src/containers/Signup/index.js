@@ -26,14 +26,14 @@ export default function SignUp() {
           </div>
         </div>
 
-        <div className="flex justify-center mt-10  animate-bounce">
+        <div className="flex justify-center mt-10 ">
         <button
-            className="animate-pulse w-50 bg-primary hover:bg-blue-700 text-lg text-white font-bold py-2 px-4 rounded-lg bg-gradient-to-r from-buttonGradient0 to-buttonGradient100"
+            className="animate-pulse w-50 bg-primary hover:bg-blue-700 text-md text-white font-bold py-2 px-4 rounded-lg bg-gradient-to-r from-buttonGradient0 to-buttonGradient100"
             type="button"
             onClick={() => setShowModal(true)}
         >
           {" "}
-          Learn more
+          Sign Up
         </button>
 
           {showModal ? (
