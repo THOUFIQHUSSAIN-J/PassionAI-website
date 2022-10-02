@@ -6,9 +6,9 @@ export default function SignUp() {
   const [showModal, setShowModal] = React.useState(false);
 
   return (
-    <section className="pb-20">
+    <section>
 
-      <div className="signup mt-40 relative">
+      <div className="signup relative">
         <div className="flex flex-col">
           <div className="flex justify-center">
             <p className="p-8 md:m-0 font-semibold text-why-passion-heading text-lg md:text-mini-heading-sz">
