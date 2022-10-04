@@ -48,13 +48,12 @@ export default function Whys() {
           <ReactPlayer
             width={768}
             height={500}
-            className="mt-20 object-cover rounded-2xl bg-red"
+            className="mt-20 rounded-2xl"
             controls="true"
-            playsinline
-            // playIcon={VideoThumbnail}
-            previewTabIndex={0}
-            // light={true}
-            url={`https://passionaiaripro.s3.ap-south-1.amazonaws.com/website/${process.env.REACT_APP_VIDEO_WEBM_NAME}`}
+            playing
+            light={VideoThumbnail}
+            autoplay
+            url="https://www.youtube.com/watch?v=3uBYYVE5K9s"
           >
             {/* <source src={`https://passionaiaripro.s3.ap-south-1.amazonaws.com/website/${process.env.REACT_APP_VIDEO_NAME}`} type="video/mp4" />
             <source src={`https://passionaiaripro.s3.ap-south-1.amazonaws.com/website/${process.env.REACT_APP_VIDEO_WEBM_NAME}`} type="video/webm" />
