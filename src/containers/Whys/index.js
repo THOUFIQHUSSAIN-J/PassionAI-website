@@ -10,6 +10,7 @@ import rightDotted from "images/right-side-dotted.svg";
 import leftDotted from "images/left-side-dotted.svg";
 import VideoThumbnail from "images/video-thumbnail.svg";
 import IntroVideoWeb from "images/introVideo.webm";
+import ReactPlayer from 'react-player';
 
 const guidance = [
   {
@@ -44,19 +45,22 @@ export default function Whys() {
           <span className="text-heading-title">Why</span> PassionAi ?
         </div>
 
-          <video
-            width="768"
-            height="500"
-            className="mt-20 object-cover rounded-2xl bg-red "
+          <ReactPlayer
+            width={768}
+            height={500}
+            className="mt-20 object-cover rounded-2xl bg-red"
             controls="true"
             playsinline
-            poster={VideoThumbnail}
+            // playIcon={VideoThumbnail}
+            previewTabIndex={0}
+            // light={true}
+            url={`https://passionaiaripro.s3.ap-south-1.amazonaws.com/website/${process.env.REACT_APP_VIDEO_WEBM_NAME}`}
           >
-            <source src={`https://passionaiaripro.s3.ap-south-1.amazonaws.com/website/${process.env.REACT_APP_VIDEO_NAME}`} type="video/mp4" />
+            {/* <source src={`https://passionaiaripro.s3.ap-south-1.amazonaws.com/website/${process.env.REACT_APP_VIDEO_NAME}`} type="video/mp4" />
             <source src={`https://passionaiaripro.s3.ap-south-1.amazonaws.com/website/${process.env.REACT_APP_VIDEO_WEBM_NAME}`} type="video/webm" />
             <source src={IntroVideoWeb} type="video/webm" />
-            Your browser does not support the video tag.
-          </video>
+            Your browser does not support the video tag. */}
+          </ReactPlayer>
           <div className="md:absolute md:-right-[285px] top-10 transform -scale-x-100 md:-z-10">
             <img
               src={helloGIF}
