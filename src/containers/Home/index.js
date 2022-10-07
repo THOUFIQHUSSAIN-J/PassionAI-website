@@ -39,9 +39,9 @@ export default function Home() {
           </button>
 
           <button
-              onClick={() => setVideoModal(true)}
-              type="button"
-              className="ml-4 md:ml-10 md:text-md-s mt-10"
+            onClick={() => setVideoModal(true)}
+            type="button"
+            className="ml-4 md:ml-10 md:text-md-s mt-10"
           >
             <img src={WatchVideo} className="w-40 md:w-full" alt="watch" />
           </button>
@@ -50,7 +50,7 @@ export default function Home() {
             <ContactModal setShowModal={setShowModal} showModal={showModal} />
           ) : null}
           {showVideo ? (
-              <VideoModal setVideoModal={setVideoModal} showVideo={showVideo} />
+            <VideoModal setVideoModal={setVideoModal} showVideo={showVideo} />
           ) : null}
         </div>
       </div>

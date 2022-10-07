@@ -12,6 +12,7 @@ import Testimonial from "containers/Testimonial";
 // eslint-disable-next-line
 import { Routes, Route, Link } from "react-router-dom";
 import SignUp from "./containers/Signup";
+import ChatBot from "./components/ChatBot";
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
               <Testimonial />
               <ContactUs />
               <Footer />
+              <ChatBot />
             </Fragment>
           }
         />
