@@ -1,5 +1,6 @@
 import { Fragment, useState } from "react";
-import ContactModal from "components/ContactModal";
+import NeedhelpModal from "components/NeedhelpModal/index";
+// import ContactModal from "components/ContactModal";
 import ContactImage from "../../images/need-help.png";
 
 function ChatBot() {
@@ -20,7 +21,7 @@ function ChatBot() {
         <img src={ContactImage} width={40} height={40} alt="Contact Us" />
       </button>
       {showModal ? (
-        <ContactModal setShowModal={setShowModal} showModal={showModal} />
+        <NeedhelpModal setShowModal={setShowModal} showModal={showModal} />
       ) : null}
     </Fragment>
   );
