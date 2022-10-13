@@ -46,9 +46,9 @@ export default function ContactModal({ showModal, setShowModal }) {
         <div className="relative w-auto mx-auto max-w-3xl">
           {/*content*/}
 
-          <div className="pb-6 rounded-2xl shadow-lg relative w-full bg-white">
+          <div className="pb-6 shadow-lg relative w-full bg-white">
             <div className="flex flex-row w-full justify-between relative rounded items-center shadow-box-primary my-2">
-              <p className="ml-8 font-normal text-regular-sz text-heading-secondary">
+              <p className="ml-8 font-normal text-regular-sz text-heading-secondary p-2">
                 Book an Appointment
               </p>
               <button
@@ -66,7 +66,7 @@ export default function ContactModal({ showModal, setShowModal }) {
                 >
                   <path
                     d="M19.2 10.8L10.8 19.2M10.8 10.8L19.2 19.2M29 15C29 22.732 22.732 29 15 29C7.26801 29 1 22.732 1 15C1 7.26801 7.26801 1 15 1C22.732 1 29 7.26801 29 15Z"
-                    stroke="white"
+                    stroke="black"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -187,6 +187,9 @@ export default function ContactModal({ showModal, setShowModal }) {
                     </form>
                   </div>
                   <div className="hidden md:block imageContainer rounded-l-2xl p-2 m-5 items-center">
+                    <p className="text-modalText text-xs my-2">
+                      Pick a suitable date and timing to book a meeting
+                    </p>
                     <RCalendar />
                   </div>
                 </Fragment>
